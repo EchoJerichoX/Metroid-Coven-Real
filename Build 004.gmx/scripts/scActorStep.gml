@@ -1,0 +1,7 @@
+if (ImmuneToPowerBomb > 0) ImmuneToPowerBomb -= 1;
+
+switch(myid)
+{
+    case Enemies.eZoomer: scZoomerStep(); break;
+    case Enemies.eGeemer: scGeemerStep(); break;
+}

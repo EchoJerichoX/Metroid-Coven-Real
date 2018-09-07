@@ -1,0 +1,2377 @@
+**************************************************************************************
+               GameMaker:Studio IDE v1.1.1567.36800
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+**We are family!
+**Its coming its in the trees.
+Init #2
+Init #3
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.39
+Init #7.40
+Init #7.41
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+tutorial task closing state = 0
+tutorial task started
+NewProject - FormOpen
+HTTP_getData of promotions
+parsing of promotions
+copying tips.rss from roaming
+finished copying tips.rss from roaming
+parsing tip file: C:\Users\Curt\AppData\Local\GameMaker-Studio\tips.rss
+tutorial task finished
+tips task started
+tips task finished
+demo task finished
+NewProject - FormClose
+g_closing = -1
+Starting to check all the SDK status
+formCloseCount: 1
+formCloseCount: 1
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+SDK Directory does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking windows version
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for file:C:\Program Files (x86)\Windows Kits\8.0\bin\x86\makeappx.exe
+Starting to check all the SDK status - done
+tips task started
+tips task finished
+parsing tip file: C:\Users\Curt\AppData\Local\GameMaker-Studio\tips.rss
+NewProject - FormClose
+g_closing = -1
+Starting to check all the SDK status
+formCloseCount: 1
+formCloseCount: 1
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+SDK Directory does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking windows version
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for file:C:\Program Files (x86)\Windows Kits\8.0\bin\x86\makeappx.exe
+Starting to check all the SDK status - done
+g_closing = -1
+save tips dict
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+CheckChanged
+Finished Form Close Query
+Quit_Steam
+JclStopExceptiontracking
+Finish GM:Studio
+Analytics thread end
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GMX_Update finished
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.1.1567.36800
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+Init #2
+Init #3
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.39
+Init #7.40
+Init #7.41
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+tutorial task closing state = 0
+tutorial task started
+NewProject - FormOpen
+HTTP_getData of promotions
+Unhandled Exception - Invalid at the top level of the document.
+
+Line: 1
+HTTP/1.1 502 Bad Gateway
+Stack Trace of thread: 6196
+(00183BC0){5piceIDE.exe} [00584BC0]
+(00183840){5piceIDE.exe} [00584840]
+(001840D4){5piceIDE.exe} [005850D4]
+(0017E1B1){5piceIDE.exe} [0057F1B1]
+(0050C74C){5piceIDE.exe} [0090D74C]
+(0050F4B3){5piceIDE.exe} [009104B3]
+(001225CD){5piceIDE.exe} [005235CD]
+(00126AA5){5piceIDE.exe} [00527AA5]
+(00004FBF){5piceIDE.exe} [00405FBF]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75456DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75458FA4] Unknown function at LoadStringW + $EB
+(0001E914){ntdll.dll   } [7770F914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [75458FB4] Unknown function at LoadStringW + $FB
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00122F70){5piceIDE.exe} [00523F70]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00230362){5piceIDE.exe} [00631362]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00100619){5piceIDE.exe} [00501619]
+(00100728){5piceIDE.exe} [00501728]
+(0010328E){5piceIDE.exe} [0050428E]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015F0C){uxtheme.dll } [72276F0C] Unknown function at GetThemeBool + $8BB
+(0001520A){USER32.dll  } [7545620A] Unknown function at gapfnScSendMessage + $242
+(00018157){USER32.dll  } [75459157] Unknown function at SystemParametersInfoW + $84
+(00018125){USER32.dll  } [75459125] SystemParametersInfoW + $52
+(0012902B){5piceIDE.exe} [0052A02B]
+(00129CCA){5piceIDE.exe} [0052ACCA]
+(00129D10){5piceIDE.exe} [0052AD10]
+(00129DCD){5piceIDE.exe} [0052ADCD]
+(00129DDA){5piceIDE.exe} [0052ADDA]
+(00129DF9){5piceIDE.exe} [0052ADF9]
+(001011D0){5piceIDE.exe} [005021D0]
+(00127BCD){5piceIDE.exe} [00528BCD]
+(001038F6){5piceIDE.exe} [005048F6]
+(00128BEB){5piceIDE.exe} [00529BEB]
+(00122F70){5piceIDE.exe} [00523F70]
+(00128FDF){5piceIDE.exe} [00529FDF]
+(00230362){5piceIDE.exe} [00631362]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(000FAF5E){5piceIDE.exe} [004FBF5E]
+(00122866){5piceIDE.exe} [00523866]
+(00127657){5piceIDE.exe} [00528657]
+(001278A7){5piceIDE.exe} [005288A7]
+(005BF131){5piceIDE.exe} [009C0131]
+(001225CD){5piceIDE.exe} [005235CD]
+(00126AA5){5piceIDE.exe} [00527AA5]
+(00004FBF){5piceIDE.exe} [00405FBF]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75456DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75458FA4] Unknown function at LoadStringW + $EB
+(001011D0){5piceIDE.exe} [005021D0]
+(0000F137){ntdll.dll   } [77700137] KiUserCallbackDispatcher + $2B
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00122F70){5piceIDE.exe} [00523F70]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00100619){5piceIDE.exe} [00501619]
+(00100728){5piceIDE.exe} [00501728]
+(0010328E){5piceIDE.exe} [0050428E]
+(000FC908){5piceIDE.exe} [004FD908]
+(00022163){USER32.dll  } [75463163] Unknown function at SetActiveWindow + $1B3
+(000221C3){USER32.dll  } [754631C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [7546302A] SetActiveWindow + $7A
+(001011D0){5piceIDE.exe} [005021D0]
+(00021F2B){USER32.dll  } [75462F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [75462F47] MonitorFromWindow + $4D
+(00122F70){5piceIDE.exe} [00523F70]
+(00128FDF){5piceIDE.exe} [00529FDF]
+(00124335){5piceIDE.exe} [00525335]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(000FAF5E){5piceIDE.exe} [004FBF5E]
+(00122866){5piceIDE.exe} [00523866]
+(0012C3CB){5piceIDE.exe} [0052D3CB]
+(00741CEF){5piceIDE.exe} [00B42CEF]
+(0001243B){kernel32.dll} [7603343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [77729830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [77729800] Unknown function at RtlInitializeExceptionChain + $31
+
+tutorial task finished
+demo task finished
+NewProject - FormClose
+g_closing = -1
+Starting to check all the SDK status
+formCloseCount: 1
+formCloseCount: 1
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+SDK Directory does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking windows version
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for file:C:\Program Files (x86)\Windows Kits\8.0\bin\x86\makeappx.exe
+Starting to check all the SDK status - done
+g_closing = -1
+save tips dict
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+CheckChanged
+Finished Form Close Query
+Quit_Steam
+JclStopExceptiontracking
+Finish GM:Studio
+Unhandled Exception - Access violation at address 0052352B in module '5piceIDE.exe'. Read of address 00000010
+Stack Trace of thread: 6196
+(00183BC0){5piceIDE.exe} [00584BC0]
+(00183840){5piceIDE.exe} [00584840]
+(001840D4){5piceIDE.exe} [005850D4]
+(0017E1B1){5piceIDE.exe} [0057F1B1]
+(0050C74C){5piceIDE.exe} [0090D74C]
+(0050F4B3){5piceIDE.exe} [009104B3]
+(001225CD){5piceIDE.exe} [005235CD]
+(00126AA5){5piceIDE.exe} [00527AA5]
+(00004FBF){5piceIDE.exe} [00405FBF]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75456DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75458FA4] Unknown function at LoadStringW + $EB
+(0001E914){ntdll.dll   } [7770F914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [75458FB4] Unknown function at LoadStringW + $FB
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00122F70){5piceIDE.exe} [00523F70]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00230362){5piceIDE.exe} [00631362]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00100619){5piceIDE.exe} [00501619]
+(00100728){5piceIDE.exe} [00501728]
+(0010328E){5piceIDE.exe} [0050428E]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015F0C){uxtheme.dll } [72276F0C] Unknown function at GetThemeBool + $8BB
+(0001520A){USER32.dll  } [7545620A] Unknown function at gapfnScSendMessage + $242
+(00018157){USER32.dll  } [75459157] Unknown function at SystemParametersInfoW + $84
+(00018125){USER32.dll  } [75459125] SystemParametersInfoW + $52
+(0012902B){5piceIDE.exe} [0052A02B]
+(00129CCA){5piceIDE.exe} [0052ACCA]
+(00129D10){5piceIDE.exe} [0052AD10]
+(00129DCD){5piceIDE.exe} [0052ADCD]
+(00129DDA){5piceIDE.exe} [0052ADDA]
+(00129DF9){5piceIDE.exe} [0052ADF9]
+(001011D0){5piceIDE.exe} [005021D0]
+(00127BCD){5piceIDE.exe} [00528BCD]
+(001038F6){5piceIDE.exe} [005048F6]
+(00128BEB){5piceIDE.exe} [00529BEB]
+(00122F70){5piceIDE.exe} [00523F70]
+(00128FDF){5piceIDE.exe} [00529FDF]
+(00230362){5piceIDE.exe} [00631362]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(000FAF5E){5piceIDE.exe} [004FBF5E]
+(00122866){5piceIDE.exe} [00523866]
+(00127657){5piceIDE.exe} [00528657]
+(001278A7){5piceIDE.exe} [005288A7]
+(005BF131){5piceIDE.exe} [009C0131]
+(001225CD){5piceIDE.exe} [005235CD]
+(00126AA5){5piceIDE.exe} [00527AA5]
+(00004FBF){5piceIDE.exe} [00405FBF]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75456DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75458FA4] Unknown function at LoadStringW + $EB
+(001011D0){5piceIDE.exe} [005021D0]
+(0000F137){ntdll.dll   } [77700137] KiUserCallbackDispatcher + $2B
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00122F70){5piceIDE.exe} [00523F70]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00100619){5piceIDE.exe} [00501619]
+(00100728){5piceIDE.exe} [00501728]
+(0010328E){5piceIDE.exe} [0050428E]
+(000FC908){5piceIDE.exe} [004FD908]
+(00022163){USER32.dll  } [75463163] Unknown function at SetActiveWindow + $1B3
+(000221C3){USER32.dll  } [754631C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [7546302A] SetActiveWindow + $7A
+(001011D0){5piceIDE.exe} [005021D0]
+(00021F2B){USER32.dll  } [75462F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [75462F47] MonitorFromWindow + $4D
+(00122F70){5piceIDE.exe} [00523F70]
+(00128FDF){5piceIDE.exe} [00529FDF]
+(00124335){5piceIDE.exe} [00525335]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(000FAF5E){5piceIDE.exe} [004FBF5E]
+(00122866){5piceIDE.exe} [00523866]
+(0012C3CB){5piceIDE.exe} [0052D3CB]
+(00741CEF){5piceIDE.exe} [00B42CEF]
+(0001243B){kernel32.dll} [7603343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [77729830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [77729800] Unknown function at RtlInitializeExceptionChain + $31
+
+Analytics thread end
+GMX_Update finished
+Unhandled Exception - Access violation at address 0052352B in module '5piceIDE.exe'. Read of address 00000010
+Stack Trace of thread: 6196
+(00183BC0){5piceIDE.exe} [00584BC0]
+(00183840){5piceIDE.exe} [00584840]
+(001840D4){5piceIDE.exe} [005850D4]
+(0017E1B1){5piceIDE.exe} [0057F1B1]
+(0050C74C){5piceIDE.exe} [0090D74C]
+(0050F4B3){5piceIDE.exe} [009104B3]
+(001225CD){5piceIDE.exe} [005235CD]
+(00126AA5){5piceIDE.exe} [00527AA5]
+(00004FBF){5piceIDE.exe} [00405FBF]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75456DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75458FA4] Unknown function at LoadStringW + $EB
+(0001E914){ntdll.dll   } [7770F914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [75458FB4] Unknown function at LoadStringW + $FB
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00122F70){5piceIDE.exe} [00523F70]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00230362){5piceIDE.exe} [00631362]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00100619){5piceIDE.exe} [00501619]
+(00100728){5piceIDE.exe} [00501728]
+(0010328E){5piceIDE.exe} [0050428E]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015F0C){uxtheme.dll } [72276F0C] Unknown function at GetThemeBool + $8BB
+(0001520A){USER32.dll  } [7545620A] Unknown function at gapfnScSendMessage + $242
+(00018157){USER32.dll  } [75459157] Unknown function at SystemParametersInfoW + $84
+(00018125){USER32.dll  } [75459125] SystemParametersInfoW + $52
+(0012902B){5piceIDE.exe} [0052A02B]
+(00129CCA){5piceIDE.exe} [0052ACCA]
+(00129D10){5piceIDE.exe} [0052AD10]
+(00129DCD){5piceIDE.exe} [0052ADCD]
+(00129DDA){5piceIDE.exe} [0052ADDA]
+(00129DF9){5piceIDE.exe} [0052ADF9]
+(001011D0){5piceIDE.exe} [005021D0]
+(00127BCD){5piceIDE.exe} [00528BCD]
+(001038F6){5piceIDE.exe} [005048F6]
+(00128BEB){5piceIDE.exe} [00529BEB]
+(00122F70){5piceIDE.exe} [00523F70]
+(00128FDF){5piceIDE.exe} [00529FDF]
+(00230362){5piceIDE.exe} [00631362]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(000FAF5E){5piceIDE.exe} [004FBF5E]
+(00122866){5piceIDE.exe} [00523866]
+(00127657){5piceIDE.exe} [00528657]
+(001278A7){5piceIDE.exe} [005288A7]
+(005BF131){5piceIDE.exe} [009C0131]
+(001225CD){5piceIDE.exe} [005235CD]
+(00126AA5){5piceIDE.exe} [00527AA5]
+(00004FBF){5piceIDE.exe} [00405FBF]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75456DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75458FA4] Unknown function at LoadStringW + $EB
+(001011D0){5piceIDE.exe} [005021D0]
+(0000F137){ntdll.dll   } [77700137] KiUserCallbackDispatcher + $2B
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00122F70){5piceIDE.exe} [00523F70]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00100619){5piceIDE.exe} [00501619]
+(00100728){5piceIDE.exe} [00501728]
+(0010328E){5piceIDE.exe} [0050428E]
+(000FC908){5piceIDE.exe} [004FD908]
+(00022163){USER32.dll  } [75463163] Unknown function at SetActiveWindow + $1B3
+(000221C3){USER32.dll  } [754631C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [7546302A] SetActiveWindow + $7A
+(001011D0){5piceIDE.exe} [005021D0]
+(00021F2B){USER32.dll  } [75462F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [75462F47] MonitorFromWindow + $4D
+(00122F70){5piceIDE.exe} [00523F70]
+(00128FDF){5piceIDE.exe} [00529FDF]
+(00124335){5piceIDE.exe} [00525335]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(000FAF5E){5piceIDE.exe} [004FBF5E]
+(00122866){5piceIDE.exe} [00523866]
+(0012C3CB){5piceIDE.exe} [0052D3CB]
+(00741CEF){5piceIDE.exe} [00B42CEF]
+(0001243B){kernel32.dll} [7603343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [77729830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [77729800] Unknown function at RtlInitializeExceptionChain + $31
+
+Unhandled Exception - Access violation at address 0052352B in module '5piceIDE.exe'. Read of address 00000010
+Stack Trace of thread: 6196
+(00183BC0){5piceIDE.exe} [00584BC0]
+(00183840){5piceIDE.exe} [00584840]
+(001840D4){5piceIDE.exe} [005850D4]
+(0017E1B1){5piceIDE.exe} [0057F1B1]
+(0050C74C){5piceIDE.exe} [0090D74C]
+(0050F4B3){5piceIDE.exe} [009104B3]
+(001225CD){5piceIDE.exe} [005235CD]
+(00126AA5){5piceIDE.exe} [00527AA5]
+(00004FBF){5piceIDE.exe} [00405FBF]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75456DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75458FA4] Unknown function at LoadStringW + $EB
+(0001E914){ntdll.dll   } [7770F914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [75458FB4] Unknown function at LoadStringW + $FB
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00122F70){5piceIDE.exe} [00523F70]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00230362){5piceIDE.exe} [00631362]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00100619){5piceIDE.exe} [00501619]
+(00100728){5piceIDE.exe} [00501728]
+(0010328E){5piceIDE.exe} [0050428E]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015F0C){uxtheme.dll } [72276F0C] Unknown function at GetThemeBool + $8BB
+(0001520A){USER32.dll  } [7545620A] Unknown function at gapfnScSendMessage + $242
+(00018157){USER32.dll  } [75459157] Unknown function at SystemParametersInfoW + $84
+(00018125){USER32.dll  } [75459125] SystemParametersInfoW + $52
+(0012902B){5piceIDE.exe} [0052A02B]
+(00129CCA){5piceIDE.exe} [0052ACCA]
+(00129D10){5piceIDE.exe} [0052AD10]
+(00129DCD){5piceIDE.exe} [0052ADCD]
+(00129DDA){5piceIDE.exe} [0052ADDA]
+(00129DF9){5piceIDE.exe} [0052ADF9]
+(001011D0){5piceIDE.exe} [005021D0]
+(00127BCD){5piceIDE.exe} [00528BCD]
+(001038F6){5piceIDE.exe} [005048F6]
+(00128BEB){5piceIDE.exe} [00529BEB]
+(00122F70){5piceIDE.exe} [00523F70]
+(00128FDF){5piceIDE.exe} [00529FDF]
+(00230362){5piceIDE.exe} [00631362]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(000FAF5E){5piceIDE.exe} [004FBF5E]
+(00122866){5piceIDE.exe} [00523866]
+(00127657){5piceIDE.exe} [00528657]
+(001278A7){5piceIDE.exe} [005288A7]
+(005BF131){5piceIDE.exe} [009C0131]
+(001225CD){5piceIDE.exe} [005235CD]
+(00126AA5){5piceIDE.exe} [00527AA5]
+(00004FBF){5piceIDE.exe} [00405FBF]
+(000FC908){5piceIDE.exe} [004FD908]
+(00015CE3){USER32.dll  } [75456CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75456D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75456D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75456DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75456DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75458FA4] Unknown function at LoadStringW + $EB
+(001011D0){5piceIDE.exe} [005021D0]
+(0000F137){ntdll.dll   } [77700137] KiUserCallbackDispatcher + $2B
+(001011D0){5piceIDE.exe} [005021D0]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00122F70){5piceIDE.exe} [00523F70]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(00100619){5piceIDE.exe} [00501619]
+(00100728){5piceIDE.exe} [00501728]
+(0010328E){5piceIDE.exe} [0050428E]
+(000FC908){5piceIDE.exe} [004FD908]
+(00022163){USER32.dll  } [75463163] Unknown function at SetActiveWindow + $1B3
+(000221C3){USER32.dll  } [754631C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [7546302A] SetActiveWindow + $7A
+(001011D0){5piceIDE.exe} [005021D0]
+(00021F2B){USER32.dll  } [75462F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [75462F47] MonitorFromWindow + $4D
+(00122F70){5piceIDE.exe} [00523F70]
+(00128FDF){5piceIDE.exe} [00529FDF]
+(00124335){5piceIDE.exe} [00525335]
+(000FC52C){5piceIDE.exe} [004FD52C]
+(000FAF5E){5piceIDE.exe} [004FBF5E]
+(00122866){5piceIDE.exe} [00523866]
+(0012C3CB){5piceIDE.exe} [0052D3CB]
+(00741CEF){5piceIDE.exe} [00B42CEF]
+(0001243B){kernel32.dll} [7603343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [77729830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [77729800] Unknown function at RtlInitializeExceptionChain + $31
+
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.1.1567.36800
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+Init #2
+execute order 66
+Init #3
+order 66 finished
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.39
+Init #7.40
+Init #7.41
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+tutorial task closing state = 0
+tutorial task started
+NewProject - FormOpen
+HTTP_getData of promotions
+parsing of promotions
+parsing tip file: C:\Users\Curt\AppData\Local\GameMaker-Studio\tips.rss
+demo task finished
+tips task started
+tips task finished
+tutorial task finished
+NewProject - FormClose
+g_closing = -1
+Starting to check all the SDK status
+formCloseCount: 1
+formCloseCount: 1
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+SDK Directory does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking windows version
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for file:C:\Program Files (x86)\Windows Kits\8.0\bin\x86\makeappx.exe
+Starting to check all the SDK status - done
+g_closing = -1
+save tips dict
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+CheckChanged
+Finished Form Close Query
+Quit_Steam
+JclStopExceptiontracking
+Finish GM:Studio
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+Analytics thread end
+GMX_Update finished
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+Init #2
+Init #3
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.40
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Init #7.65
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+remote tutorial task started
+NewProject - FormOpen
+HTTP_getData of promotions
+parsing of promotions
+Tips Pref_Version = v1.4.1567, versionString = v1.4.1804
+tutorial task finished
+tips task started
+Tips task finished
+demo task finished
+NewProject - FormClose
+g_closing = 0
+Tips Pref_Version = v1.4.1804, versionString = v1.4.1804
+tips task started
+Tips task finished
+NewProject - FormClose
+g_closing = 0
+Tips Pref_Version = v1.4.1804, versionString = v1.4.1804
+tips task started
+Tips task finished
+NewProject - FormClose
+g_closing = 0
+g_closing = -1
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+CheckChanged
+Finished Form Close Query
+Quit_Steam
+JclStopExceptiontracking
+Finish GM:Studio
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+Analytics thread end
+GMX_Update finished
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+Init #2
+execute order 66
+Init #3
+order 66 finished
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.40
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Init #7.65
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+remote tutorial task started
+NewProject - FormOpen
+HTTP_getData of promotions
+Unhandled Exception - Invalid at the top level of the document.
+
+Line: 1
+HTTP/1.1 404 Not Found
+Stack Trace of thread: 3292
+(00184824){5piceIDE.exe} [00585824]
+(001844A4){5piceIDE.exe} [005854A4]
+(00184D38){5piceIDE.exe} [00585D38]
+(0017EE15){5piceIDE.exe} [0057FE15]
+(0056D4AC){5piceIDE.exe} [0096E4AC]
+(0056FD12){5piceIDE.exe} [00970D12]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75CE6CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75CE6D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75CE6D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75CE6DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75CE6DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75CE8FA4] Unknown function at LoadStringW + $EB
+(0001E914){ntdll.dll   } [77D2F914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [75CE8FB4] Unknown function at LoadStringW + $FB
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(001236F4){5piceIDE.exe} [005246F4]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(0023349E){5piceIDE.exe} [0063449E]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75CE6CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75CE6D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75CE6D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75CE6DE3] Unknown function at GetThreadDesktop + $180
+(00015F0C){uxtheme.dll } [70B16F0C] Unknown function at GetThemeBool + $8BB
+(0001520A){USER32.dll  } [75CE620A] Unknown function at gapfnScSendMessage + $242
+(00018157){USER32.dll  } [75CE9157] Unknown function at SystemParametersInfoW + $84
+(00018125){USER32.dll  } [75CE9125] SystemParametersInfoW + $52
+(001297AF){5piceIDE.exe} [0052A7AF]
+(0012A44E){5piceIDE.exe} [0052B44E]
+(0012A494){5piceIDE.exe} [0052B494]
+(0012A551){5piceIDE.exe} [0052B551]
+(0012A55E){5piceIDE.exe} [0052B55E]
+(0012A57D){5piceIDE.exe} [0052B57D]
+(00101954){5piceIDE.exe} [00502954]
+(00128351){5piceIDE.exe} [00529351]
+(0010407A){5piceIDE.exe} [0050507A]
+(0012936F){5piceIDE.exe} [0052A36F]
+(001236F4){5piceIDE.exe} [005246F4]
+(00129763){5piceIDE.exe} [0052A763]
+(0023349E){5piceIDE.exe} [0063449E]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(00127DDB){5piceIDE.exe} [00528DDB]
+(0012802B){5piceIDE.exe} [0052902B]
+(0064E1AE){5piceIDE.exe} [00A4F1AE]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75CE6CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75CE6D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75CE6D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75CE6DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75CE6DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75CE8FA4] Unknown function at LoadStringW + $EB
+(00101954){5piceIDE.exe} [00502954]
+(0000F137){ntdll.dll   } [77D20137] KiUserCallbackDispatcher + $2B
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(001236F4){5piceIDE.exe} [005246F4]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00022163){USER32.dll  } [75CF3163] Unknown function at SetActiveWindow + $1B3
+(000221C3){USER32.dll  } [75CF31C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [75CF302A] SetActiveWindow + $7A
+(00101954){5piceIDE.exe} [00502954]
+(00021F2B){USER32.dll  } [75CF2F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [75CF2F47] MonitorFromWindow + $4D
+(001236F4){5piceIDE.exe} [005246F4]
+(00129763){5piceIDE.exe} [0052A763]
+(00124AB9){5piceIDE.exe} [00525AB9]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(0012CB4F){5piceIDE.exe} [0052DB4F]
+(007EAD95){5piceIDE.exe} [00BEBD95]
+(0001243B){kernel32.dll} [7588343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [77D49830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [77D49800] Unknown function at RtlInitializeExceptionChain + $31
+
+demo task finished
+tutorial task finished
+NewProject - FormClose
+g_closing = 0
+He who controls the spice
+Setting html5Advertising
+Setting windows phone Advertising
+Setting windows 8 Advertising
+setting ok and cancel glyphs to nil
+Clearing the texture groups
+checking the texture groups
+setting the button glyphs
+setting the colours for skinning
+get included files
+get dropdown for html5
+set page controls for windows
+check which tabs to show - !LITE only check
+check which tabs to show - !LITE and !Standard check
+change to configuration
+check for source control instruction list
+set sci
+show studio form
+done show studio form
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+Setting html5Advertising
+Setting windows phone Advertising
+Setting windows 8 Advertising
+setting ok and cancel glyphs to nil
+Clearing the texture groups
+checking the texture groups
+setting the button glyphs
+setting the colours for skinning
+get included files
+get dropdown for html5
+set page controls for windows
+check which tabs to show - !LITE only check
+check which tabs to show - !LITE and !Standard check
+change to configuration
+check for source control instruction list
+set sci
+Setting html5Advertising
+Setting windows phone Advertising
+Setting windows 8 Advertising
+setting ok and cancel glyphs to nil
+Clearing the texture groups
+checking the texture groups
+setting the button glyphs
+setting the colours for skinning
+get included files
+get dropdown for html5
+set page controls for windows
+check which tabs to show - !LITE only check
+check which tabs to show - !LITE and !Standard check
+change to configuration
+check for source control instruction list
+set sci
+g_closing = -1
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+Analytics thread end
+GMX_Update finished
+quitting
+CheckChanged
+Finished Form Close Query
+g_closing = -1
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+CheckChanged
+Finished Form Close Query
+Quit_Steam
+JclStopExceptiontracking
+Finish GM:Studio
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+Init #2
+execute order 66
+Init #3
+order 66 finished
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.40
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Init #7.65
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+remote tutorial task started
+NewProject - FormOpen
+HTTP_getData of promotions
+Unhandled Exception - Invalid at the top level of the document.
+
+Line: 1
+HTTP/1.1 404 Not Found
+Stack Trace of thread: 3580
+(00184824){5piceIDE.exe} [00585824]
+(001844A4){5piceIDE.exe} [005854A4]
+(00184D38){5piceIDE.exe} [00585D38]
+(0017EE15){5piceIDE.exe} [0057FE15]
+(0056D4AC){5piceIDE.exe} [0096E4AC]
+(0056FD12){5piceIDE.exe} [00970D12]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [760C6CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [760C6D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [760C6D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [760C6DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [760C6DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [760C8FA4] Unknown function at LoadStringW + $EB
+(0001E914){ntdll.dll   } [770CF914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [760C8FB4] Unknown function at LoadStringW + $FB
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(001236F4){5piceIDE.exe} [005246F4]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(0023349E){5piceIDE.exe} [0063449E]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [760C6CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [760C6D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [760C6D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [760C6DE3] Unknown function at GetThreadDesktop + $180
+(00015F0C){uxtheme.dll } [6FDC6F0C] Unknown function at GetThemeBool + $8BB
+(0001520A){USER32.dll  } [760C620A] Unknown function at gapfnScSendMessage + $242
+(00018157){USER32.dll  } [760C9157] Unknown function at SystemParametersInfoW + $84
+(00018125){USER32.dll  } [760C9125] SystemParametersInfoW + $52
+(001297AF){5piceIDE.exe} [0052A7AF]
+(0012A44E){5piceIDE.exe} [0052B44E]
+(0012A494){5piceIDE.exe} [0052B494]
+(0012A551){5piceIDE.exe} [0052B551]
+(0012A55E){5piceIDE.exe} [0052B55E]
+(0012A57D){5piceIDE.exe} [0052B57D]
+(00101954){5piceIDE.exe} [00502954]
+(00128351){5piceIDE.exe} [00529351]
+(0010407A){5piceIDE.exe} [0050507A]
+(0012936F){5piceIDE.exe} [0052A36F]
+(001236F4){5piceIDE.exe} [005246F4]
+(00129763){5piceIDE.exe} [0052A763]
+(0023349E){5piceIDE.exe} [0063449E]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(00127DDB){5piceIDE.exe} [00528DDB]
+(0012802B){5piceIDE.exe} [0052902B]
+(0064E1AE){5piceIDE.exe} [00A4F1AE]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [760C6CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [760C6D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [760C6D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [760C6DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [760C6DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [760C8FA4] Unknown function at LoadStringW + $EB
+(00101954){5piceIDE.exe} [00502954]
+(0000F137){ntdll.dll   } [770C0137] KiUserCallbackDispatcher + $2B
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(001236F4){5piceIDE.exe} [005246F4]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(0002211B){USER32.dll  } [760D311B] Unknown function at SetActiveWindow + $16B
+(000221C3){USER32.dll  } [760D31C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [760D302A] SetActiveWindow + $7A
+(00101954){5piceIDE.exe} [00502954]
+(00021F2B){USER32.dll  } [760D2F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [760D2F47] MonitorFromWindow + $4D
+(001236F4){5piceIDE.exe} [005246F4]
+(00129763){5piceIDE.exe} [0052A763]
+(00124AB9){5piceIDE.exe} [00525AB9]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(0012CB4F){5piceIDE.exe} [0052DB4F]
+(007EAD95){5piceIDE.exe} [00BEBD95]
+(0001243B){kernel32.dll} [75CF343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [770E9830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [770E9800] Unknown function at RtlInitializeExceptionChain + $31
+
+demo task finished
+tutorial task finished
+NewProject - FormClose
+g_closing = 0
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+Init #2
+Init #3
+execute order 66
+order 66 finished
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.40
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Init #7.65
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+remote tutorial task started
+NewProject - FormOpen
+HTTP_getData of promotions
+Unhandled Exception - Invalid at the top level of the document.
+
+Line: 1
+HTTP/1.1 404 Not Found
+Stack Trace of thread: 2104
+(00184824){5piceIDE.exe} [00585824]
+(001844A4){5piceIDE.exe} [005854A4]
+(00184D38){5piceIDE.exe} [00585D38]
+(0017EE15){5piceIDE.exe} [0057FE15]
+(0056D4AC){5piceIDE.exe} [0096E4AC]
+(0056FD12){5piceIDE.exe} [00970D12]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75646CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75646D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75646D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75646DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75646DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75648FA4] Unknown function at LoadStringW + $EB
+(0001E914){ntdll.dll   } [779EF914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [75648FB4] Unknown function at LoadStringW + $FB
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(001236F4){5piceIDE.exe} [005246F4]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(0023349E){5piceIDE.exe} [0063449E]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75646CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75646D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75646D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75646DE3] Unknown function at GetThreadDesktop + $180
+(00015F0C){uxtheme.dll } [6E0E6F0C] Unknown function at GetThemeBool + $8BB
+(0001520A){USER32.dll  } [7564620A] Unknown function at gapfnScSendMessage + $242
+(00018157){USER32.dll  } [75649157] Unknown function at SystemParametersInfoW + $84
+(00018125){USER32.dll  } [75649125] SystemParametersInfoW + $52
+(001297AF){5piceIDE.exe} [0052A7AF]
+(0012A44E){5piceIDE.exe} [0052B44E]
+(0012A494){5piceIDE.exe} [0052B494]
+(0012A551){5piceIDE.exe} [0052B551]
+(0012A55E){5piceIDE.exe} [0052B55E]
+(0012A57D){5piceIDE.exe} [0052B57D]
+(00101954){5piceIDE.exe} [00502954]
+(00128351){5piceIDE.exe} [00529351]
+(0010407A){5piceIDE.exe} [0050507A]
+(0012936F){5piceIDE.exe} [0052A36F]
+(001236F4){5piceIDE.exe} [005246F4]
+(00129763){5piceIDE.exe} [0052A763]
+(0023349E){5piceIDE.exe} [0063449E]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(00127DDB){5piceIDE.exe} [00528DDB]
+(0012802B){5piceIDE.exe} [0052902B]
+(0064E1AE){5piceIDE.exe} [00A4F1AE]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75646CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75646D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75646D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75646DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75646DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75648FA4] Unknown function at LoadStringW + $EB
+(00101954){5piceIDE.exe} [00502954]
+(0000F137){ntdll.dll   } [779E0137] KiUserCallbackDispatcher + $2B
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(001236F4){5piceIDE.exe} [005246F4]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(0002211B){USER32.dll  } [7565311B] Unknown function at SetActiveWindow + $16B
+(000221C3){USER32.dll  } [756531C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [7565302A] SetActiveWindow + $7A
+(00101954){5piceIDE.exe} [00502954]
+(00021F2B){USER32.dll  } [75652F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [75652F47] MonitorFromWindow + $4D
+(001236F4){5piceIDE.exe} [005246F4]
+(00129763){5piceIDE.exe} [0052A763]
+(00124AB9){5piceIDE.exe} [00525AB9]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(0012CB4F){5piceIDE.exe} [0052DB4F]
+(007EAD95){5piceIDE.exe} [00BEBD95]
+(0001243B){kernel32.dll} [7655343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [77A09830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [77A09800] Unknown function at RtlInitializeExceptionChain + $31
+
+demo task finished
+tutorial task finished
+NewProject - FormClose
+g_closing = 0
+checking Marketplace login status
+Marketplace login check failed
+checking Marketplace login status
+Marketplace login check failed
+checking Marketplace login status
+Marketplace login check failed
+HTTP_getData of promotions
+Unhandled Exception - Invalid at the top level of the document.
+
+Line: 1
+HTTP/1.1 404 Not Found
+Stack Trace of thread: 2104
+(00184824){5piceIDE.exe} [00585824]
+(001844A4){5piceIDE.exe} [005854A4]
+(00184D38){5piceIDE.exe} [00585D38]
+(0017EE15){5piceIDE.exe} [0057FE15]
+(0056D4AC){5piceIDE.exe} [0096E4AC]
+(0056FD12){5piceIDE.exe} [00970D12]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(0001E914){ntdll.dll   } [779EF914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [75648FB4] Unknown function at LoadStringW + $FB
+(0000F137){ntdll.dll   } [779E0137] KiUserCallbackDispatcher + $2B
+(00017E5D){USER32.dll  } [75648E5D] SetWindowPos + $F
+(00004D9C){5piceIDE.exe} [00405D9C]
+(000B62DD){5piceIDE.exe} [004B72DD]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00101954){5piceIDE.exe} [00502954]
+(001236F4){5piceIDE.exe} [005246F4]
+(0063C606){5piceIDE.exe} [00A3D606]
+(001236F4){5piceIDE.exe} [005246F4]
+(0023349E){5piceIDE.exe} [0063449E]
+(0063C606){5piceIDE.exe} [00A3D606]
+(00032442){ntdll.dll   } [77A03442] Unknown function at RtlQueryPerformanceCounter + $A7E
+(00032471){ntdll.dll   } [77A03471] Unknown function at RtlQueryPerformanceCounter + $AAD
+(00101954){5piceIDE.exe} [00502954]
+(002432D6){5piceIDE.exe} [006442D6]
+(00101954){5piceIDE.exe} [00502954]
+(00252C25){5piceIDE.exe} [00653C25]
+(002432D6){5piceIDE.exe} [006442D6]
+(00243256){5piceIDE.exe} [00644256]
+(002432AE){5piceIDE.exe} [006442AE]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00018481){USER32.dll  } [75649481] Unknown function at GetWindow + $213
+(0001C1F0){USER32.dll  } [7564D1F0] EnumWindows + $11
+(0012B229){5piceIDE.exe} [0052C229]
+(0012B306){5piceIDE.exe} [0052C306]
+(0012BBD8){5piceIDE.exe} [0052CBD8]
+(00234500){5piceIDE.exe} [00635500]
+(0023418B){5piceIDE.exe} [0063518B]
+(0004E4AC){5piceIDE.exe} [0044F4AC]
+(000152F7){USER32.dll  } [756462F7] Unknown function at gapfnScSendMessage + $32F
+(00101954){5piceIDE.exe} [00502954]
+(001236F4){5piceIDE.exe} [005246F4]
+(0002211B){USER32.dll  } [7565311B] Unknown function at SetActiveWindow + $16B
+(0023349E){5piceIDE.exe} [0063449E]
+(0063C606){5piceIDE.exe} [00A3D606]
+(000221C3){USER32.dll  } [756531C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [7565302A] SetActiveWindow + $7A
+(00021F2B){USER32.dll  } [75652F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [75652F47] MonitorFromWindow + $4D
+(00129763){5piceIDE.exe} [0052A763]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(00127DDB){5piceIDE.exe} [00528DDB]
+(0012802B){5piceIDE.exe} [0052902B]
+(0064838B){5piceIDE.exe} [00A4938B]
+(0064C091){5piceIDE.exe} [00A4D091]
+(000E926B){5piceIDE.exe} [004EA26B]
+(000EA827){5piceIDE.exe} [004EB827]
+(001267DF){5piceIDE.exe} [005277DF]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015D4C){USER32.dll  } [75646D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75646DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75646DEE] Unknown function at GetThreadDesktop + $18B
+(0001EA97){ntdll.dll   } [779EFA97] ZwFindAtom + $F
+(00012250){kernel32.dll} [76553250] Unknown function at RegEnumKeyExW + $1B6
+(00101089){5piceIDE.exe} [00502089]
+(001011B6){5piceIDE.exe} [005021B6]
+(00101234){5piceIDE.exe} [00502234]
+(00101954){5piceIDE.exe} [00502954]
+(001236F4){5piceIDE.exe} [005246F4]
+(00123742){5piceIDE.exe} [00524742]
+(0063C606){5piceIDE.exe} [00A3D606]
+(001237C6){5piceIDE.exe} [005247C6]
+(00234500){5piceIDE.exe} [00635500]
+(00066202){5piceIDE.exe} [00467202]
+(00100FF4){5piceIDE.exe} [00501FF4]
+(00101009){5piceIDE.exe} [00502009]
+(0004E4AC){5piceIDE.exe} [0044F4AC]
+(000152F7){USER32.dll  } [756462F7] Unknown function at gapfnScSendMessage + $32F
+(00015D8B){USER32.dll  } [75646D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75646D4C] Unknown function at GetThreadDesktop + $E9
+(0023349E){5piceIDE.exe} [0063449E]
+(00100FF4){5piceIDE.exe} [00501FF4]
+(0004E4AC){5piceIDE.exe} [0044F4AC]
+(000152F7){USER32.dll  } [756462F7] Unknown function at gapfnScSendMessage + $32F
+(00015D35){USER32.dll  } [75646D35] Unknown function at GetThreadDesktop + $D2
+(00015CE3){USER32.dll  } [75646CE3] Unknown function at GetThreadDesktop + $80
+(0001FD3A){USER32.dll  } [75650D3A] Unknown function at GetClientRect + $C0
+(0001FD60){USER32.dll  } [75650D60] CallWindowProcW + $16
+(00234500){5piceIDE.exe} [00635500]
+(0023559A){5piceIDE.exe} [0063659A]
+(00233ED3){5piceIDE.exe} [00634ED3]
+(0004E4AC){5piceIDE.exe} [0044F4AC]
+(000152F7){USER32.dll  } [756462F7] Unknown function at gapfnScSendMessage + $32F
+(00015D35){USER32.dll  } [75646D35] Unknown function at GetThreadDesktop + $D2
+(00015CE3){USER32.dll  } [75646CE3] Unknown function at GetThreadDesktop + $80
+(000167BF){USER32.dll  } [756477BF] Unknown function at CharPrevW + $133
+(00016252){USER32.dll  } [75647252] GetPropW + $2B
+(000F7CDA){5piceIDE.exe} [004F8CDA]
+(00016885){USER32.dll  } [75647885] DispatchMessageW + $A
+(0012C7F5){5piceIDE.exe} [0052D7F5]
+(0012C83A){5piceIDE.exe} [0052D83A]
+(0012CB65){5piceIDE.exe} [0052DB65]
+(007EAD95){5piceIDE.exe} [00BEBD95]
+(0001243B){kernel32.dll} [7655343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [77A09830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [77A09800] Unknown function at RtlInitializeExceptionChain + $31
+
+TNewProjectForm.Image5MouseUp opening URL: http://www.yoyogames.com/gamemaker
+Form closed - #1
+NewProject - FormClose
+g_closing = -1
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+Init #2
+Init #3
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.40
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Init #7.65
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+remote tutorial task started
+NewProject - FormOpen
+HTTP_getData of promotions
+Unhandled Exception - Invalid at the top level of the document.
+
+Line: 1
+HTTP/1.1 404 Not Found
+Stack Trace of thread: 5560
+(00184824){5piceIDE.exe} [00585824]
+(001844A4){5piceIDE.exe} [005854A4]
+(00184D38){5piceIDE.exe} [00585D38]
+(0017EE15){5piceIDE.exe} [0057FE15]
+(0056D4AC){5piceIDE.exe} [0096E4AC]
+(0056FD12){5piceIDE.exe} [00970D12]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75646CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75646D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75646D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75646DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75646DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75648FA4] Unknown function at LoadStringW + $EB
+(0001E914){ntdll.dll   } [779EF914] ZwCallbackReturn + $C
+(00017FB4){USER32.dll  } [75648FB4] Unknown function at LoadStringW + $FB
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(001236F4){5piceIDE.exe} [005246F4]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(0023349E){5piceIDE.exe} [0063449E]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75646CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75646D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75646D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75646DE3] Unknown function at GetThreadDesktop + $180
+(00015F0C){uxtheme.dll } [6E0E6F0C] Unknown function at GetThemeBool + $8BB
+(0001520A){USER32.dll  } [7564620A] Unknown function at gapfnScSendMessage + $242
+(00018157){USER32.dll  } [75649157] Unknown function at SystemParametersInfoW + $84
+(00018125){USER32.dll  } [75649125] SystemParametersInfoW + $52
+(001297AF){5piceIDE.exe} [0052A7AF]
+(0012A44E){5piceIDE.exe} [0052B44E]
+(0012A494){5piceIDE.exe} [0052B494]
+(0012A551){5piceIDE.exe} [0052B551]
+(0012A55E){5piceIDE.exe} [0052B55E]
+(0012A57D){5piceIDE.exe} [0052B57D]
+(00101954){5piceIDE.exe} [00502954]
+(00128351){5piceIDE.exe} [00529351]
+(0010407A){5piceIDE.exe} [0050507A]
+(0012936F){5piceIDE.exe} [0052A36F]
+(001236F4){5piceIDE.exe} [005246F4]
+(00129763){5piceIDE.exe} [0052A763]
+(0023349E){5piceIDE.exe} [0063449E]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(00127DDB){5piceIDE.exe} [00528DDB]
+(0012802B){5piceIDE.exe} [0052902B]
+(0064E1AE){5piceIDE.exe} [00A4F1AE]
+(00122D51){5piceIDE.exe} [00523D51]
+(00127229){5piceIDE.exe} [00528229]
+(00004E1F){5piceIDE.exe} [00405E1F]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(00015CE3){USER32.dll  } [75646CE3] Unknown function at GetThreadDesktop + $80
+(00015D8B){USER32.dll  } [75646D8B] Unknown function at GetThreadDesktop + $128
+(00015D4C){USER32.dll  } [75646D4C] Unknown function at GetThreadDesktop + $E9
+(00015DE3){USER32.dll  } [75646DE3] Unknown function at GetThreadDesktop + $180
+(00015DEE){USER32.dll  } [75646DEE] Unknown function at GetThreadDesktop + $18B
+(00017FA4){USER32.dll  } [75648FA4] Unknown function at LoadStringW + $EB
+(00101954){5piceIDE.exe} [00502954]
+(0000F137){ntdll.dll   } [779E0137] KiUserCallbackDispatcher + $2B
+(00101954){5piceIDE.exe} [00502954]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(001236F4){5piceIDE.exe} [005246F4]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(00100D9D){5piceIDE.exe} [00501D9D]
+(00100EAC){5piceIDE.exe} [00501EAC]
+(00103A12){5piceIDE.exe} [00504A12]
+(000FD08C){5piceIDE.exe} [004FE08C]
+(0002211B){USER32.dll  } [7565311B] Unknown function at SetActiveWindow + $16B
+(000221C3){USER32.dll  } [756531C3] Unknown function at SetActiveWindow + $213
+(0002202A){USER32.dll  } [7565302A] SetActiveWindow + $7A
+(00101954){5piceIDE.exe} [00502954]
+(00021F2B){USER32.dll  } [75652F2B] MonitorFromWindow + $31
+(00021F47){USER32.dll  } [75652F47] MonitorFromWindow + $4D
+(001236F4){5piceIDE.exe} [005246F4]
+(00129763){5piceIDE.exe} [0052A763]
+(00124AB9){5piceIDE.exe} [00525AB9]
+(000FCCB0){5piceIDE.exe} [004FDCB0]
+(000FB6E2){5piceIDE.exe} [004FC6E2]
+(00122FEA){5piceIDE.exe} [00523FEA]
+(0012CB4F){5piceIDE.exe} [0052DB4F]
+(007EAD95){5piceIDE.exe} [00BEBD95]
+(0001243B){kernel32.dll} [7655343B] BaseThreadInitThunk + $10
+(00038830){ntdll.dll   } [77A09830] Unknown function at RtlInitializeExceptionChain + $61
+(00038800){ntdll.dll   } [77A09800] Unknown function at RtlInitializeExceptionChain + $31
+
+demo task finished
+tutorial task finished
+NewProject - FormClose
+g_closing = 0
+checking Marketplace login status
+Marketplace login check failed
+checking Marketplace login status
+Marketplace login check failed
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+g_closing = -1
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+CheckChanged
+Finished Form Close Query
+Quit_Steam
+JclStopExceptiontracking
+Finish GM:Studio
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GMX_Update finished
+Analytics thread end
+GDIAPI - finalize start
+GDIAPI - finalize end
+Freeing bitmap with refcount>1
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Stacktrace/Exception handling - Enabled
+Init #1
+Init #2
+Init #3
+Init #6
+Init #7
+Init #7.01
+Init #7.02
+Init #7.03
+Init #7.04
+Init #7.05
+Init #7.06
+Init #7.07
+Init #7.08
+Init #7.09
+Init #7.10
+Init #7.11
+Init #7.12
+Init #7.13
+Init #7.14
+Init #7.15
+Init #7.16
+Init #7.17
+Init #7.18
+Init #7.19
+Init #7.20
+Init #7.21
+Init #7.22
+Init #7.23
+Init #7.24
+Init #7.25
+Init #7.26
+Init #7.27
+Init #7.28
+Init #7.29
+Init #7.30
+Init #7.31
+Init #7.32
+Init #7.33
+Init #7.34
+Init #7.35
+Init #7.36
+Init #7.37
+Init #7.38
+Init #7.40
+Init #7.42
+Init #7.43
+Init #7.44
+Init #7.45
+Init #7.46
+Init #7.47
+Init #7.48
+Init #7.49
+Init #7.50
+Init #7.51
+Init #7.52
+Init #7.53
+Init #7.54
+Init #7.55
+Init #7.56
+Init #7.57
+Init #7.58
+Init #7.59
+Init #7.60
+Init #7.61
+Init #7.62
+Init #7.63
+Init #7.64
+Init #7.65
+Run
+Analytics Thread Start
+demo task closing state = 0
+demo task started
+remote tutorial task started
+opening studio with paramater
+initialising tips - studio was opened with paramater
+Tips Pref_Version = v1.4.1804, versionString = v1.4.1804
+demo task finished
+tips task started
+Tips task finished
+analytic project_gmx_opened
+tutorial task finished
+He who controls the spice
+Setting html5Advertising
+Setting windows phone Advertising
+Setting windows 8 Advertising
+setting ok and cancel glyphs to nil
+Clearing the texture groups
+checking the texture groups
+setting the button glyphs
+setting the colours for skinning
+get included files
+get dropdown for html5
+set page controls for windows
+check which tabs to show - !LITE only check
+check which tabs to show - !LITE and !Standard check
+change to configuration
+check for source control instruction list
+set sci
+show studio form
+done show studio form
+Setting html5Advertising
+Setting windows phone Advertising
+Setting windows 8 Advertising
+setting ok and cancel glyphs to nil
+Clearing the texture groups
+checking the texture groups
+setting the button glyphs
+setting the colours for skinning
+get included files
+get dropdown for html5
+set page controls for windows
+check which tabs to show - !LITE only check
+check which tabs to show - !LITE and !Standard check
+change to configuration
+check for source control instruction list
+set sci
+g_closing = -1
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+CheckChanged
+Finished Form Close Query
+Quit_Steam
+JclStopExceptiontracking
+Finish GM:Studio
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+GMX_Update finished
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+quitting
+Analytics thread end
+GDIAPI - finalize start
+GDIAPI - finalize end
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+checking for directory: c:\Program Files\Java\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\.\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\..\bin
+JDK binary directory does not exist
+checking for directory: c:\Program Files\Java\jre1.8.0_171\bin
+checking for file: c:\Program Files\Java\jre1.8.0_171\bin\javac.exe
+JDK java compiler does not exist
+writing to tempfile: C:\Users\Curt\AppData\Local\gm_ttt_54332\Engine_v101\
+g_closing = -1
+save achievements
+killProcesses
+HTML_Help_Close
+CloseAll1Click
+CheckChanged
+Finished Form Close Query
+Quit_Steam
+JclStopExceptiontracking
+Finish GM:Studio
+Analytics thread end
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GMX_Update finished
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
+**************************************************************************************
+               GameMaker:Studio IDE v1.4.1804.44013
+**************************************************************************************
+Preferences_Save
+Reg_WriteBoolean
+Finished Maker_Preferences_finalization
+DestroyTempDir
+Finish Support_File finalization
+Sound_DirectX - CoUnitialize
+finalization of Sound_DirectX finished
+DirectSound - finalize start
+DirectSound - finalize end
+GDIAPI - finalize start
+GDIAPI - finalize end
