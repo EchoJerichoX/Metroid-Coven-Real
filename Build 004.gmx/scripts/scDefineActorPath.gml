@@ -1,3 +1,12 @@
+/// CURRENTLY UNUSED!!!
+
+// Argument 0 = Path name.
+// Argument 1 = Path's goal x.
+// Argument 2 = Path's goal y.
+// Argument 3 = Start path at end of script (true or false).
+//
+//
+
 var sx = x; // Starting location.
 var sy = y; // ^
 var fx = argument0; // Location to find a path to.

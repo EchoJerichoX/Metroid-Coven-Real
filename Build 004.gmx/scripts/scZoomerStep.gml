@@ -40,4 +40,12 @@ if (statechange > 0) statechange -= 1;
 if (damaged > 0) damaged -= .1;
 if (soundcanplay > 0) soundcanplay -= 1;
 
+if (!ignorevector)
+{
+    mhspeed = lengthdir_x(speed,direction);
+    mvspeed = lengthdir_y(speed,direction);
+    move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);
+    speed = 0;
+}
+
 image_angle = direction;

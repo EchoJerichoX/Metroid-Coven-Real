@@ -1,0 +1,52 @@
+Hey guys! So I have been plugging away at a coding issue for some time here, trying to figure it out myself and use any tutorials I find, but they don't seem to achieve what I need. A quick summary of my Reddit post is here if you wanna look there: http://bombch.us/CxJD
+
+In the meantime, the issue is that I am using mp_grid and paths to tell enemies to pathfind to a point when attacked. In my game's main controller, I create the mp_grid and a path stored within this object that other objects reference for pathing. So in my controller's create event...:
+
+aigrid = -1; // At the start of each room, we reset the grid to fit the room size. See "scRoomInit".
+aipath = -1; // At the start of each room, we establish a universal path for objects to tap into.
+aigridcellsize = 16; // Size of each motion planning cell.
+
+And, as stated in the above comment, in scRoomInit (the Room Start event of the main controller)...
+
+aigrid = mp_grid_create(0,0,room_width/aigridcellsize,room_height/aigridcellsize,aigridcellsize,aigridcellsize);
+aipath = path_add();
+mp_grid_add_instances(aigrid,oBlockParent,true);
+
+So this adds the instances, and adds all of my block objects, including doors, destructibles, walls, etc. to the mp_grid. This all works fine and dandy! Now, when my enemy - of which there are usually several in a room - takes damage from something, it calculates the path from its current position, to the nearest den for it to go hide in. It works beautifully with just one enemy doing the running around, but as soon as you have several in a room, this is what happens: https://gfycat.com/SlimyMeaslyDegus
+
+I guess the issue stems from several objects all trying to use the same path but #1: using several paths seems inefficient resource-wise, and #2: I don't know how to make a path for each individual enemy instance in the room.
+
+Any help is greatly appreciated, this is one of the few things stopping me from releasing an early demo of my game. Thank you guys!
+reddit
+
+
+
+EchoJX: Oh! I apologize, this is where the path is calculated (when the enemy takes damage):
+
+if (instance_exists(oZoomerDen))
+{
+   var d = instance_nearest(x,y,oZoomerDen);
+   scDefineActorPath(d.x,d.y);
+   path_start(eId.aipath,1,path_action_stop,0);
+   state = 3;
+}
+
+And then, scDefineActorPath...
+
+var sx = x; // Starting location.
+var sy = y; // ^
+var fx = argument0; // Location to find a path to.
+var fy = argument1; //   We determine this on demand.
+
+if (!mp_grid_path(eId.aigrid,eId.aipath,sx,sy,fx,fy,true)) // Check if there is a possible route
+    { show_message("No path set!"); return false; }        //   between start and finish locations.
+else
+{
+    path_set_kind(eId.aipath,1);
+    path_set_precision(eId.aipath,8);
+    return true;
+}
+
+The "state" variable is not relevant to the code I am having trouble with, by the way.
+
+I pulled most of this code from one of the generic tutorials on the GM:S website, so I personally don't even get where the path is physically calculated in relation to the mp_grid... I guess that's what return does in scDefineActorPath.

@@ -389,6 +389,9 @@
       <path>paths\BarriaCacheMorphBallPath1</path>
       <path>paths\BarriaCacheMorphBallPath2</path>
     </paths>
+    <paths name="Tutorial">
+      <path>paths\TutorialStartPath1</path>
+    </paths>
   </paths>
   <scripts name="scripts">
     <scripts name="- Miscellaneous">
@@ -654,12 +657,15 @@
       <room>rooms\TitleRoom</room>
       <room>rooms\IntroSceneShip</room>
     </rooms>
+    <rooms name="Tutorial">
+      <room>rooms\TutorialStart</room>
+    </rooms>
     <rooms name="Barria">
       <room>rooms\BarriaLandingSite</room>
       <room>rooms\BarriaIntWest</room>
-      <room>rooms\BarriaCacheMorphBall</room>
       <room>rooms\BarriaCacheMissile</room>
       <room>rooms\BarriaIntEast</room>
+      <room>rooms\BarriaCacheMorphBall</room>
     </rooms>
     <rooms name="Generic Rooms">
       <room>rooms\GeneralTestRoom</room>

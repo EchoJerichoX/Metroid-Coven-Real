@@ -1,4 +1,4 @@
-HP -= other.Damage;
+HP -= other.Damage; // Reduce health by a value determined by the projectile.
 if (HP <= 0)
     { instance_destroy(); exit; }
 
@@ -12,8 +12,11 @@ switch (myid)
         if (instance_exists(oZoomerDen))
         {
             var d = instance_nearest(x,y,oZoomerDen);
-            scDefineActorPath(d.x,d.y);
-            path_start(eId.aipath,1,path_action_stop,0);
+            mypath = path_add();
+            mp_grid_path(eId.aigrid,mypath,x,y,d.x,d.y,true);
+            path_set_kind(mypath,1);
+            path_set_precision(mypath,8);
+            path_start(mypath,1,path_action_stop,0);
             state = 3;
         }
         break;

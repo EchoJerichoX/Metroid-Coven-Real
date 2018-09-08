@@ -149,7 +149,7 @@ if (pulsechargeshot &lt; 16) then
           <argument>
             <kind>1</kind>
             <string>///reset so we can take damage
-CanTakeHit=true;
+CanTakeHit = true;
 </string>
           </argument>
         </arguments>
