@@ -660,6 +660,7 @@
     </rooms>
     <rooms name="Tutorial">
       <room>rooms\TutorialStart</room>
+      <room>rooms\Tutorial2</room>
     </rooms>
     <rooms name="Barria">
       <room>rooms\BarriaLandingSite</room>
