@@ -653,6 +653,7 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\InitRoom</room>
+    <room>rooms\GitTest</room>
     <rooms name="Intro/Title">
       <room>rooms\TitleRoom</room>
       <room>rooms\IntroSceneShip</room>
