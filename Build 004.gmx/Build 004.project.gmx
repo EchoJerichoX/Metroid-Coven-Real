@@ -168,6 +168,11 @@
         <sprite>sprites\sprDoorGreen</sprite>
         <sprite>sprites\sprDoorYellow</sprite>
       </sprites>
+      <sprites name="Hazards">
+        <sprite>sprites\sprSpikeGuideEW</sprite>
+        <sprite>sprites\sprSpikeGuideNS</sprite>
+        <sprite>sprites\sprBarriaSpikes</sprite>
+      </sprites>
       <sprites name="Lighting">
         <sprite>sprites\sprDomeLight</sprite>
         <sprite>sprites\sprSmallLightEW</sprite>
@@ -584,6 +589,24 @@
       <object>objects\oViewController</object>
     </objects>
     <objects name="Environment">
+      <objects name="Other">
+        <object>objects\oShip</object>
+        <object>objects\oZoomerDen</object>
+      </objects>
+      <objects name="Scannables and Details">
+        <object>objects\oScanTargetParent</object>
+        <object>objects\oPCE</object>
+        <object>objects\oPCW</object>
+        <object>objects\oPCN</object>
+        <object>objects\oPCS</object>
+        <object>objects\oLargePCE</object>
+        <object>objects\oLargePCW</object>
+        <object>objects\oLargePCN</object>
+        <object>objects\oLargePCS</object>
+      </objects>
+      <objects name="Weather">
+        <object>objects\oWeatherSnow</object>
+      </objects>
       <object>objects\oBlockParent</object>
       <objects name="Doors">
         <object>objects\oDoorParent</object>
@@ -618,24 +641,6 @@
         <object>objects\oIceParent</object>
         <object>objects\oIceLR</object>
         <object>objects\oIceUD</object>
-      </objects>
-      <objects name="Other">
-        <object>objects\oShip</object>
-        <object>objects\oZoomerDen</object>
-      </objects>
-      <objects name="Scannables and Details">
-        <object>objects\oScanTargetParent</object>
-        <object>objects\oPCE</object>
-        <object>objects\oPCW</object>
-        <object>objects\oPCN</object>
-        <object>objects\oPCS</object>
-        <object>objects\oLargePCE</object>
-        <object>objects\oLargePCW</object>
-        <object>objects\oLargePCN</object>
-        <object>objects\oLargePCS</object>
-      </objects>
-      <objects name="Weather">
-        <object>objects\oWeatherSnow</object>
       </objects>
     </objects>
     <objects name="Player">
