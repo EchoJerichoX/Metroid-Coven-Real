@@ -5,6 +5,9 @@ switch (argument0)
 {
     // --- Red (Missile) ---
     case 1:
+        // - Tutorial -
+        if (room = Tutorial2) eId.OpenedTutorial2Red = true;
+        // - Barria Tundra -
         if (room = BarriaIntWest) eId.OpenedBarriaIntWestRed = true;
         if (room = BarriaCacheMissile) eId.OpenedBarriaCacheMissileRedE = true;
         if (room = BarriaCacheMissile) eId.OpenedBarriaCacheMissileRedW = true;

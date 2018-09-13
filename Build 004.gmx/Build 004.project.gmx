@@ -396,6 +396,7 @@
     </paths>
     <paths name="Tutorial">
       <path>paths\TutorialStartPath1</path>
+      <path>paths\Tutorial2Path1</path>
     </paths>
   </paths>
   <scripts name="scripts">
