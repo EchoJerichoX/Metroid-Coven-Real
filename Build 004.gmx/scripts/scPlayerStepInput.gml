@@ -114,6 +114,9 @@ else
         moving = false;
     }
     
+    if (alarm[3] > 0)
+        { speed = 5; direction = KnockbackDir; }
+    
     mhspeed = lengthdir_x(speed,direction);
     mvspeed = lengthdir_y(speed,direction);
     

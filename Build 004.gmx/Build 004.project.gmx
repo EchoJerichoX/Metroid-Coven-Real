@@ -507,6 +507,7 @@
       <script>scripts\scPlayerWeaponControl.gml</script>
       <script>scripts\scPlayerEndStep.gml</script>
       <script>scripts\scPlayerDraw.gml</script>
+      <script>scripts\scPlayerDeath.gml</script>
     </scripts>
     <scripts name="Projectile">
       <script>scripts\scDefineProjectile.gml</script>

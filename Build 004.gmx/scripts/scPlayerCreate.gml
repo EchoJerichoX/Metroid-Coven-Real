@@ -20,6 +20,7 @@ DodgeCooldown = 0;
 
 TakeHitDirection = -1; // Determines which direction the player bounces when taking damage.
 CanTakeHit = true; // Checks if the player is currently taking damage.
+KnockbackDir = 0; // Where to move away from when hit by something.
 
 friction = .2; // Change friction for different surfaces.
 MaxSpeed = -1; // Determines top speed for player.

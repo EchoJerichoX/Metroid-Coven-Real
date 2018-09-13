@@ -6,12 +6,15 @@ switch (state)
         if (statechange = 0) // If nothing happened, and we are looking to change states...
         {
             state = 1; // Move to the turning state (later, maybe add a different transitional state).
-            destdir = turnrate*(round(random(360/turnrate))); // Pick a target rotation for the turning state.
+            //destdir = turnrate*(round(random(360/turnrate))); // Pick a target rotation for the turning state.
+            destdir = round(random(360/turnrate))*turnrate;
         }
         break;
     case 1: // Turn.
-        if (abs(destdir) <= 180) direction += median(-turnrate,turnrate,destdir); // These 2 lines are used for taking the shortest "path"
-        else direction += median(-turnrate,turnrate,destdir-sign(destdir)*360);   //   to the target rotation.
+        //if (abs(destdir) <= 180) direction += median(-turnrate,turnrate,destdir); // These 2 lines are used for taking the shortest "path"
+        //else direction += median(-turnrate,turnrate,destdir-sign(destdir)*360);   //   to the target rotation.
+        direction += sin(degtorad(destdir-direction))*turnrate;
+        if (abs(direction-destdir) < turnrate) direction = destdir;
         if (direction = destdir) // If we are facing the target rotation...
             { statechange = staterate+round(random(staterate*stateratemultiplier)); state = 2; } // Set a timer for another state switch,
                                                                                                  //   and switch to the new state (moving).
@@ -25,7 +28,7 @@ switch (state)
         break;
     case 3: // Retreat to den.
         image_speed = 1;
-        if (path_position > 0.8) and (path_position < 1) speed += 0.01; // Speed up as it gets closer.
+        if (path_position > 0.8) and (path_position < 1) speed += 0.05; // Speed up as it gets closer.
         if (path_position = 1) state = 4; // Burrow when it gets to the den.
         break;
     case 4:
@@ -48,4 +51,5 @@ if (!ignorevector)
     speed = 0;
 }
 
-image_angle = direction;
+if (speed > 0) image_angle = point_direction(x,y,xprevious,yprevious);
+else image_angle = direction;

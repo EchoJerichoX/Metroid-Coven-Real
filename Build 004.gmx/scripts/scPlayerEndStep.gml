@@ -1,3 +1,6 @@
+if (alarm[0] > 0) CanTakeHit = false;
+else CanTakeHit = true;
+
 if (WeaponDistanceOffset != 0)
 {
     var irecoil;
