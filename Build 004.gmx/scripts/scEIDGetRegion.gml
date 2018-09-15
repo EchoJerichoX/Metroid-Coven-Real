@@ -1,3 +1,4 @@
+// Check the "region" to see if we need to anything special for it, like weather effects.
 if (room = TransitionRoom) exit; // Keep region the same in transition rooms.
 switch (room)
 {

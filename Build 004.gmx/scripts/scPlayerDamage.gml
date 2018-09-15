@@ -1,18 +1,25 @@
 // Damage the player.
 // argument0 = minimum damage the player can take, before modifier(s).
 // argument1 = maximum damage the player can tage, before modifier(s).
+// argument2 = bypass modifier(s). For armor-piercing or environmental hazards.
+//   0 = Do not bypass modifiers.
+//   1 = Bypass modifier(s).
+//   This argument currently unused, pending modifier code.
 // Runs in the oPlayer object.
 
 // Insert "switch" statement here for different suit damage modifiers. Below is placeholder.
 loss = round(random_range(argument0,argument1)); // Determine the amount of damage to deduct from current health.
-
+if (argument2 = 0)
+{
+    // Insert modifier code here.
+}
+KnockbackDir = point_direction(other.x,other.y,x,y);
+alarm[3] = 3; // See scPlayerStepInput for knockback. It runs through this alarm.
 if (CanTakeHit)
 {
     CanTakeHit = false;
     alarm[0] = 10; // Make sure we cannot be hit.
     Energy -= loss;
-    KnockbackDir = point_direction(other.x,other.y,x,y);
-    alarm[3] = 2; // See scPlayerStepInput for knockback. It runs through this alarm.
     if (Energy <= 0)
     {
         FullTanks -= 1;
@@ -37,6 +44,4 @@ if (CanTakeHit)
             }
         }
     }
-    //if (other != eId) 
-    //    { with (other) motion_add(other.TakeHitDirection,1); }
 }

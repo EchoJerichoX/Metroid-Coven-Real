@@ -382,6 +382,10 @@
       <path>paths\GeneralTestRoomPath1</path>
       <path>paths\AITestRoomPath1</path>
     </paths>
+    <paths name="Tutorial">
+      <path>paths\TutorialStartPath1</path>
+      <path>paths\Tutorial2Path1</path>
+    </paths>
     <paths name="Barria">
       <path>paths\BarriaLandingSitePath1</path>
       <path>paths\BarriaIntWestPath1</path>
@@ -393,10 +397,6 @@
       <path>paths\BarriaCacheMissilePath2</path>
       <path>paths\BarriaCacheMorphBallPath1</path>
       <path>paths\BarriaCacheMorphBallPath2</path>
-    </paths>
-    <paths name="Tutorial">
-      <path>paths\TutorialStartPath1</path>
-      <path>paths\Tutorial2Path1</path>
     </paths>
   </paths>
   <scripts name="scripts">
@@ -498,6 +498,8 @@
     <scripts name="Player">
       <script>scripts\scPlayerCreate.gml</script>
       <script>scripts\scDefineSuit.gml</script>
+      <script>scripts\scPlayerDamageActor.gml</script>
+      <script>scripts\scPlayerDamageHazard.gml</script>
       <script>scripts\scPlayerDamage.gml</script>
       <script>scripts\scPlayerMovement.gml</script>
       <script>scripts\scPlayerMovementBall.gml</script>
@@ -669,7 +671,6 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\InitRoom</room>
-    <room>rooms\GitTest</room>
     <rooms name="Intro/Title">
       <room>rooms\TitleRoom</room>
       <room>rooms\IntroSceneShip</room>

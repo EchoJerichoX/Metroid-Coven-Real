@@ -20,8 +20,16 @@ if (other.object_index = oTransitionTubeUD)
 // Determine the room we need to move to.
 switch (room) // Determine current room.
 {
-    case BarriaLandingSite: // Only one destination that applies in this room.
-        // Determine the destination room.
+    // - Tutorial -
+    case TutorialStart: // Only one destination that applies in this room.
+        eId.destinationroom = Tutorial2; // Determine the destination room.
+        break;
+    case Tutorial2:
+        if (other.trans = 1) eId.destinationroom = TutorialStart;
+        else eId.destinationroom = Tutorial2;
+        
+    // - Barria Tundra -
+    case BarriaLandingSite:
         eId.destinationroom = BarriaIntWest;
         break;
     case BarriaIntWest:

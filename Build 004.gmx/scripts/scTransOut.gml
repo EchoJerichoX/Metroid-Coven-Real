@@ -1,4 +1,5 @@
 // Runs within oPlayer.
+// Determines how the player object(s) behave during transitions.
 if (eId.transitioning) exit; // Ensures we don't try to run the same code several times.
 eId.transitioning = true; // Tell the entire engine we are transitioning.
 persistent = true;

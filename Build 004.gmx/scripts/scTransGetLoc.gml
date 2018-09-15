@@ -29,6 +29,10 @@ switch (room) // Check current room.
        ====
     */
     case TutorialStart:
-        trans = 1; // To Tutorial1.
+        trans = 1; // To Tutorial2.
+        break;
+    case Tutorial2:
+        if (x < room_width/2) trans = 1; // To TutorialStart.
+        else trans = 2; // To Tutorial3.
         break;
 }

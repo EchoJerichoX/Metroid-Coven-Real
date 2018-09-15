@@ -7,7 +7,7 @@ switch(myid)
         ActorSprite = sprZoomer;
         ActorSpriteHit = sprZoomerHit;
         MaxSpeed = 2.25;
-        MaxHP = choose(1.5,2,2.5,3);
+        MaxHP = choose(3.5,4,4.5,5);
         HP = MaxHP;
         state = choose(0,2); // 0 = Idle. 1 = Turning.
                              // 2 = Moving. 3 = Retreating to den (on path).

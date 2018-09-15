@@ -7,6 +7,8 @@ if (object_index = eId)
 {
     switch (room)
     {
+        // NOTE that some rooms initialize their vector paths from the room creation code.
+        // - Barria Tundra -
         case BarriaLandingSite:
             vector_world_add(oVectorLine);
             vector_path_add(oVectorLine,BarriaLandingSitePath1,0,0,0);
@@ -30,10 +32,12 @@ if (object_index = eId)
 
 // 3: Set ambient brightness of light engine.
 // LightAlphaMult of 1 for outdoor areas, 0.75 for indoor areas.
+// The lower the number, the brighter the room (this represents the alpha of the dark layer).
 else
 {
     switch (room)
     {
+        default: eId.LightAlphaMult = 1; break;
         case BarriaLandingSite:
         case BarriaIntWest:
         case BarriaCacheMissile:
