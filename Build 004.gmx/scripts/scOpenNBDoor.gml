@@ -6,7 +6,7 @@ switch (argument0)
     // --- Red (Missile) ---
     case 1:
         // - Tutorial -
-        if (room = Tutorial2) eId.OpenedTutorial2Red = true;
+        if (room = Tutorial3) eId.OpenedTutorial3Red = true;
         // - Barria Tundra -
         if (room = BarriaIntWest) eId.OpenedBarriaIntWestRed = true;
         if (room = BarriaCacheMissile) eId.OpenedBarriaCacheMissileRedE = true;
@@ -14,6 +14,8 @@ switch (argument0)
         break;
     // --- Green (Super Missile) ---
     case 2:
+        // - Tutorial -
+        if (room = Tutorial3) eId.OpenedTutorial3Green = true;
         break;
     // --- Yellow (Power Bomb) ---
     case 3:

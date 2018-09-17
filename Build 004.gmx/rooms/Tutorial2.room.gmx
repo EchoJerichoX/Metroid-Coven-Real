@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>480</height>
   <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <hsnap>256</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -17,9 +17,9 @@ vector_path_add(oVectorLine,Tutorial2Path1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1479</w>
-    <h>859</h>
-    <showGrid>0</showGrid>
+    <w>1000</w>
+    <h>600</h>
+    <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
     <showBackgrounds>-1</showBackgrounds>
@@ -27,9 +27,9 @@ vector_path_add(oVectorLine,Tutorial2Path1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>0</page>
-    <xoffset>1693</xoffset>
-    <yoffset>191</yoffset>
+    <page>2</page>
+    <xoffset>375</xoffset>
+    <yoffset>-30</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -57,9 +57,9 @@ vector_path_add(oVectorLine,Tutorial2Path1,0,0,0);</code>
     <instance objName="oTransitionTubeLR" x="0" y="240" name="inst_3751D130" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oTransitionTubeLR" x="1024" y="240" name="inst_8C274C0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDoorGuideW" x="48" y="240" name="inst_B074243C" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDoorGuideE" x="976" y="240" name="inst_01B61225" locked="0" code="scDefineDoor(Doors.dRed);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideE" x="976" y="240" name="inst_01B61225" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="408" y="208" name="inst_E31DA35A" locked="0" code="scDefineItem(Items.iMorphBall);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="664" y="248" name="inst_A70813F6" locked="0" code="scDefineItem(Items.iMissileLauncher);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="664" y="248" name="inst_A70813F6" locked="0" code="scDefineItem(Items.iWaveBeam);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesEW" x="272" y="296" name="inst_BFF6436C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesEW" x="496" y="320" name="inst_2D979FA7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesEW" x="560" y="296" name="inst_54A47648" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

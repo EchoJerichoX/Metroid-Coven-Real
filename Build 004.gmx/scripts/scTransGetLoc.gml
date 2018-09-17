@@ -17,7 +17,7 @@ switch (room) // Check current room.
             if (x < room_width/2) trans = 1; // To BarriaLandingSite.
             else trans = 3; // To BarriaIceTunnelWest.
         }
-        else trans = 2; // To BArriaCacheMissile.
+        else trans = 2; // To BarriaCacheMissile.
         break;
     case BarriaCacheMissile:
         trans = 2; // To BarriaIntWest.
@@ -29,10 +29,22 @@ switch (room) // Check current room.
        ====
     */
     case TutorialStart:
-        trans = 1; // To Tutorial2.
+        trans = 1; // Blue to Tutorial2.
         break;
     case Tutorial2:
-        if (x < room_width/2) trans = 1; // To TutorialStart.
-        else trans = 2; // To Tutorial3.
+        if (x < room_width/2) trans = 3; // Blue to TutorialStart.
+        else trans = 2; // Blue to Tutorial3.
+        break;
+    case Tutorial3:
+        if (sprite_index = sprTransitionGuideLR)
+        {
+            if (y < room_height/3) trans = 3; // Red to .
+            else trans = 2; // Blue to Tutorial2.
+        }
+        else
+        {
+            if (y < room_height/2) trans = 1; // Blue to .
+            else trans = 4; // Green to .
+        }
         break;
 }

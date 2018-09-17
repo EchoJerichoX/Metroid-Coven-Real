@@ -4,6 +4,8 @@
 // Variables vox and voy are where the transition object needs to be adjusted during a
 //   transition in relation to the view x and y. So, if the destination room's door is 128
 //   pixels from the top of the screen, we set voy to 128.
+// If we are sending the player to a "cache" or single-cell room, we manually set vox to
+//   320 to make sure the view sets properly.
 // Variable transdir is the direction that the transition object will move across the screen
 //   plus 180 degrees.
 
@@ -21,12 +23,20 @@ if (other.object_index = oTransitionTubeUD)
 switch (room) // Determine current room.
 {
     // - Tutorial -
-    case TutorialStart: // Only one destination that applies in this room.
+    case TutorialStart: // Only one destination that applies in this
+                        //   room, so we don't care what eId.trans says.
         eId.destinationroom = Tutorial2; // Determine the destination room.
         break;
     case Tutorial2:
         if (other.trans = 1) eId.destinationroom = TutorialStart;
-        else eId.destinationroom = Tutorial2;
+        if (other.trans = 2)  eId.destinationroom = Tutorial3;
+        break;
+    case Tutorial3:
+        //if (other.trans = 1) eId.destinationroom = Tutorial4;
+        if (other.trans = 2) eId.destinationroom = Tutorial2;
+        //if (other.trans = 3) eId.destinationroom = Tutorial;
+        //if (other.trans = 4) eId.destinationroom = Tutorial;
+        break;
         
     // - Barria Tundra -
     case BarriaLandingSite:
