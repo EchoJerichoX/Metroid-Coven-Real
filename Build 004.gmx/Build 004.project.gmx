@@ -218,6 +218,8 @@
         <sprite>sprites\sprIceShatter</sprite>
         <sprite>sprites\sprIceMelt</sprite>
         <sprite>sprites\sprIcePart</sprite>
+        <sprite>sprites\sprSmallCrate</sprite>
+        <sprite>sprites\sprLargeCrate</sprite>
       </sprites>
       <sprites name="Other">
         <sprite>sprites\sprShip</sprite>
@@ -241,6 +243,22 @@
       </sprites>
       <sprite>sprites\sprHMTL</sprite>
       <sprite>sprites\sprHMBR</sprite>
+    </sprites>
+    <sprites name="Explosions">
+      <sprite>sprites\sprBeamFire1</sprite>
+      <sprite>sprites\sprBeamFire2</sprite>
+      <sprite>sprites\sprBeamExplosion1</sprite>
+      <sprite>sprites\sprBeamExplosion2</sprite>
+      <sprite>sprites\sprBeamExplosion3</sprite>
+      <sprite>sprites\sprPlasmaExplosion</sprite>
+      <sprite>sprites\sprMissileSmoke</sprite>
+      <sprite>sprites\sprMissileExplosion</sprite>
+      <sprite>sprites\sprSuperMissileSmoke</sprite>
+      <sprite>sprites\sprSuperMissileExplosion</sprite>
+      <sprite>sprites\sprBallBombExplosion</sprite>
+      <sprite>sprites\sprPowerBombGather</sprite>
+      <sprite>sprites\sprPowerBombInvert</sprite>
+      <sprite>sprites\sprLargeCrateExplosion</sprite>
     </sprites>
     <sprites name="Interface">
       <sprite>sprites\sprText</sprite>
@@ -288,11 +306,6 @@
       <sprite>sprites\sprCharging1</sprite>
       <sprite>sprites\sprCharging2</sprite>
       <sprite>sprites\sprCharging3</sprite>
-      <sprite>sprites\sprBeamFire1</sprite>
-      <sprite>sprites\sprBeamFire2</sprite>
-      <sprite>sprites\sprBeamExplosion1</sprite>
-      <sprite>sprites\sprBeamExplosion2</sprite>
-      <sprite>sprites\sprBeamExplosion3</sprite>
       <sprite>sprites\sprPower</sprite>
       <sprite>sprites\sprPowerCharge</sprite>
       <sprite>sprites\sprWave</sprite>
@@ -302,7 +315,6 @@
       <sprite>sprites\sprPlasma</sprite>
       <sprite>sprites\sprPlasmaCharge</sprite>
       <sprite>sprites\sprPlasmaTrail</sprite>
-      <sprite>sprites\sprPlasmaExplosion</sprite>
       <sprite>sprites\sprSpazer</sprite>
       <sprite>sprites\sprSpazerCharge</sprite>
       <sprite>sprites\sprPulse</sprite>
@@ -316,17 +328,10 @@
       <sprite>sprites\sprPhazon</sprite>
       <sprite>sprites\sprPhazonCharge</sprite>
       <sprite>sprites\sprMissile</sprite>
-      <sprite>sprites\sprMissileSmoke</sprite>
-      <sprite>sprites\sprMissileExplosion</sprite>
       <sprite>sprites\sprSuperMissile</sprite>
-      <sprite>sprites\sprSuperMissileSmoke</sprite>
-      <sprite>sprites\sprSuperMissileExplosion</sprite>
       <sprite>sprites\sprBallBomb</sprite>
       <sprite>sprites\sprBallBombCharge</sprite>
-      <sprite>sprites\sprBallBombExplosion</sprite>
       <sprite>sprites\sprPowerBomb</sprite>
-      <sprite>sprites\sprPowerBombGather</sprite>
-      <sprite>sprites\sprPowerBombInvert</sprite>
     </sprites>
     <sprites name="Transitions">
       <sprite>sprites\sprTransitionGuideLR</sprite>
@@ -580,6 +585,7 @@
     </objects>
     <objects name="Classes">
       <object>objects\oActor</object>
+      <object>objects\oBlockParent</object>
       <object>objects\oDestroyAnim</object>
       <object>objects\oDestructible</object>
       <object>objects\oDoodad</object>
@@ -597,7 +603,6 @@
       <object>objects\oViewController</object>
     </objects>
     <objects name="Environment">
-      <object>objects\oBlockParent</object>
       <objects name="Doors">
         <object>objects\oDoorParent</object>
         <object>objects\oDoorChanger</object>
@@ -637,6 +642,9 @@
         <object>objects\oIceParent</object>
         <object>objects\oIceLR</object>
         <object>objects\oIceUD</object>
+        <object>objects\oCrateParent</object>
+        <object>objects\oSmallCrate</object>
+        <object>objects\oLargeCrate</object>
       </objects>
       <objects name="Other">
         <object>objects\oShip</object>
