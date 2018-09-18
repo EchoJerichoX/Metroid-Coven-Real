@@ -9,9 +9,11 @@ switch(myid)
         MaxSpeed = 2.25;
         MaxHP = choose(3.5,4,4.5,5);
         HP = MaxHP;
-        state = choose(0,2); // 0 = Idle. 1 = Turning.
-                             // 2 = Moving. 3 = Retreating to den (on path).
-                             // 4 = Burrow into den.
+        state = 0; // 0 = Idle.
+                   // 1 = Turning.
+                   // 2 = Moving.
+                   // 3 = Retreating to den (on path).
+                   // 4 = Burrow into den.
         if (state = 2)
             { direction = round(random(360)); speed = 0.5; }
         destdir = 0; // The target rotation for turning state.
@@ -26,6 +28,7 @@ switch(myid)
         CantTakeDamageFrom = noone;
         if (instance_exists(oZoomerDen)) nearestden = instance_nearest(x,y,oZoomerDen);
         else nearestden = noone;
+        mypath = path_add();
         break;
         
     case Enemies.eGeemer:

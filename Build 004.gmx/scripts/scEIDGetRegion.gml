@@ -2,12 +2,18 @@
 if (room = TransitionRoom) exit; // Keep region the same in transition rooms.
 switch (room)
 {
+    // Tutorial: 1
+    case TutorialStart:
+    case Tutorial2:
+    case Tutorial3:
+        region = 1; break;
     // Barria Tundra: 1.
     case BarriaLandingSite:
     case BarriaIntWest:
     case BarriaCacheMorphBall:
     case BarriaCacheMissile:
         region = 1; break;
+    // Show guide sprite if no region is set.
     default: region = 0; break;
 }
 switch (region)

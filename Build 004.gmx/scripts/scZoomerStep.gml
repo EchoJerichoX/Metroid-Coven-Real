@@ -6,31 +6,47 @@ switch (state)
         if (statechange = 0) // If nothing happened, and we are looking to change states...
         {
             state = 1; // Move to the turning state (later, maybe add a different transitional state).
-            //destdir = turnrate*(round(random(360/turnrate))); // Pick a target rotation for the turning state.
-            destdir = round(random(360/turnrate))*turnrate;
+            destdir = round(random(360/turnrate))*turnrate; // Pick a target rotation for the turning state.
         }
         break;
     case 1: // Turn.
-        //if (abs(destdir) <= 180) direction += median(-turnrate,turnrate,destdir); // These 2 lines are used for taking the shortest "path"
-        //else direction += median(-turnrate,turnrate,destdir-sign(destdir)*360);   //   to the target rotation.
-        direction += sin(degtorad(destdir-direction))*turnrate;
-        if (abs(direction-destdir) < turnrate) direction = destdir;
         if (direction = destdir) // If we are facing the target rotation...
-            { statechange = staterate+round(random(staterate*stateratemultiplier)); state = 2; } // Set a timer for another state switch,
-                                                                                                 //   and switch to the new state (moving).
+        {
+            var cellx,celly;
+            cellx = random(room_width);
+            celly = random(room_height);
+            if (mp_grid_get_cell(eId.aigrid,cellx,celly) = 0) // If the random cell is unoccupied, see if a path to it is possible.
+            {
+                if (mp_potential_path_object(mypath,cellx,celly,MaxSpeed,6,oBlockParent)) // If the path is clear, make it move.
+                {
+                    mp_grid_path(eId.aigrid,mypath,x,y,nearestden.x,nearestden.y,true);
+                    path_set_kind(mypath,1);
+                    path_set_precision(mypath,8);
+                    if (HP >= MaxHP/2) pspeed = 0.5;
+                    else pspeed = 1; // Move faster if the enemy is weakened, to show panic.
+                    path_start(mypath,pspeed,path_action_stop,0);
+                    image_speed = speed/2;
+                    state = 2;
+                }
+            }
+        }
+        else
+        {
+            direction += sin(degtorad(destdir-direction))*turnrate;
+            if (abs(direction-destdir) < turnrate) direction = destdir;
+        }
         break;
     case 2: // Wander.
-        if (HP >= MaxHP/2) speed = 0.5;
-        else speed = 1; // Move faster if the enemy is weakened, to show panic.
-        mp_potential_step_object(x+lengthdir_x(speed,direction),y+lengthdir_y(speed,direction),speed,oBlockParent);
-        image_speed = speed/2;
-        if (statechange = 0)
-            { state = choose(0,1); statechange = staterate+round(random(staterate*stateratemultiplier)); }
+        if (statechange = 0) or (path_position = 1)
+        {
+            path_end();
+            state = choose(0,1);
+            statechange = staterate+round(random(staterate*stateratemultiplier));
+        }
         break;
     case 3: // Retreat to den.
         if (!ignorevector) ignorevector = 1;
         image_speed = 1;
-        //if (path_position > 0.8) and (path_position < 1) speed += 0.05; // Speed up as it gets closer.
         if (path_position = 1) state = 4; // Burrow when it gets to the den.
         break;
     case 4:

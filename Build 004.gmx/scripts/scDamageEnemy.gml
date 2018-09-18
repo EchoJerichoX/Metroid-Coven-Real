@@ -11,7 +11,7 @@ switch (myid)
         damaged = 1;
         if (nearestden != noone)
         {
-            mypath = path_add();
+            //mypath = path_add();
             mp_grid_path(eId.aigrid,mypath,x,y,nearestden.x,nearestden.y,true);
             path_set_kind(mypath,1);
             path_set_precision(mypath,8);
