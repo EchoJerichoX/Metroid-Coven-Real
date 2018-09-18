@@ -24,6 +24,8 @@ switch(myid)
         soundcanplay = 0; // Keeps hit sounds from overlapping.
         ImmuneToPowerBomb = 0;
         CantTakeDamageFrom = noone;
+        if (instance_exists(oZoomerDen)) nearestden = instance_nearest(x,y,oZoomerDen);
+        else nearestden = noone;
         break;
         
     case Enemies.eGeemer:

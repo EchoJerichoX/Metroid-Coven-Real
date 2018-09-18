@@ -9,11 +9,10 @@ switch (myid)
         if (soundcanplay = 0)
             { sound_play(ZoomerHit) soundcanplay += 5+round(random(15)); }
         damaged = 1;
-        if (instance_exists(oZoomerDen))
+        if (nearestden != noone)
         {
-            var d = instance_nearest(x,y,oZoomerDen);
             mypath = path_add();
-            mp_grid_path(eId.aigrid,mypath,x,y,d.x,d.y,true);
+            mp_grid_path(eId.aigrid,mypath,x,y,nearestden.x,nearestden.y,true);
             path_set_kind(mypath,1);
             path_set_precision(mypath,8);
             path_start(mypath,1,path_action_stop,0);

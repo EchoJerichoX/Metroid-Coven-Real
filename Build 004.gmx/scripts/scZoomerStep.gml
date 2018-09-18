@@ -22,13 +22,15 @@ switch (state)
     case 2: // Wander.
         if (HP >= MaxHP/2) speed = 0.5;
         else speed = 1; // Move faster if the enemy is weakened, to show panic.
+        mp_potential_step_object(x+lengthdir_x(speed,direction),y+lengthdir_y(speed,direction),speed,oBlockParent);
         image_speed = speed/2;
         if (statechange = 0)
             { state = choose(0,1); statechange = staterate+round(random(staterate*stateratemultiplier)); }
         break;
     case 3: // Retreat to den.
+        if (!ignorevector) ignorevector = 1;
         image_speed = 1;
-        if (path_position > 0.8) and (path_position < 1) speed += 0.05; // Speed up as it gets closer.
+        //if (path_position > 0.8) and (path_position < 1) speed += 0.05; // Speed up as it gets closer.
         if (path_position = 1) state = 4; // Burrow when it gets to the den.
         break;
     case 4:

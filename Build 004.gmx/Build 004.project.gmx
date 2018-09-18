@@ -128,7 +128,6 @@
       <sprite>sprites\sprUnknownPlanetMessage</sprite>
     </sprites>
     <sprites name="Enemies">
-      <sprite>sprites\sprBadGuySpawner</sprite>
       <sprites name="Gamet">
         <sprite>sprites\sprGamet</sprite>
         <sprite>sprites\sprGametHit</sprite>
@@ -149,6 +148,7 @@
       </sprites>
       <sprites name="Miscellaneous">
         <sprite>sprites\sprDen</sprite>
+        <sprite>sprites\sprActorSpawner</sprite>
       </sprites>
     </sprites>
     <sprites name="Environment">
@@ -599,7 +599,6 @@
     <objects name="Controllers">
       <object>objects\eId</object>
       <object>objects\oLE</object>
-      <object>objects\oActorSpawner</object>
       <object>objects\oViewController</object>
     </objects>
     <objects name="Environment">
