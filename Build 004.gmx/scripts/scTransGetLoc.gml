@@ -32,7 +32,7 @@ switch (room) // Check current room.
         trans = 1; // Blue to Tutorial2.
         break;
     case Tutorial2:
-        if (x < room_width/2) trans = 3; // Blue to TutorialStart.
+        if (x < room_width/2) trans = 1; // Blue to TutorialStart.
         else trans = 2; // Blue to Tutorial3.
         break;
     case Tutorial3:

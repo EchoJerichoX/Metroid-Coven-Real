@@ -11,11 +11,12 @@ switch (myid)
         damaged = 1;
         if (nearestden != noone)
         {
+            //if (state = 2) path_end();
             //mypath = path_add();
-            mp_grid_path(eId.aigrid,mypath,x,y,nearestden.x,nearestden.y,true);
-            path_set_kind(mypath,1);
-            path_set_precision(mypath,8);
-            path_start(mypath,1,path_action_stop,0);
+            mp_grid_path(eId.aigrid,mypath2,x,y,nearestden.x,nearestden.y,true);
+            path_set_kind(mypath2,1);
+            path_set_precision(mypath2,8);
+            path_start(mypath2,1,path_action_stop,0);
             state = 4;
         }
         break;

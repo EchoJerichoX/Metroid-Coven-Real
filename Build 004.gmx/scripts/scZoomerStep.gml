@@ -42,6 +42,7 @@ switch (state)
         }
         break;
     case 3: // Reset and start over.
+        image_speed = 0;
         if (statechange = 0) state = 0;
         break;
         // ---
@@ -57,6 +58,10 @@ switch (state)
             { despawn = true; instance_destroy(); }
         break;
 }
+
+if (retreatcheckdelay > 0) retreatcheckdelay -= 1;
+if (retreatcheckdelay = 0) and (instance_exists(oZoomerDen)) 
+    { retreatcheckdelay = 30; nearestden = instance_nearest(x,y,oZoomerDen); } // Regularly update the nearest retreat destination.
 
 if (statechange > 0) statechange -= 1;
 if (damaged > 0) damaged -= .1;

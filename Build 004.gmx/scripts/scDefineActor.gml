@@ -21,9 +21,10 @@ switch(myid)
         soundcanplay = 0; // Keeps hit sounds from overlapping.
         ImmuneToPowerBomb = 0;
         CantTakeDamageFrom = noone;
-        if (instance_exists(oZoomerDen)) nearestden = instance_nearest(x,y,oZoomerDen);
-        else nearestden = noone;
-        mypath = path_add();
+        nearestden = noone;
+        retreatcheckdelay = 1;
+        mypath = path_add(); // Wander path.
+        mypath2 = path_add(); // Retreat path.
         pspeed = 0;
         state = 0; // 0 = Idle.
                    // 1 = Turning.
