@@ -16,7 +16,7 @@ switch (myid)
             path_set_kind(mypath,1);
             path_set_precision(mypath,8);
             path_start(mypath,1,path_action_stop,0);
-            state = 3;
+            state = 4;
         }
         break;
 }

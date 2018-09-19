@@ -119,7 +119,7 @@ if (keyboard_check_pressed(vk_multiply))
 //   Set "debugenemy" variable in "GameInit" script
 //   to determine which enemy to spawn.
 if (keyboard_check_pressed(vk_numpad4))
-    { with (instance_create(mouse_x,mouse_y,oActor)) scDefineActor(eId.debugenemy); }
+    { with (instance_create(mouse_x,mouse_y,oActor)) scDefineActor(other.debugenemy); }
 
 // Spawn a 16x16 basic block at the mouse.
 //   Snaps to nearest 16x16 grid corner.

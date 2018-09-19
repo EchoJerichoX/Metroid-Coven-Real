@@ -1,56 +1,57 @@
 switch (state)
 {
-    case 0: // Idle.
+    case 0: // Set a path while idling.
         speed = 0;
         image_speed = 0;
-        if (statechange = 0) // If nothing happened, and we are looking to change states...
-        {
-            state = 1; // Move to the turning state (later, maybe add a different transitional state).
-            destdir = round(random(360/turnrate))*turnrate; // Pick a target rotation for the turning state.
-        }
-        break;
-    case 1: // Turn.
-        if (direction = destdir) // If we are facing the target rotation...
-        {
-            var cellx,celly;
-            cellx = random(room_width);
-            celly = random(room_height);
-            if (mp_grid_get_cell(eId.aigrid,cellx,celly) = 0) // If the random cell is unoccupied, see if a path to it is possible.
-            {
-                if (mp_potential_path_object(mypath,cellx,celly,MaxSpeed,6,oBlockParent)) // If the path is clear, make it move.
-                {
-                    mp_grid_path(eId.aigrid,mypath,x,y,nearestden.x,nearestden.y,true);
-                    path_set_kind(mypath,1);
-                    path_set_precision(mypath,8);
-                    if (HP >= MaxHP/2) pspeed = 0.5;
-                    else pspeed = 1; // Move faster if the enemy is weakened, to show panic.
-                    path_start(mypath,pspeed,path_action_stop,0);
-                    image_speed = speed/2;
-                    state = 2;
-                }
-            }
-        }
+        var pathx = random(room_width);
+        var pathy = random(room_height);
+        if (!mp_grid_path(eId.aigrid,mypath,x,y,pathx,pathy,true)) exit;
         else
         {
-            direction += sin(degtorad(destdir-direction))*turnrate;
-            if (abs(direction-destdir) < turnrate) direction = destdir;
+            mp_grid_path(eId.aigrid,mypath,x,y,pathx,pathy,true)
+            path_set_kind(mypath,1);
+            path_set_precision(mypath,8);
+            var px = path_get_x(mypath,0.001);
+            var py = path_get_y(mypath,0.001);
+            destdir = point_direction(x,y,px,py); // Set where to turn towards the start of the path.
+            state = 1;
         }
         break;
-    case 2: // Wander.
-        if (statechange = 0) or (path_position = 1)
+    case 1: // Turn towards path and start it.
+        image_speed = 0.25;
+        direction -= clamp(angle_difference(direction,destdir),-turnrate,turnrate);
+        if (abs(direction-destdir) < turnrate) direction = destdir;
+        if (direction = destdir)
+        {
+            image_angle = direction;
+            if (HP >= MaxHP/2) pspeed = 0.5;
+            else pspeed = 1; // Move faster if the enemy is weakened, to show panic.
+                             // Would normally not be needed unless there is no den to run to when taking damage.
+            path_start(mypath,pspeed,path_action_stop,0);
+            image_speed = pspeed/2;
+            state = 2;
+        }
+        break;
+    case 2: // Move along path.
+        image_angle = point_direction(x,y,xprevious,yprevious);
+        if (path_position = 1)
         {
             path_end();
-            state = choose(0,1);
+            state = 3;
             statechange = staterate+round(random(staterate*stateratemultiplier));
         }
         break;
-    case 3: // Retreat to den.
+    case 3: // Reset and start over.
+        if (statechange = 0) state = 0;
+        break;
+        // ---
+    case 4: // Retreat to den.
         if (!ignorevector) ignorevector = 1;
         image_speed = 1;
-        if (path_position = 1) state = 4; // Burrow when it gets to the den.
+        if (path_position = 1) state = 5; // Burrow when it gets to the den.
         break;
-    case 4:
-        image_angle += -5+random(15);
+    case 5:
+        direction += -5+random(15);
         if (image_alpha > 0) image_alpha -= 0.05;
         if (image_alpha = 0)
             { despawn = true; instance_destroy(); }
@@ -68,6 +69,4 @@ if (!ignorevector)
     move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);
     speed = 0;
 }
-
-if (speed > 0) image_angle = point_direction(x,y,xprevious,yprevious);
-else image_angle = direction;
+image_angle = direction;

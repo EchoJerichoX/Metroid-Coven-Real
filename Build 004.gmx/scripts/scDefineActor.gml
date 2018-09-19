@@ -9,15 +9,10 @@ switch(myid)
         MaxSpeed = 2.25;
         MaxHP = choose(3.5,4,4.5,5);
         HP = MaxHP;
-        state = 0; // 0 = Idle.
-                   // 1 = Turning.
-                   // 2 = Moving.
-                   // 3 = Retreating to den (on path).
-                   // 4 = Burrow into den.
-        if (state = 2)
-            { direction = round(random(360)); speed = 0.5; }
-        destdir = 0; // The target rotation for turning state.
         turnrate = 5; // How fast we turn towards "destdir."
+        direction = round(random(360/turnrate))*turnrate;
+        image_angle = direction;
+        destdir = 0; // The target rotation for turning state.
         staterate = 50; // How fast states change.
         stateratemultiplier = 5; // Multiplies the statetimer.
                                  //   Change to change the variation in state changes.
@@ -29,6 +24,12 @@ switch(myid)
         if (instance_exists(oZoomerDen)) nearestden = instance_nearest(x,y,oZoomerDen);
         else nearestden = noone;
         mypath = path_add();
+        pspeed = 0;
+        state = 0; // 0 = Idle.
+                   // 1 = Turning.
+                   // 2 = Moving.
+                   // 3 = Retreating to den (on path).
+                   // 4 = Burrow into den.
         break;
         
     case Enemies.eGeemer:
