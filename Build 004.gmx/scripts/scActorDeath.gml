@@ -1,3 +1,8 @@
+switch (myid)
+{
+    case Enemies.eZoomer: scZoomerPathClear(); break;
+}
+
 if (despawn) exit; // Check if we are naturally despawning the enemy, 
                            //   rather than awarding loot and running the death
                            // animation.
@@ -22,7 +27,8 @@ switch (myid)
         }
         with (instance_create(x,y,oDestroyAnim))
             { image_speed = .25; sprite_index = sprZoomerDie; depth = other.depth; }
-        scDropLoot();
+        //scDropLoot();
+        // ^ Implement once the system is properly implemented.
         sound_play(EnemyZoomerDeath);
         break;
 }

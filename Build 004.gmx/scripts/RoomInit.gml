@@ -57,5 +57,5 @@ if (instance_exists(oActor))
 {
     aigrid = mp_grid_create(0,0,room_width/aigridcellsize,room_height/aigridcellsize,aigridcellsize,aigridcellsize);
     aipath = path_add();
-    mp_grid_add_instances(aigrid,oBlockParent,true);
+    mp_grid_add_instances(aigrid,oBlockParent,1);
 }

@@ -220,6 +220,7 @@
         <sprite>sprites\sprIcePart</sprite>
         <sprite>sprites\sprSmallCrate</sprite>
         <sprite>sprites\sprLargeCrate</sprite>
+        <sprite>sprites\sprCrateChunk</sprite>
       </sprites>
       <sprites name="Other">
         <sprite>sprites\sprShip</sprite>
@@ -412,7 +413,8 @@
         <script>scripts\move_contact_object.gml</script>
         <script>scripts\point_in_view.gml</script>
         <script>scripts\point_in_view_ext.gml</script>
-        <script>scripts\sprite_from_screen.gml</script>
+        <script>scripts\instance_nth_nearest.gml</script>
+        <script>scripts\scDefineActorPath.gml</script>
       </scripts>
       <script>scripts\Pause.gml</script>
       <script>scripts\scSpawnTestItems.gml</script>
@@ -423,16 +425,21 @@
     <scripts name="Actors">
       <script>scripts\scActorInit.gml</script>
       <script>scripts\scDefineActor.gml</script>
+      <script>scripts\scActorStep.gml</script>
       <script>scripts\scActorHit.gml</script>
       <script>scripts\scDamageEnemy.gml</script>
-      <script>scripts\scActorDeath.gml</script>
       <script>scripts\scActorDraw.gml</script>
       <script>scripts\scActorWallCollide.gml</script>
-      <script>scripts\scDefineActorPath.gml</script>
-      <scripts name="Actor &quot;Step&quot; Events">
-        <script>scripts\scActorStep.gml</script>
-        <script>scripts\scZoomerStep.gml</script>
-        <script>scripts\scGeemerStep.gml</script>
+      <script>scripts\scActorRoomEnd.gml</script>
+      <script>scripts\scActorDeath.gml</script>
+      <scripts name="Actor-specific">
+        <scripts name="Zoomer">
+          <script>scripts\scZoomerStep.gml</script>
+          <script>scripts\scZoomerPathClear.gml</script>
+        </scripts>
+        <scripts name="Geemer">
+          <script>scripts\scGeemerStep.gml</script>
+        </scripts>
       </scripts>
     </scripts>
     <scripts name="Engine Initialization">
@@ -470,6 +477,7 @@
       <scripts name="Hazards">
         <script>scripts\scSpikesInit.gml</script>
       </scripts>
+      <script>scripts\scUpdateMPGrid.gml</script>
     </scripts>
     <scripts name="Inventory">
       <script>scripts\scSwitchSuit.gml</script>

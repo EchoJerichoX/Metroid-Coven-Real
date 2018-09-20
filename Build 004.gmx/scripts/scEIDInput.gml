@@ -32,6 +32,7 @@ if (keyboard_check_pressed(vk_f9))
             blocks underneath it when placed!
     NUM 6 - Update AI movement planning grid cells.
     NUM 7 - Toggle drawing of motion planning grid.
+    NUM 8 - Update motion planning grid.
     
     NUM * - Grant all powerups to player.
     NUM - - Reduce player health by 1.
@@ -150,6 +151,9 @@ if (keyboard_check_pressed(vk_numpad6))
 
 // Toggle drawing of motion planning grid.
 if (keyboard_check_pressed(vk_numpad7)) drawmpgrid = !drawmpgrid;
+
+// Update motion planning grid.
+if (keyboard_check_pressed(vk_numpad8)) scUpdateMPGrid();
 
 // Reduce player health by 1.
 if (keyboard_check(vk_subtract))

@@ -47,7 +47,7 @@ xrayon = false; // X-Ray Visor toggle.
 
 // Initialize motion planning data.
 aigrid = -1; // At the start of each room, we reset the grid to fit the room size. See "Room Start" event of "eId" object.
-aipath = -1; // At the start of each room, we establish a universal path for objects to tap into.
+aipath = -1; // CURRENTLY UNUSED!!! At the start of each room, we establish a universal path for objects to tap into.
 aigridcellsize = 16; // Size of each motion planning cell.
 
 // Initialize transition stuff.

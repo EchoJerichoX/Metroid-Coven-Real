@@ -51,7 +51,7 @@ switch (state)
         image_speed = 1;
         if (path_position = 1) state = 5; // Burrow when it gets to the den.
         break;
-    case 5:
+    case 5: // Disappear.
         direction += -5+random(15);
         if (image_alpha > 0) image_alpha -= 0.05;
         if (image_alpha = 0)
@@ -60,8 +60,23 @@ switch (state)
 }
 
 if (retreatcheckdelay > 0) retreatcheckdelay -= 1;
-if (retreatcheckdelay = 0) and (instance_exists(oZoomerDen)) 
-    { retreatcheckdelay = 30; nearestden = instance_nearest(x,y,oZoomerDen); } // Regularly update the nearest retreat destination.
+if (retreatcheckdelay = 0)
+and (instance_exists(oZoomerDen))
+and (state != 4) // Regularly update the nearest retreat destination.
+{
+    retreatcheckdelay = 30;
+    var dnum = instance_number(oZoomerDen);
+    for (var checked = 0; checked < dnum; checked += 1;)
+    {
+        var cz = instance_nth_nearest(x,y,oZoomerDen,checked);
+        scUpdateMPGrid();
+        if (mp_grid_path(eId.aigrid,mypath2,x,y,cz.x,cz.y,true)) 
+        {
+            retreatcheckdelay = 30;
+            nearestden = cz;
+        }
+    }
+}
 
 if (statechange > 0) statechange -= 1;
 if (damaged > 0) damaged -= .1;
