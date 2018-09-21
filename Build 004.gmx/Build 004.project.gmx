@@ -220,7 +220,8 @@
         <sprite>sprites\sprIcePart</sprite>
         <sprite>sprites\sprSmallCrate</sprite>
         <sprite>sprites\sprLargeCrate</sprite>
-        <sprite>sprites\sprCrateChunk</sprite>
+        <sprite>sprites\sprCrateHit</sprite>
+        <sprite>sprites\sprCratePart</sprite>
       </sprites>
       <sprites name="Other">
         <sprite>sprites\sprShip</sprite>
@@ -478,6 +479,10 @@
         <script>scripts\scBlockHit.gml</script>
         <script>scripts\scBlockDeath.gml</script>
         <script>scripts\scCrateInit.gml</script>
+        <script>scripts\scCrateStep.gml</script>
+        <script>scripts\scCrateHit.gml</script>
+        <script>scripts\scCrateDraw.gml</script>
+        <script>scripts\scCrateDestroy.gml</script>
       </scripts>
     </scripts>
     <scripts name="Inventory">

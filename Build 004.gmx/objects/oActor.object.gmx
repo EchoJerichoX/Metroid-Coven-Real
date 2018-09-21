@@ -213,7 +213,8 @@ scActorRoomEnd();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scActorDraw();
+            <string>///scActorDraw();
+scActorDraw();
 </string>
           </argument>
         </arguments>
