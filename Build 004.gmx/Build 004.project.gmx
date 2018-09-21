@@ -421,6 +421,7 @@
       <script>scripts\scTitleObjectInit.gml</script>
       <script>scripts\scTitleObjectStep.gml</script>
       <script>scripts\scTitleObjectMouseEnter.gml</script>
+      <script>scripts\scUpdateMPGrid.gml</script>
     </scripts>
     <scripts name="Actors">
       <script>scripts\scActorInit.gml</script>
@@ -454,11 +455,6 @@
       <script>scripts\scDebugModeDraw.gml</script>
     </scripts>
     <scripts name="Environment">
-      <scripts name="Blocks">
-        <script>scripts\scDefineBlock.gml</script>
-        <script>scripts\scBlockHit.gml</script>
-        <script>scripts\scBlockDeath.gml</script>
-      </scripts>
       <scripts name="Doors">
         <script>scripts\scDefineDoor.gml</script>
         <script>scripts\scDoorStep.gml</script>
@@ -470,14 +466,19 @@
           <script>scripts\scCheckNBDoor.gml</script>
         </scripts>
       </scripts>
+      <scripts name="Hazards">
+        <script>scripts\scSpikesInit.gml</script>
+      </scripts>
       <scripts name="Lights and Hidden Areas">
         <script>scripts\scLightInit.gml</script>
         <script>scripts\scFadeHiddenArea.gml</script>
       </scripts>
-      <scripts name="Hazards">
-        <script>scripts\scSpikesInit.gml</script>
+      <scripts name="Obstructions">
+        <script>scripts\scDefineBlock.gml</script>
+        <script>scripts\scBlockHit.gml</script>
+        <script>scripts\scBlockDeath.gml</script>
+        <script>scripts\scCrateInit.gml</script>
       </scripts>
-      <script>scripts\scUpdateMPGrid.gml</script>
     </scripts>
     <scripts name="Inventory">
       <script>scripts\scSwitchSuit.gml</script>

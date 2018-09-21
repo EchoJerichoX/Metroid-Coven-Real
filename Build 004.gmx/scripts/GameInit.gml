@@ -10,7 +10,7 @@ scEIDMessagesInit(); // Init the various messages of the game.
 region = 0; // Determines what region we are in.
 fullscreen = 0; // Determines whether the game is in fullscreen or not.
 titlefade = 0; // Used to fade the title screen.
-StartRoom = BarriaLandingSite; // Determines where we go after the player leaves the title screen.
+StartRoom = TutorialStart; // Determines where we go after the player leaves the title screen.
 wait = 120; // Delay to start intro scene.
 titlevol = 1; // Volume of title music.
 
