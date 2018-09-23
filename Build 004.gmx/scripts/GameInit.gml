@@ -6,6 +6,7 @@
 
 // Initialize general eId variables.
 scEIDMasterList(); // Init the enums for all IDs in the game.
+tutorialroom = 0;
 scEIDMessagesInit(); // Init the various messages of the game.
 region = 0; // Determines what region we are in.
 fullscreen = 0; // Determines whether the game is in fullscreen or not.
@@ -13,6 +14,7 @@ titlefade = 0; // Used to fade the title screen.
 StartRoom = TutorialStart; // Determines where we go after the player leaves the title screen.
 wait = 120; // Delay to start intro scene.
 titlevol = 1; // Volume of title music.
+tutorialmessageshown = 0; // Has the tutorial "welcome" message been shown?
 
 // Initialize debug mode stuff.
 debugmode = 0; // Is debug mode on or off?
@@ -29,7 +31,7 @@ fadeStage = -1; // How far along we are in printing a message.
 complete = true; // Is the message done fading in?
 canEnter = false; // Can we press a key to advance the message?
 text = "No text"; // The text we are printing (see the scEIDMessagesInit() script.
-scan = 0; // Scan variant.
+scan = 0; // Tells the message system if the current message is the result of using the Scan Visor.
 gonextroom = 0; // When leaving a message, determine if we go to the game or not (from title screen).
 
 // Initialize light and hidden area variables.

@@ -114,6 +114,8 @@ switch (myid)
 }
 if (text != "No string assigned!") with (eId)
 {
+    if (tutorialroom = 1) scan = 1;
+    else scan = 0;
     Pause();
     fadeStage = 0;
     text = other.text;

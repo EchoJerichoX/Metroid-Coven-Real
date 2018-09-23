@@ -52,7 +52,7 @@ if (fadeStage != -1)
     draw_set_alpha(alpha2);
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
-    draw_text_ext(view_xview[0]+view_wview[0]/2,view_yview[0]+view_hview[0]/2,text,-15,560);
+    draw_text_ext(view_xview[0]+view_wview[0]/2,view_yview[0]+view_hview[0]/2,text,-15,630);
     draw_set_alpha(1);
 }
 scDebugModeDraw(); // Optional.

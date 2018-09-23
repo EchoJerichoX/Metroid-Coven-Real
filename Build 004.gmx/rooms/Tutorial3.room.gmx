@@ -18,8 +18,8 @@ vector_path_add(oVectorLine,Tutorial3Path2,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
-    <h>600</h>
+    <w>2576</w>
+    <h>1374</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,9 +28,9 @@ vector_path_add(oVectorLine,Tutorial3Path2,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>3</page>
-    <xoffset>-179</xoffset>
-    <yoffset>-78</yoffset>
+    <page>0</page>
+    <xoffset>-398</xoffset>
+    <yoffset>-213</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -66,7 +66,7 @@ vector_path_add(oVectorLine,Tutorial3Path2,0,0,0);</code>
     <instance objName="oDoorGuideN" x="384" y="48" name="inst_01E2963C" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="346" y="642" name="inst_F5D6C814" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="348" y="664" name="inst_D12FA9EC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallCrate" x="324" y="669" name="inst_0F96BEF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallCrate" x="320" y="664" name="inst_0F96BEF5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="346" y="619" name="inst_2D0F2682" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="299" y="667" name="inst_B2A3AB1F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="313" y="635" name="inst_8C084C11" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -77,7 +77,7 @@ vector_path_add(oVectorLine,Tutorial3Path2,0,0,0);</code>
     <instance objName="oSpikesEW" x="664" y="632" name="inst_EDFC9E91" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesEW" x="456" y="624" name="inst_94E335A2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesEW" x="480" y="560" name="inst_EEFE0729" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oLargeCrate" x="658" y="522" name="inst_76FADE54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oLargeCrate" x="664" y="504" name="inst_76FADE54" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="522" y="548" name="inst_43D218A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="543" y="547" name="inst_53D02E65" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="533" y="97" name="inst_9F66EFE9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -94,6 +94,38 @@ vector_path_add(oVectorLine,Tutorial3Path2,0,0,0);</code>
     <instance objName="oActor" x="192" y="624" name="inst_3EFB3AC6" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="208" y="608" name="inst_1DBB806D" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="224" y="624" name="inst_16812117" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="72" y="344" name="inst_01C1A952" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="88" y="424" name="inst_2F39A6F0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="184" y="376" name="inst_3B4478C3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="216" y="472" name="inst_F10A8186" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="96" y="560" name="inst_43DDFE7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="104" y="704" name="inst_BFA23EA4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="168" y="680" name="inst_8D66754C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="320" y="544" name="inst_0FF7439C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="280" y="656" name="inst_9148CBBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="560" y="544" name="inst_6EE7B44B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="544" y="360" name="inst_06F77EC0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="648" y="288" name="inst_5EEC5D1C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="512" y="208" name="inst_B85DFD0C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="472" y="104" name="inst_470EE6A7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="328" y="208" name="inst_1AEF6CDF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="248" y="72" name="inst_9053B55F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="64" y="96" name="inst_0C70F9AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="64" y="152" name="inst_0892C629" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesEW" x="64" y="184" name="inst_C4D1A93A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesEW" x="208" y="192" name="inst_F1ACD3CA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesEW" x="176" y="192" name="inst_A59DBAE1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="80" y="80" name="inst_AAEDA3CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="128" y="88" name="inst_9B22D0E1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="168" y="72" name="inst_D1101D6A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="216" y="64" name="inst_FD8AEEAD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="280" y="80" name="inst_9C5761F1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="328" y="80" name="inst_0B64B8CF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="256" y="208" name="inst_C4D638FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="304" y="216" name="inst_AD4196EA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="192" y="176" name="inst_CF6631AB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oActor" x="128" y="136" name="inst_43154738" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oActor" x="184" y="128" name="inst_F199157A" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="0" y="336" w="48" h="32" xo="80" yo="32" id="10031926" name="inst_6973304E" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
