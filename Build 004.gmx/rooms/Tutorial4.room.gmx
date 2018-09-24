@@ -11,14 +11,15 @@
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
   <code>vector_world_add(oVectorLine);
-vector_path_add(oVectorLine,Path1,0,0,0);</code>
+vector_path_add(oVectorLine,Tutorial4Path1,0,0,0);
+vector_path_add(oVectorLine,Tutorial4Path2,0,0,0);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>2560</w>
-    <h>1374</h>
+    <w>1008</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,8 +29,8 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-152</xoffset>
-    <yoffset>140</yoffset>
+    <xoffset>-52</xoffset>
+    <yoffset>-5</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -90,6 +91,7 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
     <instance objName="oDomeLight" x="392" y="392" name="inst_97B0718A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="312" y="272" name="inst_E4A6070C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oDomeLight" x="304" y="400" name="inst_F9B65FF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oPlayer" x="352" y="336" name="inst_ED4887FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="272" y="400" w="32" h="80" xo="208" yo="160" id="10032495" name="inst_8077A9F6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

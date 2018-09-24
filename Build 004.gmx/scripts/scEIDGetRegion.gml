@@ -6,6 +6,7 @@ switch (room)
     case TutorialStart:
     case Tutorial2:
     case Tutorial3:
+    case Tutorial4:
         region = 1; break;
     // Barria Tundra: 1.
     case BarriaLandingSite:
@@ -14,7 +15,7 @@ switch (room)
     case BarriaCacheMissile:
         region = 1; break;
     // Show guide sprite if no region is set.
-    default: region = 0; break;
+    default: region = 1; break; // Set back to 0 once we are beyond testing phases.
 }
 switch (region)
 {
