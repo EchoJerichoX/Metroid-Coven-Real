@@ -150,6 +150,10 @@
         <sprite>sprites\sprDen</sprite>
         <sprite>sprites\sprActorSpawner</sprite>
       </sprites>
+      <sprites name="Turret">
+        <sprite>sprites\sprTurret</sprite>
+        <sprite>sprites\sprite196</sprite>
+      </sprites>
     </sprites>
     <sprites name="Environment">
       <sprites name="Doors">
