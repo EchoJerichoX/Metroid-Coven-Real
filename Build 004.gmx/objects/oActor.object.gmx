@@ -120,7 +120,8 @@ scActorStep();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scActorHit();
+            <string>if (other.playerprojectile = 0) exit;
+scActorHit();
 </string>
           </argument>
         </arguments>

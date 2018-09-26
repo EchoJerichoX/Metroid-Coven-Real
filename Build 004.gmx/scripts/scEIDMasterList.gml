@@ -10,12 +10,13 @@ enum Weapons
 };
 enum Projectiles
 {
-    pPowerBeam, pWaveBeam = 10000, pPlasmaBeam, pSpazerBeam = 10001, pPulseBeam, pIceBeam, pRuptureBeam = 10002, pPhazonBeam
+    pPowerBeam, pWaveBeam = 10000, pPlasmaBeam, pSpazerBeam = 10001, pPulseBeam, pIceBeam, pRuptureBeam = 10002, pPhazonBeam,
+    pTurret
 };
 enum Enemies
 {
-    eZoomer,
-    eGeemer
+    eZoomer,eGeemer,
+    eTurret
 };
 enum Items
 {

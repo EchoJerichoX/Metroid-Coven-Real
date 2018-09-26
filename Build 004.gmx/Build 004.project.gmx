@@ -152,7 +152,7 @@
       </sprites>
       <sprites name="Turret">
         <sprite>sprites\sprTurret</sprite>
-        <sprite>sprites\sprite196</sprite>
+        <sprite>sprites\sprTurretHit</sprite>
       </sprites>
     </sprites>
     <sprites name="Environment">
@@ -338,6 +338,7 @@
       <sprite>sprites\sprBallBomb</sprite>
       <sprite>sprites\sprBallBombCharge</sprite>
       <sprite>sprites\sprPowerBomb</sprite>
+      <sprite>sprites\sprTurretBolt</sprite>
     </sprites>
     <sprites name="Transitions">
       <sprite>sprites\sprTransitionGuideLR</sprite>
@@ -447,6 +448,9 @@
         </scripts>
         <scripts name="Geemer">
           <script>scripts\scGeemerStep.gml</script>
+        </scripts>
+        <scripts name="Turret">
+          <script>scripts\scTurretStep.gml</script>
         </scripts>
       </scripts>
     </scripts>
