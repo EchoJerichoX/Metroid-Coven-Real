@@ -201,7 +201,8 @@ switch (myid)
         trail.direction = direction;
         trail.speed = speed/2;
         trail.image_angle = other.image_angle;
-        trail.image_alpha = other.image_alpha;
+        trail.image_alpha = other.image_alpha/1.5;
+        trail.image_blend = c_red;
         trail.flex = 1;
         break;
 }

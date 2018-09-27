@@ -43,9 +43,12 @@ switch(myid)
         CantTakeDamageFrom = noone;
         destdir = 0;
         primarydir = -1; // Tells the turret where its general facing is (the center of the sight cone).
-        maxdir1 = -1000; // Edge of sight cone, right side.
-        maxdir2 = -1000; // Edge of sight cone, left side.
-        turnrate = 10;
+        sightconesize = 120; // Full size of sight cone, in degrees out of 360.
+        turnrate = 4;
+        turn = 1; // Which direction to turn.
+        turnchangerate = 60; // Time between changing direction for random sweeps.
+        turnchange = turnchangerate;
+        lastturn = 1; // Last direction it tried to turn. Switches to alternate random rotation behavior.
         attack = 0;
         shotready = 1;
         shotdelay = 60; // Delay between bursts.

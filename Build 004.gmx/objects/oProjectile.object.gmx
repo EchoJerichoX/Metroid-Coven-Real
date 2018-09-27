@@ -294,6 +294,7 @@ switch (myid)
         exit;
         break;
 }
+with (other) scPlayerDamageProjectile();
 if (DiesOnContact = true) instance_destroy();
 </string>
           </argument>
