@@ -188,4 +188,17 @@ switch (myid)
             if (instance_exists(oPlayer)) oPlayer.ExistingBombs -= 1;
         }
     break;
+    
+// ===== Enemy Beams =====
+// --- Turret Bolt ---
+    case Projectiles.pTurret:
+        sound_play(BeamImpact1);
+        with (instance_create(x,y,oDestroyAnim))
+        {
+            sprite_index = sprBeamExplosion1;
+            image_blend = c_red;
+            image_speed = .25;
+            _ProjectileLight(.4,c_white,c_red,.6);
+        }
+    break;
 }

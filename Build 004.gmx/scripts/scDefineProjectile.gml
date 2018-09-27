@@ -420,7 +420,7 @@ switch (myid)
         hittype = 1; // Beam.
         Damage = 12;
         speed = 10;
-        sprite_index = sprPower;
+        sprite_index = sprTurretBolt;
         DiesOnContact = true;
         pop = instance_create(x,y,oParticle);
         pop.myid = Projectiles.pTurret;
@@ -433,5 +433,5 @@ switch (myid)
         break;
 
 // ===== Error-catcher =====
-    default: show_error("The projectile ID ("+string(myid)+") is not defined in the engine ID list.",true); break;
+    default: show_error("The projectile ID ("+string(myid)+") is not defined in the engine ID list.",tr=ue); break;
 }

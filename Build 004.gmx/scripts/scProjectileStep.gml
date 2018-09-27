@@ -192,6 +192,18 @@ switch (myid)
         if (image_speed >= .75)
             { instance_create(x,y,oPowerBombExplosion); instance_destroy(); }
         break;
+
+// ===== Enemy Beams =====
+// --- Turret Bolt ---
+    case Projectiles.pTurret:
+        trail = instance_create(x,y,oEffect);
+        trail.sprite_index = sprite_index;
+        trail.direction = direction;
+        trail.speed = speed/2;
+        trail.image_angle = other.image_angle;
+        trail.image_alpha = other.image_alpha;
+        trail.flex = 1;
+        break;
 }
 
 if (fadeout)

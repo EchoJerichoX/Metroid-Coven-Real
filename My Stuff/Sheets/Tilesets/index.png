@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en">
+  <head>
+    <title>.::[Metroid: Fan Mission]::.</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <link rel="shortcut icon" href="./template/3/favicon.ico" />
+    <link rel="stylesheet" href="./template/3/style.css" type="text/css" />
+  </head><body>
+  <script type="text/javascript" src="./template/3/global.js"></script>
+  <div class="header">
+  <table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr>
+    <td width="100%" valign="top" height="75" style='background:url("./template/3/images/titlebar_background.gif"); background-repeat:repeat-x;'>
+      <img src="./template/3/images/mfm_forum_banner.gif" alt="Logo Image" />
+    </td>
+  </tr>
+  </table>
+  </div>
+  <table border="0" cellspacing="0" cellpadding="0" width="100%">
+  <tr><td width="160" valign="top"><table border="0" cellspacing="0" cellpadding="0" width="151"><tr><td><img src="./template/3/images/menutop.gif" /></td></tr><tr><td style='background:url("./template/3/images/menubg2.png"); background-repeat:repeat-y;'><div class="canvas_left">
+<div class="menu">
+<div class="menutitle">Main</div>
+<div class="menusection">
+  <div class="menuitem"><a href="/index.php?act=main">Updates</a></div>
+  <div class="menuitem"><a href="/index.php?act=staff">Staff</a></div>
+  <div class="menuitem"><a href="/index.php?act=submit&amp;param=01">Submission Rules</a></div>
+  <div class="menuitem"><a href="olympus_missioncontrol/">Message Board</a></div>
+</div>
+<div class="menutitle">Content</div>
+<div class="menusection">
+  <div class="menutiem"><a href="/index.php?act=resdb&amp;param=01&amp;c=1">Sprites</a></div>
+  <div class="menutiem"><a href="/index.php?act=resdb&amp;param=01&amp;c=2">Games</a></div>
+  <div class="menutiem"><a href="/index.php?act=resdb&amp;param=01&amp;c=4">How-Tos</a></div>
+  <div class="menutiem"><a href="/index.php?act=resdb&amp;param=01&amp;c=5">Sounds</a></div>  <div class="menutiem"><a href="/index.php?act=resdb&amp;param=01&amp;c=6">Misc</a></div>
+</div>
+<div class="menutitle">Search</div>
+<div class="menusection">
+  <form method="get" action="/index.php?">
+  <input type="hidden" name="act" value="search" />
+  <input type="hidden" name="param" value="02" />
+  <div class="menuitem">
+    <input type="text" name="search" alt="search" size="14" class="sidetextbox" /></div>
+  <div class="menuitem">
+    <input type="submit" value="Go" class="sidebutton" /> 
+    <a href="/index.php?act=search&amp;param=01">Advanced</a></div>
+  </form>
+</div>
+</div>
+<br />
+<form method="post" action="/index.php?act=login&amp;param=02">
+<div class="menu">
+<div class="menutitle">Login</div>
+<div class="menusection">
+  <div class="menuitem">
+    <input type="text" name="username" value="username" alt="username" size="14" class="sidetextbox" /></div>
+  <div class="menuitem">
+    <input type="password" name="password" value="" alt="password" size="14" class="sidetextbox" /></div>
+  <div class="menuitem" style="font-size:8pt">
+    <a href="/index.php?act=login&amp;param=05">I lost my password</a></div>
+  <div class="menuitem">
+    <input type="submit" name="submit" value="Login" class="sidebutton" /></div>
+</div>
+<div class="menutitle"><a href="/index.php?act=login&amp;param=01">
+    Register</a></div>
+</div>
+</form>
+<br />
+<div class="menu">
+<div class="menutitle">Affiliates</div>
+<div class="menusection" style="text-align:center">
+  <div class="menuitem"><a href="http://www.mfgg.net/" target="_blank">
+    <img src="template/images/mfggbutton.gif" alt="MFGG" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://h4xopolis.net:1069/h4xopolis/index.php" target="_blank">
+    <img src="template/images/h4xaffbanner.png" alt="h4xopolis" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://www.spriters-resource.com/" target="_blank">
+    <img src="template/images/tsr.gif" alt="The Spriter's Resource" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://tsgk.captainn.net/" target="_blank">
+    <img src="template/images/tsgk-cap_88x31.gif" alt="TSGK" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://gdarcade.taloncrossing.com/" target="_blank">
+    <img src="template/images/gda.gif" alt="GDA" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://stencyl.com/" target="_blank">
+    <img src="template/images/stencyl.gif" alt="Stencyl" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://www.sprites-inc.co.uk/" target="_blank">
+    <img src="template/images/spritesinc.gif" alt="Sprites INC" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://www.metroidheadquarters.com/" target="_blank">
+    <img src="template/images/mhq.gif" alt="Metroid HQ" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://www.fangamez.org/" target="_blank">
+    <img src="template/images/fangamezbutton.gif" alt="Fangamez.net" width="88" height="31" border="0"></a></div>
+  <div class="menuitem"><a href="http://www.metroid-database.com/" target="_blank">
+    <img src="template/images/metroiddatabase.gif" alt="Metroid Database" width="88" height="31" border="0"></a></div>
+</div>
+</div>
+<br /><div class="menu"><div class="menutitle">Link to us!</div><div class="menusection" style="text-align:center"><div class="menuitem"><img src="template/images/mfmbutton.gif" alt="M:FM" /></div></div></div>
+<br /><script type="text/javascript"><!--
+google_ad_client = "pub-8990129646918379";
+/* NEW M:FM Main Skyscraper */
+google_ad_slot = "2002859563";
+google_ad_width = 120;
+google_ad_height = 600;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+</td></tr><tr><td><img src="./template/3/images/menubottom.gif" /></td></tr></table></td><td valign="top" align="center">
+<div class="canvas_center">
+<br />
+    <br />
+	<div class="sform" style="width:75%; margin-left:auto; margin-right:auto">
+	  <div class="sformstrip">Error</div>
+	  <table class="sformtable" cellspacing="0">
+	    <tr>
+	      <td>You cannot download the same submission more than 3 times consecutively.
+			<p align='center'><a href='javascript:history.go(-1)'>Return to previous page</a></p>
+	      </td>
+	    </tr>
+	    <tr><td height="6" class="sformdark">
+	      </td></tr>
+	  </table>
+	</div></div>
+</td></tr>
+<tr>
+  <td></td>
+  <td align="center">
+  <br />
+  <div class="canvas_center" style="border-top: 1px solid #444466;">
+    All Nintendo material is &copy; Nintendo.  M:FM does not own any user-submitted content, which is &copy; the
+    submitter or a third party.  All remaining material is &copy; M:FM. M:FM is a non-profit site.  All material is available on this site for the intention of fair-use parody works, and not copywright infringement.
+    Please read the Disclaimer.
+    <br /><br />
+    <div style="text-align:center">Powered By: Taloncrossing SMS v0.8.4, &copy; 2007 Taloncrossing.com</div>
+  </div>
+  </td>
+</tr>
+</table>
+<div style="visibility: hidden;"><a href="http://gpxplus.net/AmLmZwZ1" target="_blank"><img src="http://img.gpxplus.net/12/52/AmLmZwZ1/image.png" border="0" alt="" height="1" width="1" /></a><a href="http://gpxplus.net/AwxmBGH2" target="_blank"><img src="http://img.gpxplus.net/11/25/AwxmBGH2/image.png" border="0" alt="" height="1" width="1" /></a><a href="http://gpxplus.net/AQLmZwN5" target="_blank"><img src="http://img.gpxplus.net/7/102/AQLmZwN5/image.png" border="0" alt="" height="1" width="1" /></a><a href="http://gpxplus.net/ZmNkAmV3" target="_blank"><img src="http://img.gpxplus.net/4/206/ZmNkAmV3/image.png" border="0" alt="" height="1" width="1" /></a><a href="http://gpxplus.net/ZwD5BGD4" target="_blank"><img src="http://img.gpxplus.net/3/249/ZwD5BGD4/image.png" border="0" alt="" height="1" width="1" /></a><a href="http://gpxplus.net/ZmR1Awp1" target="_blank"><img src="http://img.gpxplus.net/5/12/ZmR1Awp1/image.png" border="0" alt="" height="1" width="1" /></a></div>
+</body>
+</html>

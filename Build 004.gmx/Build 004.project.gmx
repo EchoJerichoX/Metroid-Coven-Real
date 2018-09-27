@@ -531,6 +531,7 @@
       <script>scripts\scDefineSuit.gml</script>
       <script>scripts\scPlayerDamageActor.gml</script>
       <script>scripts\scPlayerDamageHazard.gml</script>
+      <script>scripts\scPlayerDamageProjectile.gml</script>
       <script>scripts\scPlayerDamage.gml</script>
       <script>scripts\scPlayerMovement.gml</script>
       <script>scripts\scPlayerMovementBall.gml</script>
@@ -548,9 +549,7 @@
       <script>scripts\scProjectileStep.gml</script>
       <script>scripts\scProjectileDeath.gml</script>
       <script>scripts\scFireProjectile.gml</script>
-      <scripts name="Projectile Functions">
-        <script>scripts\_ProjectileLight.gml</script>
-      </scripts>
+      <script>scripts\_ProjectileLight.gml</script>
     </scripts>
     <scripts name="Rooms and Transitions">
       <script>scripts\RoomInit.gml</script>

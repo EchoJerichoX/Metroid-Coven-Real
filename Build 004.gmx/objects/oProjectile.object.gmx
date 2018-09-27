@@ -270,7 +270,10 @@ scProjectileStep();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>switch (myid)
+            <string>// If the projectile is a player-owned one, or
+//   otherwise exempt projectile type, don't
+//   run this script to explode on the player.
+switch (myid)
 {
     case Weapons.wPowerBeam:
     case Weapons.wWaveBeam:
@@ -290,12 +293,7 @@ scProjectileStep();
     case Weapons.wPowerBomb:
         exit;
         break;
-
-// ===== Error-catcher =====
-    default: show_error("The projectile ID ("+string(myid)+") is not defined in the engine ID list.",true); break;
 }
-other.HitPoints -= Damage;
-other.TakeHitDirection = direction;
 if (DiesOnContact = true) instance_destroy();
 </string>
           </argument>
@@ -367,7 +365,8 @@ if (DiesOnContact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>other.HitPoints -= Damage;
+            <string>if (!playerprojectile) exit;
+other.HitPoints -= Damage;
 other.TakeHitDirection = direction;
 if (DiesOnContact) 
     { instance_destroy(); }

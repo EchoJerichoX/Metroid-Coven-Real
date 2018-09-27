@@ -48,8 +48,10 @@ switch(myid)
         turnrate = 10;
         attack = 0;
         shotready = 1;
+        shotdelay = 60; // Delay between bursts.
         pulse = 0;
-        pulseready = 10;
+        pulsedelay = 10; // Delay between individual shots in each burst.
+        pulseready = pulsedelay;
         image_speed = 0;
         break;
     

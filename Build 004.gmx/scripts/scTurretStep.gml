@@ -25,15 +25,19 @@ if (shotready = 0) and (pulse < 3)
     if (pulseready > 0) pulseready -= 1;
     else
     {
+        if (collision_line(x,y,oPlayer.x,oPlayer.y,oBlockParent,1,0))
+            { pulse = 0; pulseready = pulsedelay; shotready = shotdelay; exit; }
         pulse += 1;
-        pulseready = 10;
-        with (instance_create(x+lengthdir_x(15,direction),y+lengthdir_y(0,direction),oProjectile))
+        pulseready = pulsedelay;
+        with (instance_create(x+lengthdir_x(15,direction),y+lengthdir_y(15,direction),oProjectile))
         {
             scDefineProjectile(Projectiles.pTurret);
             speed = 10;
             direction = other.direction+random_range(-10,10);
+            image_angle = direction;
         }
-        if (pulse = 3) shotready = 100;
+        if (pulse = 3)
+            { pulse = 0; shotready = shotdelay; }
     }
 }
 
