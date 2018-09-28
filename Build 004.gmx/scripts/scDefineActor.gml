@@ -42,10 +42,13 @@ switch(myid)
         ImmuneToPowerBomb = 0;
         CantTakeDamageFrom = noone;
         destdir = 0;
-        primarydir = -1; // Tells the turret where its general facing is (the center of the sight cone).
+        primarydir = -1; // Tells the turret where its general facing is (center of sight cone).
+                         // Defined in room creation code.
         mindir = 0;
         maxdir = 0;
         sightconesize = 120; // Full size of sight cone, in degrees out of 360.
+        range = 150; // How far the turret can see the player, in pixels.
+        angleDiffTurn = 0;
         turnrate = 4;
         turn = 1; // Which direction to turn.
         turnchangerate = 60; // Time between changing direction for random sweeps.
