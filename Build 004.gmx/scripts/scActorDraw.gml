@@ -12,12 +12,18 @@ switch (myid)
                 draw_text(x+7,y-23,nearestden.x);
                 draw_text(x+7,y-36,nearestden.y);
             }
-            //draw_text(x+7,y-23,path_position);
-            //draw_text(x+7,y-10,direction);
-            //draw_text(x+7,y-23,destdir);
-            //draw_text(x+7,y-23,statechange);
-            //draw_text(x+7,y-36,staterate);
-            //draw_text(x+7,y-40,damaged);
+        }
+        break;
+    case Enemies.eTurret:
+        if (damaged > 0) draw_sprite_ext(sprTurretHit,image_index,x,y,1,1,image_angle,c_white,damaged);
+        if (eId.debugmode)
+        {
+            draw_set_color(c_blue);
+            draw_text(x+7,y-10,primarydir);
+            draw_text(x+7,y-23,destdir);
+            draw_text(x+7,y-36,direction);
+            draw_text(x+7,y-49,mindir);
+            draw_text(x+7,y-62,maxdir);
         }
         break;
 }

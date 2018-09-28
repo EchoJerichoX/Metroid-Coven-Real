@@ -43,6 +43,8 @@ switch(myid)
         CantTakeDamageFrom = noone;
         destdir = 0;
         primarydir = -1; // Tells the turret where its general facing is (the center of the sight cone).
+        mindir = 0;
+        maxdir = 0;
         sightconesize = 120; // Full size of sight cone, in degrees out of 360.
         turnrate = 4;
         turn = 1; // Which direction to turn.
@@ -55,6 +57,7 @@ switch(myid)
         pulse = 0;
         pulsedelay = 10; // Delay between individual shots in each burst.
         pulseready = pulsedelay;
+        damaged = 0;
         image_speed = 0;
         break;
     

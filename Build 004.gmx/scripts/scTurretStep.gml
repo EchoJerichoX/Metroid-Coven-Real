@@ -1,21 +1,33 @@
-//if (maxdir1 != primarydir-60) maxdir1 = primarydir-60;
-//if (maxdir2 != primarydir+60) maxdir2 = primarydir+60;
+/*
+if (mindir != primarydir-sightconesize) mindir = primarydir-sightconesize;
+if (mindir < 0) mindir += 360;
+if (maxdir != primarydir+sightconesize) maxdir = primarydir+sightconesize;
+if (maxdir > 360) maxdir -= 360;
+*/
 if (instance_exists(oPlayer))
 {
     if (point_distance(x,y,oPlayer.x,oPlayer.y) <= 150)
     and (!collision_line(x,y,oPlayer.x,oPlayer.y,oBlockParent,1,0))
-    and (angle_difference(primarydir,point_direction(x,y,oPlayer.x,oPlayer.y)) <= sightconesize/2)
+    and (abs(angle_difference(primarydir,point_direction(x,y,oPlayer.x,oPlayer.y)) <= sightconesize/2))
         { target = oPlayer; }
     else target = 0;
 }
+
 if (target != 0)
 {
-    destdir = point_direction(x,y,oPlayer.x,oPlayer.y);
-    if (abs(direction-destdir) < turnrate*2) attack = 1;
+    destdir = point_direction(x,y,target.x,target.y);
+    direction -= clamp(angle_difference(direction,destdir),-turnrate,turnrate);
+    if (abs(direction-destdir) < turnrate)
+        { direction = destdir; attack = 1; }
     else attack = 0;
 }
 else
 {
+    destdir = primarydir;
+    direction -= clamp(angle_difference(direction,destdir),-turnrate,turnrate);
+    if (abs(direction-destdir) < turnrate) direction = destdir;
+    
+    /*
     switch (turn)
     {
         case 0: // Stop.
@@ -28,10 +40,12 @@ else
             }
             break;
         case 1: // Turn.
+            direction -= clamp(angle_difference(direction,destdir),-turnrate,turnrate);
             if (abs(direction-destdir) < turnrate)
                 { turn = 0; turnchange = turnchangerate; direction = destdir; }
             break;
     }
+    */
 }
 
 if (attack) and (shotready > 0) shotready -= 1;
@@ -57,6 +71,5 @@ if (shotready = 0) and (pulse < 3)
     }
 }
 
-if (direction != destdir) direction -= clamp(angle_difference(direction,destdir),-turnrate,turnrate);
-if (abs(direction-destdir) < turnrate) direction = destdir;
+if (damaged > 0) damaged -= 0.1;
 image_angle = direction;
