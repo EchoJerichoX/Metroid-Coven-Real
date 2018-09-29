@@ -17,8 +17,8 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>916</w>
-    <h>1456</h>
+    <w>2576</w>
+    <h>1394</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -28,8 +28,8 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>194</xoffset>
-    <yoffset>-215</yoffset>
+    <xoffset>910</xoffset>
+    <yoffset>364</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -64,6 +64,9 @@ vector_path_add(oVectorLine,Path1,0,0,0);</code>
     <instance objName="oBlock8" x="248" y="432" name="inst_A8310D4D" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="312" y="456" name="inst_D05FD2B3" locked="0" code="scDefineBlock(Blocks.bBomb);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="336" y="424" name="inst_0B6D7C81" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oActor" x="715" y="281" name="inst_B546C4FB" locked="0" code="scDefineTurret(225);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oActor" x="744" y="302" name="inst_D45E8AA3" locked="0" code="scDefineTurret(225);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="704" y="320" name="inst_7CB6FF8E" locked="0" code="scDefineItem(Items.iVariaSuit);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="976" y="592" w="48" h="32" xo="112" yo="32" id="10032941" name="inst_8B8A4747" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

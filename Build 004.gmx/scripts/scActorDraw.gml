@@ -19,6 +19,8 @@ switch (myid)
         if (eId.debugmode)
         {
             draw_set_color(c_blue);
+            draw_text(x+7,y-10,HP);
+            /*
             draw_text(x+7,y-10,primarydir);
             draw_text(x+7,y-23,direction);
             draw_text(x+7,y-36,abs(angleDiffTurn));

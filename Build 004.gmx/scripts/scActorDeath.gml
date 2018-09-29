@@ -14,7 +14,7 @@ switch (myid)
             with (instance_create(x,y,oDoodad))
             {
                 sprite_index = sprZoomerPart;
-                depth = other.depth;
+                depth = other.depth+1;
                 image_angle = random(360);
                 image_xscale = 1.5;
                 image_yscale = 1.5;
@@ -30,5 +30,28 @@ switch (myid)
         //scDropLoot();
         // ^ Implement once the system is properly implemented.
         sound_play(EnemyZoomerDeath);
+        break;
+    case Enemies.eTurret:
+        repeat (5)
+        {
+            with (instance_create(x,y,oDoodad))
+            {
+                sprite_index = sprTurretPart;
+                depth = other.depth+1;
+                image_angle = random(360);
+                image_xscale = 0.5+random(0.75);
+                image_yscale = 0.5+random(0.75);
+                alarm[0] = 500-max(instance_number(oDoodad),1);
+                image_single = round(random(4));
+                speed = 1+random(2);
+                friction = .1;
+                direction = other.TakeHitDirection+random_range(70,-70);
+            }
+        }
+        with (instance_create(x,y,oDestroyAnim))
+            { image_speed = .25; sprite_index = sprMissileExplosion; depth = other.depth; image_blend = c_yellow; }
+        //scDropLoot();
+        // ^ Implement once the system is properly implemented.
+        sound_play(MissileExplosion);
         break;
 }

@@ -153,6 +153,7 @@
       <sprites name="Turret">
         <sprite>sprites\sprTurret</sprite>
         <sprite>sprites\sprTurretHit</sprite>
+        <sprite>sprites\sprTurretPart</sprite>
       </sprites>
     </sprites>
     <sprites name="Environment">
@@ -450,6 +451,7 @@
           <script>scripts\scGeemerStep.gml</script>
         </scripts>
         <scripts name="Turret">
+          <script>scripts\scDefineTurret.gml</script>
           <script>scripts\scTurretStep.gml</script>
         </scripts>
       </scripts>
