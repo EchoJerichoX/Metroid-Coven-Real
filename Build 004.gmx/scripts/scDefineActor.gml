@@ -47,7 +47,7 @@ switch(myid)
         mindir = 0;
         maxdir = 0;
         sightconesize = 120; // Full size of sight cone, in degrees out of 360.
-        range = 150; // How far the turret can see the player, in pixels.
+        range = 250; // How far the turret can see the player, in pixels.
         angleDiffTurn = 0;
         turnrate = 4;
         turn = 1; // Which direction to turn.

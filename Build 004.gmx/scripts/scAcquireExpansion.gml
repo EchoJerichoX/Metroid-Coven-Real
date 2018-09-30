@@ -8,6 +8,9 @@ switch (argument0)
         break;
     // --- Missile Expansions ---
     case 2:
+        // - Tutorial -
+        if (room = Tutorial5) eId.HasTutorial5ME = true;
+        // - Barria Tundra -
         if (room = BarriaLandingSite) eId.HasBarriaLandingSiteME = true;
         if (room = BarriaCacheMissile) eId.HasBarriaCacheMissileME = true;
         break;

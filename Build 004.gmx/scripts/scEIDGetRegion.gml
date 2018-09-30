@@ -7,7 +7,7 @@ switch (room)
     case Tutorial2:
     case Tutorial3:
     case Tutorial4:
-        region = 1; break;
+    case Tutorial5:
     // Barria Tundra: 1.
     case BarriaLandingSite:
     case BarriaIntWest:
