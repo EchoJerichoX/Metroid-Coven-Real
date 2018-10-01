@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>480</height>
   <vsnap>8</vsnap>
-  <hsnap>256</hsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -17,7 +17,7 @@ vector_path_add(oVectorLine,Tutorial2Path1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
+    <w>1008</w>
     <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
@@ -27,9 +27,9 @@ vector_path_add(oVectorLine,Tutorial2Path1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>2</page>
-    <xoffset>15</xoffset>
-    <yoffset>-23</yoffset>
+    <page>0</page>
+    <xoffset>-42</xoffset>
+    <yoffset>-138</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -75,10 +75,10 @@ vector_path_add(oVectorLine,Tutorial2Path1,0,0,0);</code>
     <instance objName="oSpikesNS" x="520" y="384" name="inst_53C0C6AC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesNS" x="616" y="184" name="inst_144D7174" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesEW" x="576" y="224" name="inst_0225FC2F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallLightNS" x="64" y="216" name="inst_1539C166" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallLightNS" x="64" y="264" name="inst_B60D43D9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallLightNS" x="960" y="216" name="inst_2B43B216" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oSmallLightNS" x="960" y="264" name="inst_294A0C80" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="72" y="200" name="inst_52BAD652" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="96" y="280" name="inst_8F2F2B3A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="960" y="216" name="inst_E709F1A6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="952" y="280" name="inst_E0152BBB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="0" y="192" w="16" h="16" xo="176" yo="32" id="10031400" name="inst_A7CE2355" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

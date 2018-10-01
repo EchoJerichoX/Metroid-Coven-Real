@@ -29,8 +29,8 @@ vector_path_add(oVectorLine,Tutorial4Path2,0,0,0);</code>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>-52</xoffset>
-    <yoffset>-5</yoffset>
+    <xoffset>115</xoffset>
+    <yoffset>168</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="grdSnow" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -68,7 +68,7 @@ vector_path_add(oVectorLine,Tutorial4Path2,0,0,0);</code>
     <instance objName="oZoomerDen" x="344" y="184" name="inst_DFD404F8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="440" y="136" name="inst_888E1F2B" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="496" y="120" name="inst_12119BF4" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oActor" x="296" y="160" name="inst_1C947BB7" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oActor" x="296" y="152" name="inst_1C947BB7" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="384" y="112" name="inst_99F4A949" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oActor" x="312" y="120" name="inst_64E89168" locked="0" code="scDefineActor(Enemies.eZoomer);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="506" y="267" name="inst_23D4A80A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -77,20 +77,17 @@ vector_path_add(oVectorLine,Tutorial4Path2,0,0,0);</code>
     <instance objName="oSmallCrate" x="243" y="134" name="inst_4FCD8AAE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="264" y="144" name="inst_E09FF310" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="541" y="326" name="inst_D2EECEAA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="120" y="336" name="inst_6F1419A8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="216" y="328" name="inst_B2FFCC89" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="136" y="248" name="inst_3BC5B7E2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="280" y="112" name="inst_15D201DC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="288" y="176" name="inst_B1500EEE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="408" y="88" name="inst_939909AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="400" y="176" name="inst_625495C0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="512" y="120" name="inst_A3D720E7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="544" y="296" name="inst_8976DC0B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="536" y="352" name="inst_26BC3FBA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="400" y="280" name="inst_D5877674" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="392" y="392" name="inst_97B0718A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="312" y="272" name="inst_E4A6070C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oDomeLight" x="304" y="400" name="inst_F9B65FF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="361" y="411" name="inst_97B0718A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDomeLight" x="299" y="404" name="inst_F9B65FF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="304" y="192" name="inst_7438868D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="383" y="203" name="inst_1EE671FA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="464" y="159" name="inst_ABE31BE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="424" y="80" name="inst_72784BE6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSpikesNS" x="351" y="83" name="inst_A8609FCC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallLightNS" x="376" y="264" name="inst_2F231451" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallLightNS" x="392" y="88" name="inst_98B164F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallLightEW" x="88" y="296" name="inst_6D628A90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oSmallLightEW" x="553" y="289" name="inst_BDF77C4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="272" y="400" w="32" h="80" xo="208" yo="160" id="10032495" name="inst_8077A9F6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

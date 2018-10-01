@@ -18,7 +18,7 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
   <makerSettings>
     <isSet>-1</isSet>
     <w>2576</w>
-    <h>1374</h>
+    <h>1394</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,9 +27,9 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <showViews>0</showViews>
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
-    <page>1</page>
-    <xoffset>-226</xoffset>
-    <yoffset>-166</yoffset>
+    <page>2</page>
+    <xoffset>619</xoffset>
+    <yoffset>1572</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="0" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>

@@ -1,0 +1,18 @@
+decrease wave beam sprite size
+pitch up wave beam sound
+reduce damage of nearly all beams
+
+scanner item telling you if there are items in a room
+
+power bomb ammo points only near places where power bombs are used
+
+turn up damage for turrets and spikes
+
+rename scripts and fix calls to get rid of dumbass underscores and shit
+
+have zoomers stop during pauses and messages. turrets too.
+
+fix some rooms not transitioning correctly to cache rooms (transition object not centered and shit, 3 to 4)
+fix transition object not moving to the right place vertically (3 to 5) eid.voy?
+
+reduce ambient light around player (range, not brightness)

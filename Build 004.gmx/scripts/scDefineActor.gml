@@ -62,6 +62,7 @@ switch(myid)
         pulseready = pulsedelay;
         damaged = 0;
         image_speed = 0;
+        target = 0;
         break;
     
     // //
