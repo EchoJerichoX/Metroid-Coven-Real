@@ -104,7 +104,6 @@
       <sound>sound\BarriaOverworld</sound>
       <sound>sound\Title</sound>
     </sounds>
-    <sounds name="Sound Effects"/>
   </sounds>
   <sprites name="sprites">
     <sprites name="- Miscellaneous">
@@ -424,6 +423,21 @@
   <scripts name="scripts">
     <scripts name="- Miscellaneous">
       <scripts name="Outsourced">
+        <scripts name="Vector Collisions">
+          <script>scripts\vector_world_add.gml</script>
+          <script>scripts\vector_path_add.gml</script>
+          <script>scripts\vector_line_add.gml</script>
+          <script>scripts\vector_circle_add.gml</script>
+          <script>scripts\vector_collision_line.gml</script>
+          <script>scripts\vector_collision_circle.gml</script>
+          <script>scripts\vector_collision_square.gml</script>
+          <script>scripts\scr_vector_draw.gml</script>
+          <script>scripts\scr_check.gml</script>
+          <script>scripts\scr_limit.gml</script>
+          <script>scripts\scr_360.gml</script>
+          <script>scripts\vector_wallset.gml</script>
+          <script>scripts\setwall.gml</script>
+        </scripts>
         <script>scripts\move_contact_object.gml</script>
         <script>scripts\point_in_view.gml</script>
         <script>scripts\point_in_view_ext.gml</script>
@@ -566,21 +580,6 @@
       <script>scripts\scTransition.gml</script>
       <script>scripts\scTransGetDest.gml</script>
       <script>scripts\scTransIn.gml</script>
-    </scripts>
-    <scripts name="Vector Collisions">
-      <script>scripts\vector_world_add.gml</script>
-      <script>scripts\vector_path_add.gml</script>
-      <script>scripts\vector_line_add.gml</script>
-      <script>scripts\vector_circle_add.gml</script>
-      <script>scripts\vector_collision_line.gml</script>
-      <script>scripts\vector_collision_circle.gml</script>
-      <script>scripts\vector_collision_square.gml</script>
-      <script>scripts\scr_vector_draw.gml</script>
-      <script>scripts\scr_check.gml</script>
-      <script>scripts\scr_limit.gml</script>
-      <script>scripts\scr_360.gml</script>
-      <script>scripts\vector_wallset.gml</script>
-      <script>scripts\setwall.gml</script>
     </scripts>
     <scripts name="Weapon">
       <script>scripts\scDefineWeapon.gml</script>

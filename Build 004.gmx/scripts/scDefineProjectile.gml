@@ -1,37 +1,50 @@
+// Initialization script for all projectiles.
 myid = argument0;
-mask_index = sprProjectileMaskDoorChecker;
-alarm[4] = 1;
+mask_index = sprProjectileMaskDoorChecker; // If the player is butted up against
+                                           //   a door, open it.
+alarm[4] = 2; // Revert to the proper mask_index after it has moved few frames.
 switch (myid)
 {
+// ========================
 // ===== Player Beams =====
+// ========================
+
 // --- Power Beam ---
     case Weapons.wPowerBeam:
-        playerprojectile = 1;
+        // - General Initialization -
+        playerprojectile = 1; // Player-owned projectile.
         hittype = 1; // Beam.
-        speed = 10;
-        sprite_index = sprPower;
-        Damage = 1;
-        DiesOnContact = true;
-        pop = instance_create(x,y,oParticle);
-        pop.myid = Weapons.wPowerBeam;
-        if (Charger >= 60)
+        DiesOnContact = true; // Destroy the instance when it hits something.
+        Damage = 1; // Damage dealt to enemies/objects on contact.
+        var lightalpha = 0.1;
+        var lightradius = 0.6;
+        var charged = 0; // Tell the particle object that the player fired
+                         //   using the Charge Beam.
+        var sprite = sprPower;
+        // - Charge Beam variance -
+        if (Charger >= 60) // If the player's weapon is sufficiently charged.
         {
+            sprite = sprPowerCharge;
             Damage = 5;
-            sound_play(BeamPower);
-            sprite_index = sprPowerCharge;
-            _ProjectileLight(.2,c_white,c_yellow,1);
-            pop.c = 1;
+            lightalpha = 0.2;
+            lightradius = 1;
+            charged = 1;
         }
-        else
-        {
-            sound_play(BeamPower);
-            _ProjectileLight(.1,c_white,c_yellow,.6)
-            pop.c = 0;
-        }
-        alarm[0] = 20+random(5);
-        with (instance_create(x,y,oDestroyAnim))
+        // - Movement and effects -
+        sprite_index = sprite;
+        speed = 10;
+        pop = instance_create(x,y,oParticle); // Create a small particle burst.
+        pop.myid = myid;                      // ^
+        pop.c = charged;                      // ^
+        _ProjectileLight(lightalpha,c_white,c_yellow,lightradius); 
+            // ^ Create the light that follows the projectile.
+        sound_play(BeamPower);
+        alarm[0] = 20+random(5); // Time until the projectile starts fading out.
+        with (instance_create(x,y,oDestroyAnim)) 
             { sprite_index = sprBeamFire1; image_blend = c_yellow; image_speed = .5; }
+            // ^ Create a small explosion at the tip of the arm cannon.
         break;
+        
 // --- Wave Beam Proxy ---
     case Weapons.wWaveBeam:
         playerprojectile = 1;
@@ -42,8 +55,9 @@ switch (myid)
         alarm[0] = 3;
         DiesOnContact = true;
         var xx,yy;
-        xx = oPlayer.WeaponXPosition+lengthdir_x(20,direction)
-        yy = oPlayer.WeaponYPosition+lengthdir_y(20,direction)
+        xx = oPlayer.WeaponXPosition+lengthdir_x(20,direction);
+        yy = oPlayer.WeaponYPosition+lengthdir_y(20,direction);
+        sound_play(BeamWave);
         with (instance_create(xx,yy,oProjectile))
         {
             t = 0;
@@ -82,14 +96,12 @@ switch (myid)
         {
             Damage = 8;
             speed = 8;
-            sound_play(BeamWave);
             sprite_index = sprWaveCharge;
             _ProjectileLight(.2,c_white,c_purple,1);
             pop.c = 1;
         }
         else
         {
-            sound_play(BeamWave);
             _ProjectileLight(.1,c_white,c_purple,.6);
             pop.c = 0;
         }
@@ -356,7 +368,10 @@ switch (myid)
         }
         break;
 
+// ====================================
 // ===== Player Secondary Weapons =====
+// ====================================
+
 // --- Missile Launcher ---
     case Weapons.wMissileLauncher:
         playerprojectile = 1;
@@ -381,7 +396,10 @@ switch (myid)
         alarm[0] = 200;
         break;
 
+// ================================
 // ===== Player Addon Weapons =====
+// ================================
+
 // --- Ball Bomb ---
     case Weapons.wBallBomb:
         playerprojectile = 1;
@@ -412,8 +430,11 @@ switch (myid)
         image_speed = .03;
         createeffect = 0;
         break;
-        
+
+// =============================
 // ===== Enemy Projectiles =====
+// =============================
+
 // --- Turret Bolt ---
     case Projectiles.pTurret:
         playerprojectile = 0;
@@ -432,6 +453,8 @@ switch (myid)
             { sprite_index = sprBeamFire1; image_blend = c_red; image_speed = .5; }
         break;
 
+// =========================
 // ===== Error-catcher =====
-    default: show_error("The projectile ID ("+string(myid)+") is not defined in the engine ID list.",tr=ue); break;
+// =========================
+    default: show_error("The projectile ID ("+string(myid)+") is not defined in the engine ID list.",true); break;
 }
