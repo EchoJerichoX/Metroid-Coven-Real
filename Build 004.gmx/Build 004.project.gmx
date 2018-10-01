@@ -104,6 +104,7 @@
       <sound>sound\BarriaOverworld</sound>
       <sound>sound\Title</sound>
     </sounds>
+    <sounds name="Sound Effects"/>
   </sounds>
   <sprites name="sprites">
     <sprites name="- Miscellaneous">

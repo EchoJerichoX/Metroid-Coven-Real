@@ -1,4 +1,3 @@
-decrease wave beam sprite size
 pitch up wave beam sound
 reduce damage of nearly all beams
 
