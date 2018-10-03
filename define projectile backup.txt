@@ -8,6 +8,7 @@ switch (myid)
 // ========================
 // ===== Player Beams =====
 // ========================
+
 // --- Power Beam ---
     case Weapons.wPowerBeam:
         // - General Initialization -
@@ -35,13 +36,16 @@ switch (myid)
         pop = instance_create(x,y,oParticle); // Create a small particle burst.
         pop.myid = myid;                      // ^
         pop.c = charged;                      // ^
-        _ProjectileLight(lightalpha,c_white,c_yellow,lightradius); // Create the light that follows the projectile.
+        _ProjectileLight(lightalpha,c_white,c_yellow,lightradius); 
+            // ^ Create the light that follows the projectile.
         sound_play(BeamPower);
         alarm[0] = 20+random(5); // Time until the projectile starts fading out.
-        with (instance_create(x,y,oDestroyAnim)) // Create a small explosion at the tip of the arm cannon.
+        with (instance_create(x,y,oDestroyAnim)) 
             { sprite_index = sprBeamFire1; image_blend = c_yellow; image_speed = .5; }
+            // ^ Create a small explosion at the tip of the arm cannon.
         break;
-// --- Wave Beam ---
+        
+// --- Wave Beam Proxy ---
     case Weapons.wWaveBeam:
         playerprojectile = 1;
         hittype = 1; // Beam.
@@ -51,7 +55,7 @@ switch (myid)
         alarm[0] = 30+random(5);
         DiesOnContact = true;
         pop = instance_create(x,y,oParticle);
-        pop.myid = myid;
+        pop.myid = Projectiles.pWaveBeam;
         if (Charger >= 60)
         {
             Damage = 8;
@@ -65,7 +69,67 @@ switch (myid)
             _ProjectileLight(.1,c_white,c_purple,.6);
             pop.c = 0;
         }
+        /*
+        playerprojectile = 1;
+        hittype = 1; // Beam.
+        speed = 0;
+        sprite_index = sprWave;
+        Damage = 0;
+        alarm[0] = 3;
+        DiesOnContact = true;
+        var xx,yy;
+        xx = oPlayer.WeaponXPosition+lengthdir_x(20,direction);
+        yy = oPlayer.WeaponYPosition+lengthdir_y(20,direction);
+        sound_play(BeamWave);
+        with (instance_create(xx,yy,oProjectile))
+        {
+            t = 0;
+            Charger = other.Charger;
+            direction = other.direction;
+            image_angle = direction;
+            scDefineProjectile(Projectiles.pWaveBeam);
+            SwingPositive = true;
+            alarm[1] = 2;
+        }
+        with (instance_create(xx,yy,oProjectile))
+        {
+            t = 0;
+            Charger = other.Charger;
+            direction = other.direction;
+            image_angle = direction;
+            scDefineProjectile(Projectiles.pWaveBeam);
+            SwingPositive = false;
+            alarm[1] = 2;
+        }
+        with (instance_create(x,y,oDestroyAnim))
+            { sprite_index = sprBeamFire1; image_blend = make_color_rgb(181,87,171); image_speed = .5; }
+        */
         break;
+// --- Wave Beam ---
+    /*case Projectiles.pWaveBeam:
+        playerprojectile = 1;
+        hittype = 1; // Beam.
+        speed = 6;
+        sprite_index = sprWave;
+        Damage = 5;
+        alarm[0] = 30+random(5);
+        DiesOnContact = true;
+        pop = instance_create(x,y,oParticle);
+        pop.myid = Projectiles.pWaveBeam;
+        if (Charger >= 60)
+        {
+            Damage = 8;
+            speed = 8;
+            sprite_index = sprWaveCharge;
+            _ProjectileLight(.2,c_white,c_purple,1);
+            pop.c = 1;
+        }
+        else
+        {
+            _ProjectileLight(.1,c_white,c_purple,.6);
+            pop.c = 0;
+        }
+        break;*/
 // --- Plasma Beam ---
     case Weapons.wPlasmaBeam:
         playerprojectile = 1;
@@ -96,8 +160,51 @@ switch (myid)
         with (instance_create(x,y,oDestroyAnim))
             { sprite_index = sprBeamFire2; image_speed = .5; }
         break;
-// --- Spazer Beam ---
+// --- Spazer Beam Proxy ---
     case Weapons.wSpazerBeam:
+        playerprojectile = 1;
+        hittype = 1; // Beam.
+        speed = 0;
+        image_alpha = 0;
+        sprite_index = sprSpazer;
+        Damage = 0;
+        alarm[0] = 3;
+        DiesOnContact = true;
+        var xx,yy;
+        xx = oPlayer.WeaponXPosition+lengthdir_x(20,direction)
+        yy = oPlayer.WeaponYPosition+lengthdir_y(20,direction)
+        with (instance_create(xx,yy,oProjectile))
+        {
+            t               =   0;
+            Charger         =   other.Charger;
+            direction       =   other.direction;
+            image_angle     =   direction;
+            scDefineProjectile(Projectiles.pSpazerBeam);
+            side = "left";
+        }
+        with (instance_create(xx,yy,oProjectile))
+        {
+            t = 0;
+            Charger = other.Charger;
+            direction = other.direction;
+            image_angle = direction;
+            scDefineProjectile(Projectiles.pSpazerBeam);
+            side = "mid";
+        }
+        with (instance_create(xx,yy,oProjectile))
+        {
+            t = 0;
+            Charger = other.Charger;
+            direction = other.direction;
+            image_angle = direction;
+            scDefineProjectile(Projectiles.pSpazerBeam);
+            side = "right";
+        }
+        with (instance_create(x,y,oDestroyAnim))
+            { sprite_index = sprBeamFire1; image_blend = c_lime; image_speed = .5; }
+        break;
+// --- Spazer Beam ---
+    case Projectiles.pSpazerBeam:
         playerprojectile = 1;
         hittype = 1; // Beam.
         direction = direction;
@@ -107,7 +214,7 @@ switch (myid)
         alarm[0] = 25;
         DiesOnContact = true;
         pop = instance_create(x,y,oParticle);
-        pop.myid = Weapons.wSpazerBeam;
+        pop.myid = Projectiles.pSpazerBeam;
         if (Charger >= 60)
         {
             Damage = 6;
@@ -204,12 +311,12 @@ switch (myid)
             { sprite_index = sprBeamFire1; image_blend = c_orange; image_speed = .5; }
         break;
 // --- Rupture Beam Particle---
-    case Projectiles.pRuptureBeamParticle:
+    case Projectiles.pRuptureBeam:
         playerprojectile = 1;
         hittype = 1; // Beam.
         speed = random_range(1,3);
         sprite_index = sprRuptureParticle;
-        Damage = 0.5;
+        Damage = 1;
         DiesOnContact = true;
         image_speed = .5;
         alarm[0] = 20;
@@ -288,6 +395,7 @@ switch (myid)
 // ====================================
 // ===== Player Secondary Weapons =====
 // ====================================
+
 // --- Missile Launcher ---
     case Weapons.wMissileLauncher:
         playerprojectile = 1;
@@ -315,6 +423,7 @@ switch (myid)
 // ================================
 // ===== Player Addon Weapons =====
 // ================================
+
 // --- Ball Bomb ---
     case Weapons.wBallBomb:
         playerprojectile = 1;

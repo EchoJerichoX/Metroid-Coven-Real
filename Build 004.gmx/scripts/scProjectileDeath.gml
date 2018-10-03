@@ -14,9 +14,9 @@ switch (myid)
             if (other.Charger < 60) _ProjectileLight(.1,c_white,c_yellow,.3);
             else _ProjectileLight(.4,c_white,c_yellow,.6);
         }
-    break;
+        break;
 // --- Wave Beam ---
-    case Projectiles.pWaveBeam:
+    case Weapons.wWaveBeam:
         sound_play(BeamImpact2);
         with (instance_create(x,y,oDestroyAnim))
         {
@@ -26,7 +26,7 @@ switch (myid)
             if (other.Charger < 60) _ProjectileLight(.1,c_white,c_purple,.3);
             else _ProjectileLight(.4,c_white,c_purple,.6);
         }
-    break;
+        break;
 // --- Plasma Beam ---
     case Weapons.wPlasmaBeam:
         sound_play(BeamImpact3);
@@ -38,9 +38,9 @@ switch (myid)
             if (other.Charger < 60) _ProjectileLight(.1,c_white,c_red,.3);
             else _ProjectileLight(.4,c_white,c_red,.6);
         }
-    break;
+        break;
 // --- Spazer Beam ---    
-    case Projectiles.pSpazerBeam:
+    case Weapons.wSpazerBeam:
         sound_play(BeamImpact1);
         with (instance_create(x,y,oDestroyAnim))
         {
@@ -50,7 +50,7 @@ switch (myid)
             if (other.Charger < 60) _ProjectileLight(.1,c_white,c_lime,.3);
             else _ProjectileLight(.4,c_white,c_lime,.6);
         }
-    break;
+        break;
 // --- Pulse Beam ---
     case Weapons.wPulseBeam:
         sound_play(BeamImpact1);
@@ -62,7 +62,7 @@ switch (myid)
             if (other.Charger < 60) _ProjectileLight(.1,c_white,make_color_rgb(0,255,255),.3);
             else _ProjectileLight(.4,c_white,make_color_rgb(0,255,255),.6);
         }
-    break;
+        break;
 // --- Ice Beam ---
     case Weapons.wIceBeam:
         sound_play(choose(IceBeamImpact1,IceBeamImpact2,IceBeamImpact3));
@@ -74,7 +74,7 @@ switch (myid)
             if (other.Charger < 60) _ProjectileLight(.1,c_white,make_color_rgb(94,174,255),.3);
             else _ProjectileLight(.4,c_white,make_color_rgb(94,174,255),.6);
         }
-    break;
+        break;
 // --- Rupture Beam ---
     case Weapons.wRuptureBeam:
         sound_play(BeamImpact4);
@@ -93,14 +93,14 @@ switch (myid)
                 with (instance_create(x,y,oProjectile))
                 {
                     direction = random(360);
-                    scDefineProjectile(Projectiles.pRuptureBeam);
+                    scDefineProjectile(Weapons.wRuptureBeam);
                     alarm[1] = 2;
                 }
             }
         }
-    break;
+        break;
 // --- Rupture Beam Particle ---
-    case Projectiles.pRuptureBeam:
+    case Projectiles.pRuptureBeamParticle:
         sound_play(BeamImpact1);
         with (instance_create(x,y,oDestroyAnim))
         {
@@ -111,7 +111,7 @@ switch (myid)
             image_yscale = .5;
             _ProjectileLight(.05,c_white,c_orange,.2);
         }
-    break;
+        break;
 // --- Phazon Beam ---
     case Projectiles.pPhazonBeam:
         sound_play(BeamImpact2);
@@ -128,7 +128,7 @@ switch (myid)
             }
             else _ProjectileLight(.4,c_white,c_blue,.6);
         }
-    break;
+        break;
 // ===== Player Secondary Weapons and Addons =====
 // --- Missile Launcher ---
     case Weapons.wMissileLauncher:
@@ -152,7 +152,7 @@ switch (myid)
             Damage = 0.5;
             _ProjectileLight(.2,c_white,c_orange,.6)
         }
-    break;
+        break;
     case Weapons.wSuperMissile:
         sound_play(SuperMissileExplosion);
         repeat (60)
@@ -174,7 +174,7 @@ switch (myid)
             Damage = 1;
             _ProjectileLight(.3,c_white,c_purple,.7)
         }
-    break;
+        break;
 // --- Ball Bomb ---
     case Weapons.wBallBomb:
         sound_play(BombExplosion);
@@ -187,7 +187,7 @@ switch (myid)
             _ProjectileLight(.2,c_white,make_color_rgb(94,174,255),.4);
             if (instance_exists(oPlayer)) oPlayer.ExistingBombs -= 1;
         }
-    break;
+        break;
     
 // ===== Enemy Beams =====
 // --- Turret Bolt ---
@@ -200,5 +200,5 @@ switch (myid)
             image_speed = .25;
             _ProjectileLight(.4,c_white,c_red,.6);
         }
-    break;
+        break;
 }

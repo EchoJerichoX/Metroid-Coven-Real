@@ -4,13 +4,28 @@
 
 enum Weapons 
 {
-    wPowerBeam, wWaveBeam, wPlasmaBeam, wSpazerBeam, wPulseBeam, wIceBeam, wRuptureBeam, wPhazonBeam, wRuptureBeamTrail,
-    wMissileLauncher, wSuperMissile, wDiffuser,
-    wBallBomb, wPowerBomb 
+    // Note: Nearly all of these, with the exception of the Rupture Beam particles, also
+    //   serve as the enum for the projectile created when the weapon is used.
+    // - Player Beams -
+    wPowerBeam,
+    wWaveBeam,
+    wPlasmaBeam,
+    wSpazerBeam,
+    wPulseBeam,
+    wIceBeam,
+    wRuptureBeam,
+    wPhazonBeam,
+    // - Player Secondary Weapons -
+    wMissileLauncher,
+    wSuperMissile,
+    wDiffuser,
+    // - Player Addons -
+    wBallBomb,
+    wPowerBomb
 };
 enum Projectiles
 {
-    pPowerBeam, pWaveBeam = 10000, pPlasmaBeam, pSpazerBeam = 10001, pPulseBeam, pIceBeam, pRuptureBeam = 10002, pPhazonBeam,
+    pRuptureBeamParticle, pPhazonBeam,
     pTurret
 };
 enum Enemies

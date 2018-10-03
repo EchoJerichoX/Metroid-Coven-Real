@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>myid = -1;
-side = 0;
+            <string>myid = -1; // Engine ID set on-demand. Throws an error if not defined.
+side = 0; // Used only for Spazer Beam.
 age = 0;
 fadeout = 0;
 impacted = 0;
@@ -153,7 +153,7 @@ if (DiesOnContact)
             <kind>1</kind>
             <string>switch (myid)
 {
-    case Projectiles.pWaveBeam:
+    case Weapons.wWaveBeam:
         trail = instance_create(x,y,oEffect);
         if (Charger &gt; 0) trail.sprite_index = sprWaveChargeTrail;
         else trail.sprite_index = sprWaveTrail;
@@ -275,22 +275,23 @@ scProjectileStep();
 //   run this script to explode on the player.
 switch (myid)
 {
+    // Non-ammo-requiring player weapon.
     case Weapons.wPowerBeam:
     case Weapons.wWaveBeam:
-    case Projectiles.pWaveBeam:
     case Weapons.wPlasmaBeam:
     case Weapons.wSpazerBeam:
-    case Projectiles.pSpazerBeam:
+    case Weapons.wSpazerBeam:
     case Weapons.wPulseBeam:
     case Weapons.wIceBeam:
     case Weapons.wRuptureBeam:
-    case Projectiles.pRuptureBeam:
     case Weapons.wPhazonBeam:
-    case Projectiles.pPhazonBeam:
+    // Ammo-requiring player weapon.
     case Weapons.wMissileLauncher:
     case Weapons.wSuperMissile:
-    case Weapons.wBallBomb:
     case Weapons.wPowerBomb:
+    // Miscellaneous player weapon.
+    case Projectiles.pPhazonBeam:
+    case Weapons.wBallBomb:
         exit;
         break;
 }

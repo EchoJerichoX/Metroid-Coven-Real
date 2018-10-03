@@ -566,10 +566,10 @@
       <script>scripts\scPlayerDeath.gml</script>
     </scripts>
     <scripts name="Projectile">
+      <script>scripts\scFireProjectile.gml</script>
       <script>scripts\scDefineProjectile.gml</script>
       <script>scripts\scProjectileStep.gml</script>
       <script>scripts\scProjectileDeath.gml</script>
-      <script>scripts\scFireProjectile.gml</script>
       <script>scripts\_ProjectileLight.gml</script>
     </scripts>
     <scripts name="Rooms and Transitions">

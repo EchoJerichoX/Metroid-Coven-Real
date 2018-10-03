@@ -19,7 +19,7 @@ switch (myid)
         trail.flex = 1;
         break;
 // --- Wave Beam ---
-    case Projectiles.pWaveBeam:
+    case Weapons.wWaveBeam:
         // Changing "wavewidth" affects the spread of the two projectiles.
         // Changing "wavespeed" affects how quickly the two projectiles move along their curve width-wise.
         var wavewidth,wavespeed;
@@ -27,7 +27,7 @@ switch (myid)
             { wavewidth = 16; wavespeed = 18; }
         else
             { wavewidth = 12; wavespeed = 14; }
-        if SwingPositive=true
+        if (SwingPositive)
         {
             x -= lengthdir_x(wavewidth*sin(degtorad(t)),direction+90); 
             y -= lengthdir_y(wavewidth*sin(degtorad(t)),direction+90); 
@@ -63,10 +63,10 @@ switch (myid)
         tail.image_speed = 1;
         break;
 // --- Spazer Beam ---
-    case Projectiles.pSpazerBeam:
+    case Weapons.wSpazerBeam:
         if (Charger < 60) and (speed < 9) speed += .5;
         if (Charger >= 60) and (speed < 13) speed += .75;
-        if (age > 8) // After this number of steps, stop spreading outside projectiles.
+        if (age > 8) // After this number of steps, stop spreading outside projectiles, start leaving trails.
         {
             trail = instance_create(x,y,oEffect);
             trail.sprite_index = sprite_index;
@@ -80,14 +80,14 @@ switch (myid)
         {
             switch (side)
             {
-                case "left":
+                case 0: // Left.
                     x += 2*cos(degtorad(90+direction));
                     y -= 2*sin(degtorad(90+direction));
-                break;
-                case "right":
+                    break;
+                case 2: // Right.
                     x -= 2*cos(degtorad(90+direction));
                     y += 2*sin(degtorad(90+direction));
-                break;
+                    break;
             }
         }
         break;
@@ -116,7 +116,7 @@ switch (myid)
         break;
 // --- Rupture Beam Particle ---
 // Also see oProjectile object for trail information.
-    case Projectiles.pRuptureBeam:
+    case Projectiles.pRuptureBeamParticle:
         if (instance_exists(oActor)) then
         {
            var tar;
