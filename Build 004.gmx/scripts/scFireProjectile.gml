@@ -2,8 +2,8 @@
 // Get data about the projectile, and create it.
 // argument0 = Aiming direction of the player when firing.
 // argument1 = WeaponProjectile. Defined by enums in scDefineWeapon.
-var xx = WeaponXPosition+lengthdir_x(12,argument0); // Determine where we spawn the projectile from,
-var yy = WeaponYPosition+lengthdir_y(12,argument0); //   in relation to the arm cannon.
+var xx = WeaponXPosition+lengthdir_x(13,argument0); // Determine where we spawn the projectile from,
+var yy = WeaponYPosition+lengthdir_y(13,argument0); //   in relation to the arm cannon.
 if (Charger >= 60) Heat += Heating*4; // Increase heat if using the Plasma Beam.
 else Heat += Heating; // Increase heat by less if the shot is not from the Charge Beam.
 
@@ -20,10 +20,9 @@ if (HoldingWeaponId = Weapons.wWaveBeam) // Specific behavior for Wave Beam.
             scDefineProjectile(argument1);
             t = 0;
             SwingPositive = i;
-            alarm[1] = 2;
         }
     }
-    with (instance_create(x,y,oDestroyAnim))
+    with (instance_create(xx,yy,oDestroyAnim))
         { sprite_index = sprBeamFire1; image_blend = c_purple; image_speed = .5; }
 }
 else if (HoldingWeaponId = Weapons.wSpazerBeam) // Specific behavior for Spazer Beam.
@@ -40,7 +39,7 @@ else if (HoldingWeaponId = Weapons.wSpazerBeam) // Specific behavior for Spazer 
             side = i; // 0 = left, 1 = middle, 2 = right projectile.
         }
     }
-    with (instance_create(x,y,oDestroyAnim))
+    with (instance_create(xx,yy,oDestroyAnim))
         { sprite_index = sprBeamFire1; image_blend = c_lime; image_speed = .5; }
 }
 else with (instance_create(xx,yy,oProjectile)) // Behavior for all other projectiles.

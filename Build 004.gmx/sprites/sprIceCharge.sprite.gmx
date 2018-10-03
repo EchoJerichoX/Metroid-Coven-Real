@@ -21,6 +21,5 @@
   <height>7</height>
   <frames>
     <frame index="0">images\sprIceCharge_0.png</frame>
-    <frame index="1">images\sprIceCharge_1.png</frame>
   </frames>
 </sprite>

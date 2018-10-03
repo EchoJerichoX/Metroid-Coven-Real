@@ -14,14 +14,14 @@ switch (myid)
         playerprojectile = 1; // Player-owned projectile.
         hittype = 1; // Beam.
         DiesOnContact = true; // Destroy the instance when it hits something.
-        Damage = 1; // Damage dealt to enemies/objects on contact.
+        Damage = 1; // Damage dealt to enemies and applicable obstructions.
         var lightalpha = 0.1;
         var lightradius = 0.6;
         var charged = 0; // Tell the particle object that the player fired
                          //   using the Charge Beam.
         var sprite = sprPower;
         // - Charge Beam variance -
-        if (Charger >= 60) // If the player's weapon is sufficiently charged.
+        if (Charger >= 60) // If the player's weapon is sufficiently charged, make these changes.
         {
             sprite = sprPowerCharge;
             Damage = 5;
@@ -29,7 +29,7 @@ switch (myid)
             lightradius = 1;
             charged = 1;
         }
-        // - Movement and effects -
+        // - Movement, graphics, and effects -
         sprite_index = sprite;
         speed = 10;
         pop = instance_create(x,y,oParticle); // Create a small particle burst.
@@ -43,178 +43,198 @@ switch (myid)
         break;
 // --- Wave Beam ---
     case Weapons.wWaveBeam:
+        // - General Initialization -
         playerprojectile = 1;
         hittype = 1; // Beam.
-        speed = 6;
-        sprite_index = sprWave;
-        Damage = 5;
-        alarm[0] = 30+random(5);
         DiesOnContact = true;
-        pop = instance_create(x,y,oParticle);
-        pop.myid = myid;
+        Damage = 1;
+        var lightalpha = 0.1;
+        var lightradius = 0.6;
+        var charged = 0;
+        var sprite = sprWave;
+        // - Charge Beam Variance -
         if (Charger >= 60)
         {
-            Damage = 8;
-            speed = 8;
-            sprite_index = sprWaveCharge;
-            _ProjectileLight(.2,c_white,c_purple,1);
-            pop.c = 1;
+            sprite = sprWaveCharge;
+            Damage = 4;
+            lightalpha = 0.2;
+            lightradius = 1;
+            charged = 1;
         }
-        else
-        {
-            _ProjectileLight(.1,c_white,c_purple,.6);
-            pop.c = 0;
-        }
+        // - Movement, graphics, and effects -
+        sprite_index = sprite;
+        speed = 6;
+        pop = instance_create(x,y,oParticle);
+        pop.myid = myid;
+        pop.c = charged;
+        _ProjectileLight(lightalpha,c_white,c_purple,lightradius);
+        alarm[0] = 25+random(5);
+        alarm[1] = 2; // For creating trails more slowly.
         break;
 // --- Plasma Beam ---
     case Weapons.wPlasmaBeam:
+        // - General Initialization -
         playerprojectile = 1;
         hittype = 1; // Beam.
-        direction = direction+random_range(oPlayer.WeaponAccuracy,oPlayer.WeaponAccuracy*-1);
-        speed = 6;
-        sprite_index = sprPlasma;
+        DiesOnContact = true;
         Damage = 7;
-        pop = instance_create(x,y,oParticle);
-        pop.myid = Weapons.wPlasmaBeam;
+        var lightalpha = 0.15;
+        var lightradius = 0.6;
+        var charged = 0;
+        var sprite = sprPlasma;
+        // - Charge Beam Variance -
         if (Charger >= 60)
         {
+            sprite = sprPlasmaCharge;
             Damage = 13;
-            speed = 11;
-            sound_play(BeamPlasma);
-            sprite_index = sprPlasmaCharge;
-            _ProjectileLight(.3,c_white,c_orange,1);
-            pop.c = 1;
+            lightalpha = 0.3;
+            lightradius = 1;
+            charged = 1;
         }
-        else
-        {
-            sound_play(BeamPlasma);
-            _ProjectileLight(.15,c_white,c_orange,.6);
-            pop.c = 0;
-        }
+        // - Movement, graphics, and effects -
+        sprite_index = sprite;
+        speed = 6;
+        pop = instance_create(x,y,oParticle);
+        pop.myid = myid;
+        pop.c = charged;
+        _ProjectileLight(lightalpha,c_white,c_orange,lightradius);
+        sound_play(BeamPlasma);
         alarm[0] = 35+random(5);
-        DiesOnContact = true;
+        image_speed = .25;
         with (instance_create(x,y,oDestroyAnim))
             { sprite_index = sprBeamFire2; image_speed = .5; }
         break;
 // --- Spazer Beam ---
     case Weapons.wSpazerBeam:
+        // - General Initialization -
         playerprojectile = 1;
         hittype = 1; // Beam.
-        direction = direction;
-        speed = 2;
-        sprite_index = sprSpazer;
-        Damage = 3;
-        alarm[0] = 25;
         DiesOnContact = true;
-        pop = instance_create(x,y,oParticle);
-        pop.myid = Weapons.wSpazerBeam;
+        Damage = 1;
+        var lightalpha = 0.1;
+        var lightradius = 0.6;
+        var charged = 0;
+        var sprite = sprSpazer;
+        // - Charge Beam Variance -
         if (Charger >= 60)
         {
-            Damage = 6;
-            speed = 3;
-            sound_play(BeamSpazer);
-            sprite_index = sprSpazerCharge;
-            _ProjectileLight(.2,c_white,c_lime,1);
-            pop.c = 1;
+            sprite = sprSpazerCharge;
+            Damage = 3;
+            lightalpha = 0.2;
+            lightradius = 1;
+            charged = 1;
         }
-        else
-        {
-            sound_play(BeamSpazer);
-            _ProjectileLight(.1,c_white,c_lime,.6);
-            pop.c = 0;
-        }
+        // - Movement, graphics, and effects -
+        sprite_index = sprite;
+        speed = 2;
+        pop = instance_create(x,y,oParticle);
+        pop.myid = myid;
+        pop.c = charged;
+        _ProjectileLight(lightalpha,c_white,c_lime,lightradius);
+        alarm[0] = 25;
+        with (instance_create(x,y,oDestroyAnim))
+            { sprite_index = sprBeamFire2; image_speed = .5; }
         break;
 // --- Pulse Beam ---
     case Weapons.wPulseBeam:
+        // - General Initialization -
         playerprojectile = 1;
         hittype = 1; // Beam.
-        direction = direction+random_range(oPlayer.WeaponAccuracy,oPlayer.WeaponAccuracy*-1);
-        speed = 11;
-        sprite_index = sprPulse;
-        Damage = 3;
         DiesOnContact = true;
+        Damage = 1;
+        // - Movement, graphics, and effects -
+        sprite_index = sprPulse;
+        speed = 11;
+        pop = instance_create(x,y,oParticle);
+        pop.myid = myid;
+        _ProjectileLight(0.1,c_white,make_color_rgb(0,255,255),0.6);
         if (sound_isplaying(BeamPulse)) sound_stop(BeamPulse);
         sound_play(BeamPulse);
-        _ProjectileLight(.1,c_white,make_color_rgb(0,255,255),.6);
-        pop = instance_create(x,y,oParticle);
-        pop.myid = Weapons.wPulseBeam;
-        pop.c = 0;
         alarm[0] = 15+random(5);
         with (instance_create(x,y,oDestroyAnim))
             { sprite_index = sprBeamFire1; image_blend = make_color_rgb(0,255,255); image_speed = .5; }
         break;
 // --- Ice Beam ---
     case Weapons.wIceBeam:
+        // - General Initialization -
         playerprojectile = 1;
         hittype = 1; // Beam.
-        direction = direction+random_range(oPlayer.WeaponAccuracy,oPlayer.WeaponAccuracy*-1);
-        speed = 7;
-        sprite_index = sprIce;
-        Damage = 3;
         DiesOnContact = true;
-        pop = instance_create(x,y,oParticle);
-        pop.myid = Weapons.wIceBeam;
+        Damage = 2;
+        var lightalpha = 0.15;
+        var lightradius = 0.1;
+        var charged = 0;
+        var sprite = sprIce;
+        // - Charge Beam Variance -
         if (Charger >= 60)
         {
-            Damage = 8;
-            sound_play(BeamIce);
-            sprite_index = sprIceCharge;
-            _ProjectileLight(.2,c_white,make_color_rgb(94,174,255),1);
-            pop.c = 1;
+            sprite = sprIceCharge;
+            Damage = 6;
+            lightalpha = 0.2;
+            lightradius = 1;
+            charged = 1;
         }
-        else
-        {
-            sound_play(BeamIce);
-            _ProjectileLight(.1,c_white,make_color_rgb(94,174,255),.6);
-            pop.c = 0;
-        }
-        if (Charger < 60) alarm[0] = 25+random(5);
-        else alarm[0] = 35+random(5);
+        // - Movement, graphics, and effects -
+        sprite_index = sprite;
+        speed = 7;
+        pop = instance_create(x,y,oParticle);
+        pop.myid = myid;
+        pop.c = charged;
+        _ProjectileLight(lightalpha,c_white,make_color_rgb(94,174,255),lightradius);
+        sound_play(BeamIce);
+        alarm[0] = 30+random(5);
         alarm[1] = 2;
+        image_speed = .25;
         with (instance_create(x,y,oDestroyAnim))
             { sprite_index = sprBeamFire1; image_blend = make_color_rgb(94,174,255); image_speed = .5; }
         break;
 // --- Rupture Beam ---
     case Weapons.wRuptureBeam:
+        // - General Initialization -
         playerprojectile = 1;
         hittype = 1; // Beam.
-        direction = direction+random_range(oPlayer.WeaponAccuracy,oPlayer.WeaponAccuracy*-1);
-        speed = 10;
-        sprite_index = sprRupture;
-        Damage = 3;
         DiesOnContact = true;
-        pop = instance_create(x,y,oParticle);
-        pop.myid = Weapons.wRuptureBeam;
+        Damage = 2;
+        var lightalpha = 0.15;
+        var lightradius = 0.1;
+        var charged = 0;
+        var sprite = sprRupture;
+        // - Charge Beam Variance -
         if (Charger >= 60)
         {
-            Damage = 7;
-            sound_play(BeamRupture);
-            sprite_index = sprRuptureCharge;
-            _ProjectileLight(.2,c_white,c_orange,1);
-            pop.c = 1;
+            sprite = sprRuptureCharge;
+            Damage = 6;
+            lightalpha = 0.2;
+            lightradius = 1;
+            charged = 1;
         }
-        else
-        {
-            sound_play(BeamRupture);
-            _ProjectileLight(.1,c_white,c_orange,.6)
-            pop.c = 0;
-        }
+        // - Movement, graphics, and effects -
+        sprite_index = sprite;
+        speed = 10;
+        pop = instance_create(x,y,oParticle);
+        pop.myid = myid;
+        pop.c = charged;
+        _ProjectileLight(lightalpha,c_white,c_orange,lightradius);
+        sound_play(BeamRupture);
         alarm[0] = 25+random(5);
         with (instance_create(x,y,oDestroyAnim))
             { sprite_index = sprBeamFire1; image_blend = c_orange; image_speed = .5; }
         break;
 // --- Rupture Beam Particle---
     case Projectiles.pRuptureBeamParticle:
+        // - General Initialization -
         playerprojectile = 1;
         hittype = 1; // Beam.
-        speed = random_range(1,3);
-        sprite_index = sprRuptureParticle;
-        Damage = 0.5;
         DiesOnContact = true;
-        image_speed = .5;
+        Damage = 0.5;
+        // - Movement, graphics, and effects -
+        sprite_index = sprRuptureParticle;
+        speed = random_range(1,3);
+        direction = random(360);
+        sound_play(BeamIce);
         alarm[0] = 20;
         alarm[1] = 2;
-        direction = random(360);
+        image_speed = .5;
         break;
 // --- Phazon Beam Proxy ---
     case Weapons.wPhazonBeam:
@@ -229,7 +249,7 @@ switch (myid)
         xx = oPlayer.WeaponXPosition+lengthdir_x(20,direction);
         yy = oPlayer.WeaponYPosition+lengthdir_y(20,direction);
         pop = instance_create(x,y,oParticle);
-        pop.myid = Weapons.wPhazonBeam;
+        pop.myid = myid;
         if (Charger < 60)
         {
             with (instance_create(xx,yy,oProjectile))
@@ -245,8 +265,7 @@ switch (myid)
         }
         else
         {
-            var i;
-            for (i = direction-20; i < direction+21; i+=10)
+            for (var i = direction-15; i < direction+16; i+=15)
             {
                 with (instance_create(xx,yy,oProjectile))
                 {

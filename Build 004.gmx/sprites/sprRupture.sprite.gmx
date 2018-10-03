@@ -2,7 +2,7 @@
 <sprite>
   <type>0</type>
   <xorig>9</xorig>
-  <yorigin>3</yorigin>
+  <yorigin>2</yorigin>
   <colkind>2</colkind>
   <coltolerance>0</coltolerance>
   <sepmasks>0</sepmasks>
@@ -18,7 +18,7 @@
   </TextureGroups>
   <For3D>0</For3D>
   <width>18</width>
-  <height>7</height>
+  <height>5</height>
   <frames>
     <frame index="0">images\sprRupture_0.png</frame>
     <frame index="1">images\sprRupture_1.png</frame>

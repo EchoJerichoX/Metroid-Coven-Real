@@ -280,7 +280,6 @@ switch (myid)
     case Weapons.wWaveBeam:
     case Weapons.wPlasmaBeam:
     case Weapons.wSpazerBeam:
-    case Weapons.wSpazerBeam:
     case Weapons.wPulseBeam:
     case Weapons.wIceBeam:
     case Weapons.wRuptureBeam:

@@ -106,13 +106,13 @@ switch (myid)
 // The only event that handles this beam is alarm 1.
 // --- Rupture Beam ---
     case Weapons.wRuptureBeam:
-        tail = instance_create(x+lengthdir_x(random_range(-3,3),image_angle),y+lengthdir_y(random_range(-3,3),image_angle),oEffect);
-        tail.sprite_index = sprRuptureTrail;
-        tail.direction = direction-180;
-        tail.speed = random_range(1,2);
-        tail.startspeed = speed;
-        tail.image_alpha = other.image_alpha;
-        tail.image_speed = 0.5;
+        trail = instance_create(x+lengthdir_x(random_range(-3,3),image_angle),y+lengthdir_y(random_range(-3,3),image_angle),oEffect);
+        trail.sprite_index = sprRuptureTrail;
+        trail.direction = direction-180;
+        trail.speed = random_range(1,2);
+        trail.startspeed = speed;
+        trail.image_alpha = other.image_alpha;
+        trail.image_speed = 0.5;
         break;
 // --- Rupture Beam Particle ---
 // Also see oProjectile object for trail information.
