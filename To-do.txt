@@ -1,17 +1,10 @@
-pitch up wave beam sound
-reduce damage of nearly all beams
-
 scanner item telling you if there are items in a room
 
 power bomb ammo points only near places where power bombs are used
 
-turn up damage for turrets and spikes
+possibly remove the need for a transition room?: have the object slide across the screen by dynamically finding which transition object it needs to move to, and do the slide animation in the next room using that. This will remove the need of having to set eId.vox and eId.voy for special-sized rooms and locations.
+======
 
-rename scripts and fix calls to get rid of dumbass underscores and shit
+pitch up wave beam sound
 
-have zoomers stop during pauses and messages. turrets too.
-
-fix some rooms not transitioning correctly to cache rooms (transition object not centered and shit, 3 to 4)
-fix transition object not moving to the right place vertically (3 to 5) eid.voy?
-
-reduce ambient light around player (range, not brightness)
+clamp view movement speed, then gradually increase the clamp the longer the view is not at its destination
