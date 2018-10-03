@@ -33,8 +33,8 @@ impacted = 0;
 slave = noone;
 createeffect = 0;
 hittype = 0; // 1 = Beam. 2 = Missile. 3 = Super Missile. 4 = Ball Bomb. 5 = Power Bomb.
-/*if (instance_exists(oPlayer))
-    { if (collision_line(x,y,oPlayer.x,oPlayer.y,oDoorParent,true,true)) move_towards_point(instance_nearest(x,y,oDoorParent).x,instance_nearest(x,y,oDoorParent).y,speed); }
+inputspeed = -1; // Set in scDefineProjectile.
+trail = -1; // Prevents missing instance errors later on.
 </string>
           </argument>
         </arguments>
@@ -289,7 +289,6 @@ switch (myid)
     case Weapons.wSuperMissile:
     case Weapons.wPowerBomb:
     // Miscellaneous player weapon.
-    case Projectiles.pPhazonBeam:
     case Weapons.wBallBomb:
         exit;
         break;

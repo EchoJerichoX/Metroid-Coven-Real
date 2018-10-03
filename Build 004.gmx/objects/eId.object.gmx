@@ -25,8 +25,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///GameInit();
-GameInit();
+            <string>///scGameInit();
+scGameInit();
 </string>
           </argument>
         </arguments>
@@ -54,7 +54,7 @@ if (tutorialmessageshown = 0)
 {
     scan = 1;
     tutorialmessageshown = 1;
-    Pause();
+    scPause();
     fadeStage = 0;
     text = TutorialWelcomeMessage;
     alarm[0] = 5;
@@ -178,8 +178,8 @@ if (eId.aigrid != -1)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///RoomInit();
-RoomInit();
+            <string>///scRoomInit();
+scRoomInit();
 </string>
           </argument>
         </arguments>

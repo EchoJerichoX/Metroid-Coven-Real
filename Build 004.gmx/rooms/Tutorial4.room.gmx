@@ -88,6 +88,7 @@ vector_path_add(oVectorLine,Tutorial4Path2,0,0,0);</code>
     <instance objName="oSmallLightNS" x="392" y="88" name="inst_98B164F5" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightEW" x="88" y="296" name="inst_6D628A90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightEW" x="553" y="289" name="inst_BDF77C4F" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideS" x="320" y="432" name="inst_ACA51C9D" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="272" y="400" w="32" h="80" xo="208" yo="160" id="10032495" name="inst_8077A9F6" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

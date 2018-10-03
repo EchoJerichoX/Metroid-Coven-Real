@@ -29,7 +29,7 @@ switch (mouseover)
                     {
                         if (fadeStage = -1)
                         {
-                            Pause();
+                            scPause();
                             fadeStage = 0;
                             text = Start;
                             alarm[0] = 5;
@@ -42,7 +42,7 @@ switch (mouseover)
                     {
                         if (fadeStage = -1)
                         {
-                            Pause();
+                            scPause();
                             fadeStage = 0;
                             text = Exit;
                             alarm[0] = 5;

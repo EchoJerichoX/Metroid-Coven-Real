@@ -4,7 +4,7 @@
   <width>640</width>
   <height>480</height>
   <vsnap>8</vsnap>
-  <hsnap>8</hsnap>
+  <hsnap>4</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -61,8 +61,8 @@ vector_path_add(oVectorLine,Tutorial6Path3,0,0,0);</code>
     <instance objName="oSmallCrate" x="522" y="371" name="inst_8C65EACC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallCrate" x="496" y="371" name="inst_254FB2FC" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oLargeCrate" x="344" y="120" name="inst_6BD4B7AE" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="136" y="112" name="inst_962497CD" locked="0" code="scDefineItem(Items.iBallBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oItem" x="160" y="328" name="inst_1058656E" locked="0" code="scDefineItem(Items.iPlasmaBeam);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="136" y="112" name="inst_962497CD" locked="0" code="scDefineItem(Items.iBallBomb);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oItem" x="160" y="328" name="inst_1058656E" locked="0" code="scDefineItem(Items.iPlasmaBeam);" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesNS" x="400" y="328" name="inst_83EE01AA" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesNS" x="416" y="400" name="inst_A2ED2AC9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSpikesNS" x="296" y="312" name="inst_619FD3B9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -73,6 +73,9 @@ vector_path_add(oVectorLine,Tutorial6Path3,0,0,0);</code>
     <instance objName="oDomeLight" x="296" y="400" name="inst_26AA6CBD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightNS" x="328" y="88" name="inst_8095044D" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oSmallLightNS" x="160" y="392" name="inst_4639B97C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="128" y="200" name="inst_6263732C" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="344" y="248" name="inst_BF4CAD7E" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="252" y="344" name="inst_06993301" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="272" y="432" w="32" h="48" xo="208" yo="80" id="10033502" name="inst_C7F86B34" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

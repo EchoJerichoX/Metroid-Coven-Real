@@ -26,8 +26,7 @@ enum Weapons
 enum Projectiles
 {
     pRuptureBeamParticle = 20001,
-    pPhazonBeam = 20002,
-    pTurret = 20003
+    pTurret = 20002
 }
 enum Enemies
 {

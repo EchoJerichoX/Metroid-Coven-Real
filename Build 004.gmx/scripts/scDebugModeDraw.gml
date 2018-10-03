@@ -20,6 +20,13 @@ if (object_index = eId)
         draw_set_alpha(1);
     }
     
+    if (room = TransitionRoom)
+    {
+        draw_text(5,20,"tx:"); draw_text(40,20,tx);
+        draw_text(5,40,"ty:"); draw_text(40,40,ty);
+        draw_text(5,60,"vox:"); draw_text(40,60,vox);
+        draw_text(5,80,"voy:"); draw_text(40,80,voy);
+    }
     //draw_text(dxo,dyo-2,string_insert(string_format(instance_number(oParticle),3,0), "Parts: ",8));
     //draw_text(dxo,dyo-50,string_insert(string_format(oViewController.x,3,0), "VC X: ",7));
     //draw_text(dxo,dyo-34,string_insert(string_format(oViewController.y,3,3), "VC Y: ",7));

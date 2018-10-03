@@ -116,7 +116,7 @@ if (text != "No string assigned!") with (eId)
 {
     if (tutorialroom = 1) scan = 1;
     else scan = 0;
-    Pause();
+    scPause();
     fadeStage = 0;
     text = other.text;
     alarm[0] = 5;

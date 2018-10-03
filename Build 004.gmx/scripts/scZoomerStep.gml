@@ -1,3 +1,25 @@
+// Pause handling.
+if (eId.transitioning) or (eId.paused > 0) impaused = 1;
+else impaused = 0;
+if (impaused)
+{
+    if (!held)
+    {
+        held = 1;
+        inputspeed = path_speed;
+        path_speed = 0;
+        inputimspeed = ispeed;
+        ispeed = 0;
+    }
+    exit;
+}
+if (!impaused) and (held)
+{
+    path_speed = inputspeed;
+    ispeed = inputimspeed;
+    held = 0;
+}
+// All other behavior.
 switch (state)
 {
     case 0: // Set a path while idling.
@@ -90,3 +112,4 @@ if (!ignorevector)
     speed = 0;
 }
 image_angle = direction;
+image_speed = ispeed;

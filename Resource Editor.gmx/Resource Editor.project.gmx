@@ -18,6 +18,8 @@
     <sprite>sprites\sprite8</sprite>
     <sprite>sprites\sprite10</sprite>
     <sprite>sprites\sprite11</sprite>
+    <sprite>sprites\sprite12</sprite>
+    <sprite>sprites\sprite13</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

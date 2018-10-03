@@ -5,13 +5,13 @@ if (keyboard_check_pressed(vk_enter))
 or (keyboard_check_pressed(vk_return))
 {
     if (fadeStage = -1)
-        { Pause(); exit; }
+        { scPause(); exit; }
 }
 if (keyboard_check_pressed(vk_escape))
 {
     if (fadeStage = -1)
     {
-        Pause();
+        scPause();
         fadeStage = 0;
         text = Exit;
         alarm[0] = 5;
@@ -43,10 +43,10 @@ switch (fadeStage)
                 if (wait > 0) wait -= 1;
                 else
                 {
-                    if (eId.paused = .2) Pause();
+                    if (eId.paused = .2) scPause();
                     eId.pausedelay = 10;
                     fadeStage = -1;
-                    _ItemPauseAnimationFix();
+                    scItemPauseAnimationFix();
                     text = 0;
                     alpha1 = 0;
                     alpha2 = 0;
@@ -58,10 +58,10 @@ switch (fadeStage)
         if (alpha1 > 0) alpha1 -= 0.02;
         if (alpha1 <= 0)
         {
-            if (eId.paused = .2) Pause();
+            if (eId.paused = .2) scPause();
             eId.pausedelay = 10;
             fadeStage = -1;
-            _ItemPauseAnimationFix();
+            scItemPauseAnimationFix();
             text = 0;
             alpha1 = 0;
             alpha2 = 0;

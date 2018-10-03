@@ -34,8 +34,10 @@ switch (room) // Determine current room.
     case Tutorial3:
         if (other.trans = 1)
             { eId.destinationroom = Tutorial4; eId.vox = 320; }
-        if (other.trans = 2) eId.destinationroom = Tutorial2;
-        if (other.trans = 3) eId.destinationroom = Tutorial5;
+        if (other.trans = 2)
+            { eId.destinationroom = Tutorial2; eId.voy = 240; }
+        if (other.trans = 3)
+            { eId.destinationroom = Tutorial5; eId.voy = 352; }
         //if (other.trans = 4) eId.destinationroom = Tutorial;
         break;
     case Tutorial4:
@@ -45,7 +47,8 @@ switch (room) // Determine current room.
         //if (other.trans = 1) eId.destinationroom = Tutorial;
         if (other.trans = 2)
             { eId.destinationroom = Tutorial6; eId.vox = 320; }
-        if (other.trans = 3) eId.destinationroom = Tutorial3;
+        if (other.trans = 3)
+            { eId.destinationroom = Tutorial3; eId.voy = 128; }
         break;
     case Tutorial6:
         eId.destinationroom = Tutorial5;

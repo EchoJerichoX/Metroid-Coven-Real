@@ -423,7 +423,16 @@
   <scripts name="scripts">
     <scripts name="- Miscellaneous">
       <scripts name="Outsourced">
-        <scripts name="Vector Collisions">
+        <scripts name="Movement and Collision">
+          <script>scripts\move_forward.gml</script>
+          <script>scripts\move_forward_contact.gml</script>
+          <script>scripts\move_step_basic.gml</script>
+          <script>scripts\move_step_ext.gml</script>
+          <script>scripts\move_turn.gml</script>
+          <script>scripts\move_turn_helper.gml</script>
+          <script>scripts\place_free_cust.gml</script>
+        </scripts>
+        <scripts name="Vector Paths">
           <script>scripts\vector_world_add.gml</script>
           <script>scripts\vector_path_add.gml</script>
           <script>scripts\vector_line_add.gml</script>
@@ -438,13 +447,16 @@
           <script>scripts\vector_wallset.gml</script>
           <script>scripts\setwall.gml</script>
         </scripts>
+        <script>scripts\define_actor_path.gml</script>
+        <script>scripts\instance_nth_nearest.gml</script>
         <script>scripts\move_contact_object.gml</script>
         <script>scripts\point_in_view.gml</script>
         <script>scripts\point_in_view_ext.gml</script>
-        <script>scripts\instance_nth_nearest.gml</script>
-        <script>scripts\scDefineActorPath.gml</script>
       </scripts>
-      <script>scripts\Pause.gml</script>
+      <scripts name="Unused">
+        <script>scripts\scItemGlowLight.gml</script>
+      </scripts>
+      <script>scripts\scPause.gml</script>
       <script>scripts\scSpawnTestItems.gml</script>
       <script>scripts\scTitleObjectInit.gml</script>
       <script>scripts\scTitleObjectStep.gml</script>
@@ -476,7 +488,7 @@
       </scripts>
     </scripts>
     <scripts name="Engine Initialization">
-      <script>scripts\GameInit.gml</script>
+      <script>scripts\scGameInit.gml</script>
       <script>scripts\scEIDMasterList.gml</script>
       <script>scripts\scEIDStep.gml</script>
       <script>scripts\scEIDInput.gml</script>
@@ -529,23 +541,13 @@
         <script>scripts\scCheckAcquired.gml</script>
       </scripts>
       <scripts name="Item Behaviors">
-        <script>scripts\_ItemFlash.gml</script>
-        <script>scripts\_ItemPauseAnimation.gml</script>
-        <script>scripts\_ItemGlowLight.gml</script>
-        <script>scripts\_ItemPauseAnimationFix.gml</script>
+        <script>scripts\scItemFlash.gml</script>
+        <script>scripts\scItemPauseAnimation.gml</script>
+        <script>scripts\scItemPauseAnimationFix.gml</script>
       </scripts>
     </scripts>
     <scripts name="Loot System">
       <script>scripts\scDropLoot.gml</script>
-    </scripts>
-    <scripts name="Movement and Collision">
-      <script>scripts\move_forward.gml</script>
-      <script>scripts\move_forward_contact.gml</script>
-      <script>scripts\move_step_basic.gml</script>
-      <script>scripts\move_step_ext.gml</script>
-      <script>scripts\move_turn.gml</script>
-      <script>scripts\move_turn_helper.gml</script>
-      <script>scripts\place_free_cust.gml</script>
     </scripts>
     <scripts name="Player">
       <script>scripts\scPlayerCreate.gml</script>
@@ -570,10 +572,10 @@
       <script>scripts\scDefineProjectile.gml</script>
       <script>scripts\scProjectileStep.gml</script>
       <script>scripts\scProjectileDeath.gml</script>
-      <script>scripts\_ProjectileLight.gml</script>
+      <script>scripts\scProjectileLight.gml</script>
     </scripts>
     <scripts name="Rooms and Transitions">
-      <script>scripts\RoomInit.gml</script>
+      <script>scripts\scRoomInit.gml</script>
       <script>scripts\scEIDGetRegion.gml</script>
       <script>scripts\scTransGetLoc.gml</script>
       <script>scripts\scTransOut.gml</script>
@@ -591,8 +593,8 @@
         <script>scripts\scRegulateAmmo.gml</script>
         <script>scripts\scWeaponGetAmmo.gml</script>
         <script>scripts\scWeaponSetAmmo.gml</script>
-        <script>scripts\_RequiresAmmo.gml</script>
-        <script>scripts\_GetRequiresAmmo.gml</script>
+        <script>scripts\scRequiresAmmo.gml</script>
+        <script>scripts\scGetRequiresAmmo.gml</script>
         <script>scripts\scWeaponInitValues.gml</script>
       </scripts>
     </scripts>
@@ -719,6 +721,7 @@
       <room>rooms\Tutorial4</room>
       <room>rooms\Tutorial5</room>
       <room>rooms\Tutorial6</room>
+      <room>rooms\Tutorial7</room>
     </rooms>
     <rooms name="Barria">
       <room>rooms\BarriaLandingSite</room>

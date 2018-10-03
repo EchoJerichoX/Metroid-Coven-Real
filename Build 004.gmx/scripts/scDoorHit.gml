@@ -28,11 +28,14 @@ switch (argument1.myid)
         with (argument1) instance_destroy();
         break;
     case Doors.dRed:
-        if (hit != 2) exit;
-        if (object_index != oExplosion) with (argument1) en -= 1;
-        else exit;
-        if (argument1.en > 0)
-            { sound_play(DoorHit); argument1.damage = true; }
+        if (hit = 2)
+        {
+            if (object_index != oExplosion) with (argument1) en -= 1;
+            else exit;
+            if (argument1.en > 0)
+                { sound_play(DoorHit); argument1.damage = true; }
+        }
+        if (hit = 3) and (object_index != oExplosion) with (argument1) en -= 3;
         if (argument1.en <= 0)
         {
             scOpenNBDoor(1);

@@ -1,7 +1,10 @@
 // Initialization script for all projectiles.
-myid = argument0;
+myid = argument0; // Set engine ID in accordance with current player weapon.
 mask_index = sprProjectileMaskDoorChecker; // If the player is butted up against
                                            //   a door, open it.
+impaused = 0;
+for (var i = 0; i < 6; i++) c_alarm[i] = -1; // Build array to store alarm counts when pausing.
+alarmsheld = 0; // Tells the object if its alarm states are currently held.
 alarm[4] = 2; // Revert to the proper mask_index after it has moved few frames.
 switch (myid)
 {
@@ -35,7 +38,7 @@ switch (myid)
         pop = instance_create(x,y,oParticle); // Create a small particle burst.
         pop.myid = myid;                      // ^
         pop.c = charged;                      // ^
-        _ProjectileLight(lightalpha,c_white,c_yellow,lightradius); // Create the light that follows the projectile.
+        scProjectileLight(lightalpha,c_white,c_yellow,lightradius); // Create the light that follows the projectile.
         sound_play(BeamPower);
         alarm[0] = 20+random(5); // Time until the projectile starts fading out.
         with (instance_create(x,y,oDestroyAnim)) // Create a small explosion at the tip of the arm cannon.
@@ -67,7 +70,7 @@ switch (myid)
         pop = instance_create(x,y,oParticle);
         pop.myid = myid;
         pop.c = charged;
-        _ProjectileLight(lightalpha,c_white,c_purple,lightradius);
+        scProjectileLight(lightalpha,c_white,c_purple,lightradius);
         alarm[0] = 25+random(5);
         alarm[1] = 2; // For creating trails more slowly.
         break;
@@ -97,7 +100,7 @@ switch (myid)
         pop = instance_create(x,y,oParticle);
         pop.myid = myid;
         pop.c = charged;
-        _ProjectileLight(lightalpha,c_white,c_orange,lightradius);
+        scProjectileLight(lightalpha,c_white,c_orange,lightradius);
         sound_play(BeamPlasma);
         alarm[0] = 35+random(5);
         image_speed = .25;
@@ -130,10 +133,10 @@ switch (myid)
         pop = instance_create(x,y,oParticle);
         pop.myid = myid;
         pop.c = charged;
-        _ProjectileLight(lightalpha,c_white,c_lime,lightradius);
+        scProjectileLight(lightalpha,c_white,c_lime,lightradius);
         alarm[0] = 25;
-        with (instance_create(x,y,oDestroyAnim))
-            { sprite_index = sprBeamFire2; image_speed = .5; }
+        with (instance_create(x,y,oDestroyAnim)) // Create a small explosion at the tip of the arm cannon.
+            { sprite_index = sprBeamFire1; image_blend = c_lime; image_speed = .5; }
         break;
 // --- Pulse Beam ---
     case Weapons.wPulseBeam:
@@ -147,7 +150,7 @@ switch (myid)
         speed = 11;
         pop = instance_create(x,y,oParticle);
         pop.myid = myid;
-        _ProjectileLight(0.1,c_white,make_color_rgb(0,255,255),0.6);
+        scProjectileLight(0.1,c_white,make_color_rgb(0,255,255),0.6);
         if (sound_isplaying(BeamPulse)) sound_stop(BeamPulse);
         sound_play(BeamPulse);
         alarm[0] = 15+random(5);
@@ -162,7 +165,7 @@ switch (myid)
         DiesOnContact = true;
         Damage = 2;
         var lightalpha = 0.15;
-        var lightradius = 0.1;
+        var lightradius = 0.6;
         var charged = 0;
         var sprite = sprIce;
         // - Charge Beam Variance -
@@ -180,7 +183,7 @@ switch (myid)
         pop = instance_create(x,y,oParticle);
         pop.myid = myid;
         pop.c = charged;
-        _ProjectileLight(lightalpha,c_white,make_color_rgb(94,174,255),lightradius);
+        scProjectileLight(lightalpha,c_white,make_color_rgb(94,174,255),lightradius);
         sound_play(BeamIce);
         alarm[0] = 30+random(5);
         alarm[1] = 2;
@@ -195,8 +198,8 @@ switch (myid)
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 2;
-        var lightalpha = 0.15;
-        var lightradius = 0.1;
+        var lightalpha = 0.1;
+        var lightradius = 0.6;
         var charged = 0;
         var sprite = sprRupture;
         // - Charge Beam Variance -
@@ -214,7 +217,7 @@ switch (myid)
         pop = instance_create(x,y,oParticle);
         pop.myid = myid;
         pop.c = charged;
-        _ProjectileLight(lightalpha,c_white,c_orange,lightradius);
+        scProjectileLight(lightalpha,c_white,c_orange,lightradius);
         sound_play(BeamRupture);
         alarm[0] = 25+random(5);
         with (instance_create(x,y,oDestroyAnim))
@@ -236,74 +239,36 @@ switch (myid)
         alarm[1] = 2;
         image_speed = .5;
         break;
-// --- Phazon Beam Proxy ---
-    case Weapons.wPhazonBeam:
-        playerprojectile = 1;
-        hittype = 1; // Beam.
-        speed = 0;
-        image_alpha = 0;
-        sprite_index = sprPhazon;
-        Damage = 0;
-        alarm[0] = 3;
-        var xx,yy;
-        xx = oPlayer.WeaponXPosition+lengthdir_x(20,direction);
-        yy = oPlayer.WeaponYPosition+lengthdir_y(20,direction);
-        pop = instance_create(x,y,oParticle);
-        pop.myid = myid;
-        if (Charger < 60)
-        {
-            with (instance_create(xx,yy,oProjectile))
-            {
-                direction = oPlayer.WeaponAim+random_range(oPlayer.WeaponAccuracy,oPlayer.WeaponAccuracy*-1);
-                image_angle = direction;
-                Charger = other.Charger;
-                sound_play(BeamPhazon);
-                scDefineProjectile(Projectiles.pPhazonBeam);
-                alarm[0] = 20+random(5);
-            }
-            pop.c = 0;
-        }
-        else
-        {
-            for (var i = direction-15; i < direction+16; i+=15)
-            {
-                with (instance_create(xx,yy,oProjectile))
-                {
-                    direction = i;
-                    image_angle = direction;
-                    Charger = other.Charger;
-                    scDefineProjectile(Projectiles.pPhazonBeam);
-                    alarm[0] = 25+random(5);
-                }
-            }
-            pop.c = 1;
-        }
-        with (instance_create(x,y,oDestroyAnim))
-            { sprite_index = sprBeamFire1; image_blend = c_blue; image_speed = .5; }
-        break;
 // --- Phazon Beam ---
-    case Projectiles.pPhazonBeam:
+    case Weapons.wPhazonBeam:
+        // - General Initialization -
         playerprojectile = 1;
         hittype = 1; // Beam.
-        if (Charger < 60)
+        DiesOnContact = true;
+        Damage = 4;
+        var lightalpha = 0.1;
+        var lightradius = 0.1;
+        var charged = 0;
+        var sprite = sprPhazon;
+        speed = 8;
+        alarm[0] = 25+random(5);
+        // - Charge Beam Variance -
+        if (Charger >= 60)
         {
-            speed = 8;
-            sprite_index = sprPhazon;
-            Damage = 8;
-            DiesOnContact = true;
-            _ProjectileLight(.1,c_white,c_navy,.6)
-        }
-        else
-        {
-            sound_play(BeamPhazon);
+            sprite = sprPhazonCharge;
+            Damage = 14;
+            lightalpha = 0.2;
+            lightradius = 1;
+            charged = 1;
             speed = 12;
-            sprite_index = sprPhazonCharge;
-            Damage = 20;
-            DiesOnContact = true;
-            _ProjectileLight(.2,c_white,c_navy,1)
+            alarm[0] = 25+random(5);
         }
+        // - Movement, graphics, and effects -
+        sprite_index = sprite;
+        sound_play(BeamPhazon);
+        scProjectileLight(lightalpha,c_white,c_blue,lightradius);
         break;
-
+        
 // ====================================
 // ===== Player Secondary Weapons =====
 // ====================================
@@ -316,7 +281,7 @@ switch (myid)
         Damage = 8;
         DiesOnContact = true;
         sound_play(MissileFire);
-        _ProjectileLight(.1,c_white,c_orange,.6);
+        scProjectileLight(.1,c_white,c_orange,.6);
         alarm[0] = 200;
         break;
     case Weapons.wSuperMissile:
@@ -327,7 +292,7 @@ switch (myid)
         Damage = 20;
         DiesOnContact = true;
         sound_play(MissileFire);
-        _ProjectileLight(.2,c_white,make_color_rgb(196,121,196),1);
+        scProjectileLight(.2,c_white,make_color_rgb(196,121,196),1);
         alarm[0] = 200;
         break;
 
@@ -345,7 +310,7 @@ switch (myid)
         mask_index = sprite_index;
         DiesOnContact = false;
         sound_play(BombLay);
-        _ProjectileLight(.2,c_white,make_color_rgb(94,174,255),.4);
+        scProjectileLight(.2,c_white,make_color_rgb(94,174,255),.4);
         image_speed = .03;
         createeffect = 0;
         break;
@@ -360,7 +325,7 @@ switch (myid)
         mask_index = sprite_index;
         DiesOnContact = false;
         sound_play(BombLay);
-        _ProjectileLight(.2,c_white,c_red,.4);
+        scProjectileLight(.2,c_white,c_red,.4);
         image_speed = .03;
         createeffect = 0;
         break;
@@ -381,7 +346,7 @@ switch (myid)
         pop.myid = Projectiles.pTurret;
         pop.c = 0;
         sound_play(BeamPower);
-        _ProjectileLight(.1,c_white,c_red,.6)
+        scProjectileLight(.1,c_white,c_red,.6)
         alarm[0] = 20+random(5);
         with (instance_create(x,y,oDestroyAnim))
             { sprite_index = sprBeamFire1; image_blend = c_red; image_speed = .5; }
@@ -392,3 +357,5 @@ switch (myid)
 // =========================
     default: show_error("The projectile ID ("+string(myid)+") is not defined in the engine ID list.",true); break;
 }
+
+inputspeed = speed; // Grab the projectile speed for pausing interaction.

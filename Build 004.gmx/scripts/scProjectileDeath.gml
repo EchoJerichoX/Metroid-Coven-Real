@@ -11,8 +11,8 @@ switch (myid)
             sprite_index = sprBeamExplosion1;
             image_blend = c_yellow;
             image_speed = .25;
-            if (other.Charger < 60) _ProjectileLight(.1,c_white,c_yellow,.3);
-            else _ProjectileLight(.4,c_white,c_yellow,.6);
+            if (other.Charger < 60) scProjectileLight(.1,c_white,c_yellow,.3);
+            else scProjectileLight(.4,c_white,c_yellow,.6);
         }
         break;
 // --- Wave Beam ---
@@ -23,8 +23,8 @@ switch (myid)
             sprite_index = sprBeamExplosion1;
             image_blend = c_purple;
             image_speed = .25;
-            if (other.Charger < 60) _ProjectileLight(.1,c_white,c_purple,.3);
-            else _ProjectileLight(.4,c_white,c_purple,.6);
+            if (other.Charger < 60) scProjectileLight(.1,c_white,c_purple,.3);
+            else scProjectileLight(.4,c_white,c_purple,.6);
         }
         break;
 // --- Plasma Beam ---
@@ -35,8 +35,8 @@ switch (myid)
             sprite_index = sprPlasmaExplosion;
             image_speed = .5;
             image_alpha = 1;
-            if (other.Charger < 60) _ProjectileLight(.1,c_white,c_red,.3);
-            else _ProjectileLight(.4,c_white,c_red,.6);
+            if (other.Charger < 60) scProjectileLight(.1,c_white,c_red,.3);
+            else scProjectileLight(.4,c_white,c_red,.6);
         }
         break;
 // --- Spazer Beam ---    
@@ -47,8 +47,8 @@ switch (myid)
             sprite_index = sprBeamExplosion1;
             image_blend = c_lime;
             image_speed = .25;
-            if (other.Charger < 60) _ProjectileLight(.1,c_white,c_lime,.3);
-            else _ProjectileLight(.4,c_white,c_lime,.6);
+            if (other.Charger < 60) scProjectileLight(.1,c_white,c_lime,.3);
+            else scProjectileLight(.4,c_white,c_lime,.6);
         }
         break;
 // --- Pulse Beam ---
@@ -59,8 +59,8 @@ switch (myid)
             sprite_index = sprBeamExplosion1;
             image_blend = make_color_rgb(0,255,255);
             image_speed = .25;
-            if (other.Charger < 60) _ProjectileLight(.1,c_white,make_color_rgb(0,255,255),.3);
-            else _ProjectileLight(.4,c_white,make_color_rgb(0,255,255),.6);
+            if (other.Charger < 60) scProjectileLight(.1,c_white,make_color_rgb(0,255,255),.3);
+            else scProjectileLight(.4,c_white,make_color_rgb(0,255,255),.6);
         }
         break;
 // --- Ice Beam ---
@@ -71,8 +71,8 @@ switch (myid)
             sprite_index = sprBeamExplosion1;
             image_blend = make_color_rgb(94,174,255);
             image_speed = .25;
-            if (other.Charger < 60) _ProjectileLight(.1,c_white,make_color_rgb(94,174,255),.3);
-            else _ProjectileLight(.4,c_white,make_color_rgb(94,174,255),.6);
+            if (other.Charger < 60) scProjectileLight(.1,c_white,make_color_rgb(94,174,255),.3);
+            else scProjectileLight(.4,c_white,make_color_rgb(94,174,255),.6);
         }
         break;
 // --- Rupture Beam ---
@@ -85,15 +85,15 @@ switch (myid)
             image_speed = .25;
             var PartAmount;
             if (other.Charger < 60)
-                { _ProjectileLight(.1,c_white,c_orange,.3); PartAmount = 6; }
+                { scProjectileLight(.1,c_white,c_orange,.3); PartAmount = 6; }
             else
-                { _ProjectileLight(.4,c_white,c_orange,.6); PartAmount = 18; }
+                { scProjectileLight(.4,c_white,c_orange,.6); PartAmount = 18; }
             repeat (PartAmount)
             {
                 with (instance_create(x,y,oProjectile))
                 {
                     direction = random(360);
-                    scDefineProjectile(Weapons.wRuptureBeam);
+                    scDefineProjectile(Projectiles.pRuptureBeamParticle);
                     alarm[1] = 2;
                 }
             }
@@ -109,11 +109,11 @@ switch (myid)
             image_speed = .25;
             image_xscale = .5;
             image_yscale = .5;
-            _ProjectileLight(.05,c_white,c_orange,.2);
+            scProjectileLight(.05,c_white,c_orange,.2);
         }
         break;
 // --- Phazon Beam ---
-    case Projectiles.pPhazonBeam:
+    case Weapons.wPhazonBeam:
         sound_play(BeamImpact2);
         with (instance_create(x,y,oDestroyAnim))
         {
@@ -124,9 +124,9 @@ switch (myid)
             {
                 image_xscale = 0.7;
                 image_yscale = 0.7;
-                _ProjectileLight(.1,c_white,c_blue,.3);
+                scProjectileLight(.1,c_white,c_blue,.3);
             }
-            else _ProjectileLight(.4,c_white,c_blue,.6);
+            else scProjectileLight(.4,c_white,c_blue,.6);
         }
         break;
 // ===== Player Secondary Weapons and Addons =====
@@ -150,7 +150,7 @@ switch (myid)
             sprite_index = sprMissileExplosion;
             image_speed = .25;
             Damage = 0.5;
-            _ProjectileLight(.2,c_white,c_orange,.6)
+            scProjectileLight(.2,c_white,c_orange,.6)
         }
         break;
     case Weapons.wSuperMissile:
@@ -172,7 +172,7 @@ switch (myid)
             sprite_index = sprSuperMissileExplosion;
             image_speed = .25;
             Damage = 1;
-            _ProjectileLight(.3,c_white,c_purple,.7)
+            scProjectileLight(.3,c_white,c_purple,.7)
         }
         break;
 // --- Ball Bomb ---
@@ -184,7 +184,7 @@ switch (myid)
             sprite_index = sprBallBombExplosion;
             image_speed = .5;
             Damage = 6;
-            _ProjectileLight(.2,c_white,make_color_rgb(94,174,255),.4);
+            scProjectileLight(.2,c_white,make_color_rgb(94,174,255),.4);
             if (instance_exists(oPlayer)) oPlayer.ExistingBombs -= 1;
         }
         break;
@@ -198,7 +198,7 @@ switch (myid)
             sprite_index = sprBeamExplosion1;
             image_blend = c_red;
             image_speed = .25;
-            _ProjectileLight(.4,c_white,c_red,.6);
+            scProjectileLight(.4,c_white,c_red,.6);
         }
         break;
 }

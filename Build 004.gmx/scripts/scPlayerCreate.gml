@@ -54,6 +54,8 @@ CurrentUnmorphedSecondary = Weapons.wMissileLauncher; // The current secondary w
 CurrentMorphedSecondary = Weapons.wPowerBomb; // The current secondary weapon in Morph Ball mode.
                                               // Currently only the Power Bomb can be this var.
 Cannon = 0; // Sets the current subimage for the arm cannon sprite.
+CannonOffset = 13; // Sets the offset for projectile/effect creation in relation to the tip of
+                   //   the arm cannon sprite.
 PreviousWeapon = 0; // Previous selected weapon. Simply stores so we can switch back to it when
                     //   unmorphing.
 HoldingWeaponId = CurrentPrimary; // The currently held weapon (primary or secondary, and the eId).

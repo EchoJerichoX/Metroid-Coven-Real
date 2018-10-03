@@ -1,2 +1,2 @@
-// Sets ammo requirement
+// Sets ammo requirement.
 RequiresAmmo[HoldingWeaponId] = argument0;

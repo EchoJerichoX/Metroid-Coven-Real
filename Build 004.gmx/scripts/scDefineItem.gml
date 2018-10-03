@@ -248,7 +248,6 @@ switch (myid)
         StepSpeed       = 0;
         Name = "TEMPLATE";
 }
-//_ItemGlowLight();
 image_single = AnimationStart;
 depth = 6;
 if (StepSpeed > 0) alarm[0] = StepSpeed; // Delayed "step" event.

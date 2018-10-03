@@ -1,4 +1,8 @@
-// _ItemFlash(maxbrightness,flashspeed);
+// Visual blinking effect for obtainable items.
+// argument0 = maximum brightness.
+// argument1 = flashing rate.
+
+// scItemFlash(maxbrightness,flashspeed);
 
 if (eId.fadeStage > -1) or (eId.paused > 0) exit; // If a message is on-screen, stop doing anything.
 

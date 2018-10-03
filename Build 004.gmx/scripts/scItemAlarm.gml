@@ -23,7 +23,7 @@ switch (myid)
     case Items.iMissileExpansion:
     case Items.iSuperMissileExpansion:
     case Items.iPowerBombExpansion:
-        _ItemFlash(0.5,0.1);
+        scItemFlash(0.5,0.1);
         alarm[0] = StepSpeed;
         exit;
         break;
@@ -32,20 +32,20 @@ switch (myid)
     case Items.aSSuperMissileAmmo:
     case Items.aLSuperMissileAmmo:
     case Items.aPowerBombAmmo:
-        _ItemFlash(0.75,0.15);
+        scItemFlash(0.75,0.15);
         alarm[0] = StepSpeed;
         exit;
         break;
 // --- Items with unique animations ---
     case Items.iMorphBall:
         if (eId.fadeStage > -1) or (eId.paused > 0) exit; // If a message is on-screen, stop doing anything.
-        _ItemPauseAnimation();
+        scItemPauseAnimation();
         break;
 // --- Items with both animations ---    
     case Items.iBallBomb:
         if (eId.fadeStage > -1) or (eId.paused > 0) exit; // If a message is on-screen, stop doing anything.
-        _ItemFlash(0.5,0.1);
-        _ItemPauseAnimation();
+        scItemFlash(0.5,0.1);
+        scItemPauseAnimation();
         alarm[0] = StepSpeed;
         break;
 }

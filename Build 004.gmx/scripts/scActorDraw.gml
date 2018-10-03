@@ -6,12 +6,17 @@ switch (myid)
         if (eId.debugmode)
         {
             draw_set_color(c_blue);
-            draw_text(x+7,y-10,state);
+            draw_text(x+7,y-10,path_speed);
+            draw_text(x+7,y-23,inputspeed);
+            draw_text(x+7,y-36,impaused);
+            draw_text(x+7,y-49,held);
+            /*
             if (nearestden != noone)
             {
                 draw_text(x+7,y-23,nearestden.x);
                 draw_text(x+7,y-36,nearestden.y);
             }
+            */
         }
         break;
     case Enemies.eTurret:

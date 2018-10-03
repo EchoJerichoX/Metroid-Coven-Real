@@ -29,6 +29,10 @@
 flex = 0;
 shrink = 0;
 startspeed = 0;
+// Pause handling.
+impaused = 0;
+held = 0;
+inputspeed = 0;
 </string>
           </argument>
         </arguments>
@@ -51,7 +55,25 @@ startspeed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Exception list.
+            <string>if (eId.transitioning) or (eId.paused &gt; 0) impaused = 1;
+else impaused = 0;
+if (impaused)
+{
+    if (!held)
+    {
+        held = 1;
+        inputspeed = speed;
+        speed = 0;
+    }
+    exit;
+}
+if (!impaused) and (held)
+{
+    speed = inputspeed;
+    held = 0;
+}
+
+// Exception list.
 switch (sprite_index)
 {
     case sprBallBombCharge:

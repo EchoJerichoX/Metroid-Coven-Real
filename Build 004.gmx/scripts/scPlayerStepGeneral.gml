@@ -96,14 +96,14 @@ with (suitSlave)
     y = other.y;
     if (other.MorphBall = true)
     {
-        if (image_xscale < .75) image_xscale += 0.05;
-        if (image_yscale < .75) image_yscale += 0.05;
+        if (image_xscale < .6) image_xscale += 0.05;
+        if (image_yscale < .6) image_yscale += 0.05;
         if (HasLight < 1) HasLight += 0.05;
     }
     else
     {
-        if (image_xscale > .5) image_xscale -= 0.05;
-        if (image_yscale > .5) image_yscale -= 0.05;
+        if (image_xscale > .4) image_xscale -= 0.05;
+        if (image_yscale > .4) image_yscale -= 0.05;
         if (HasLight > .7) HasLight -= 0.05;
     }
 }

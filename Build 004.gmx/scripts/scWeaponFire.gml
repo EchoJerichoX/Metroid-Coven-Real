@@ -22,7 +22,7 @@ else // Behavior for all other weapons.
     if (ShotTimer < 0) // If ShotTimer > 0, we don't allow firing.
     {
         ShotTimer = RateOfFire; // Set the delay before we can fire again.
-        if (_GetRequiresAmmo()) // Does the current weapon need ammo to operate?
+        if (scGetRequiresAmmo()) // Does the current weapon need ammo to operate?
         {
             if (scWeaponGetAmmo(HoldingWeaponId) > 0) // If so, do we have enough ammo?
             {

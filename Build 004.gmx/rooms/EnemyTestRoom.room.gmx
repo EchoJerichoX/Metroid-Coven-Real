@@ -84,6 +84,14 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <instance objName="oActor" x="416" y="288" name="inst_35BDB454" locked="0" code="scDefineTurret(225);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
+    <tile bgName="tilBarriaIceCave" x="160" y="576" w="64" h="64" xo="16" yo="320" id="10033993" name="inst_BB5E9111" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCave" x="224" y="576" w="64" h="64" xo="16" yo="320" id="10033994" name="inst_6934F163" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCave" x="288" y="576" w="64" h="64" xo="16" yo="320" id="10033995" name="inst_586B63F9" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCave" x="352" y="576" w="64" h="64" xo="16" yo="320" id="10033996" name="inst_3A242F13" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCave" x="352" y="640" w="64" h="64" xo="16" yo="320" id="10033997" name="inst_E2785298" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCave" x="288" y="640" w="64" h="64" xo="16" yo="320" id="10033998" name="inst_B5B61E3D" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCave" x="224" y="640" w="64" h="64" xo="16" yo="320" id="10033999" name="inst_500139DC" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="tilBarriaIceCave" x="160" y="640" w="64" h="64" xo="16" yo="320" id="10034000" name="inst_63C877BB" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="grdSnow" x="0" y="0" w="32" h="32" xo="0" yo="0" id="10002552" name="tile_CB1AD9D6" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="grdSnow" x="0" y="32" w="32" h="32" xo="0" yo="0" id="10002553" name="tile_839E590A" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="grdSnow" x="0" y="64" w="32" h="32" xo="0" yo="0" id="10002554" name="tile_C4EAB1BC" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

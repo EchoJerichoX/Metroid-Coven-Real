@@ -1,9 +1,34 @@
-age += 1;
-if (collision_line(x,y,x+hspeed,y+vspeed,pCollision,true,true)) then
+if (eId.transitioning) or (eId.paused > 0) impaused = 1;
+else impaused = 0;
+if (impaused)
 {
-    move_contact_object(speed,direction,pCollision);
-    alarm[2] = 2;
+    if (!alarmsheld)
+    {
+        for (var i = 0; i < 6; i++)
+        {
+            c_alarm[i] = alarm[i];
+            alarm[i] = -1;
+        }
+        alarmsheld = 1;
+        inputspeed = speed;
+        speed = 0;
+    }
+    exit;
 }
+if (!impaused) and (alarmsheld)
+{
+    speed = inputspeed;
+    for (var g = 0; g < 6; g++) alarm[g] = c_alarm[g];
+    alarmsheld = 0;
+}
+
+age += 1; // Tells Spazer Beam to stop spreading projectiles after a certain number of frames (see case below).
+
+/*if (collision_line(x,y,x+lengthdir_x(speed,direction),y+lengthdir_y(speed,direction),oBlockParent,true,true)) then
+{
+    move_contact_object(speed,direction,oBlockParent); // Cleanly collide with wall.
+    alarm[2] = 2; // Destroy object after cleanly colliding with the wall.
+}*/
 
 switch (myid)
 {
@@ -133,7 +158,7 @@ switch (myid)
         }
         break;
 // --- Phazon Beam ---
-    case Projectiles.pPhazonBeam:
+    case Weapons.wPhazonBeam:
         trail = instance_create(x,y,oEffect);
         trail.sprite_index = sprite_index;
         trail.direction = direction;

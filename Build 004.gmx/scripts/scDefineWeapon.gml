@@ -7,7 +7,7 @@ WeaponDefined = true; // ^
 switch (HoldingWeaponId)
 {
 /*
-_RequiresAmmo(true/false)   Does the weapon require ammo to function?
+scRequiresAmmo(true/false)  Does the weapon require ammo to function?
 RateOfFire                  How fast the weapon fires if it is not a click-speed firing weapon.
                             Determines how any frames pass between each projectile is fired.
                             If it IS a click-speed firing weapon, RateOfFire should be 0.
@@ -25,100 +25,110 @@ Cannon                      Sets the subimage for the arm cannon sprite.
 */
 
 // --- Beams ---
-    case Weapons.wPowerBeam:  
-        _RequiresAmmo(false);
+    case Weapons.wPowerBeam:
+        scRequiresAmmo(false);
         RateOfFire          = 6;
         WeaponProjectile    = Weapons.wPowerBeam;
         WeaponAccuracy      = 3;
         ChargerMax          = 100;
         Heating             = 0;
-        Cannon              = 0;   
+        Cannon              = 0;
+        CannonOffset        = 13;
         break;
     case Weapons.wWaveBeam:
-        _RequiresAmmo(false);
+        scRequiresAmmo(false);
         RateOfFire          = 12;           
         WeaponProjectile    = Weapons.wWaveBeam;
         WeaponAccuracy      = 0;          
         ChargerMax          = 100;
         Heating             = 0;
         Cannon              = 1;
+        CannonOffset        = 13;
         break;
     case Weapons.wPlasmaBeam:
-        _RequiresAmmo(false);
+        scRequiresAmmo(false);
         RateOfFire          = 13;           
         WeaponProjectile    = Weapons.wPlasmaBeam;
         WeaponAccuracy      = 2;
         ChargerMax          = 100;
         Heating             = 10;
         Cannon              = 2;
+        CannonOffset        = 16;
         break;
     case Weapons.wSpazerBeam:
-        _RequiresAmmo(false);
+        scRequiresAmmo(false);
         RateOfFire          = 14;           
         WeaponProjectile    = Weapons.wSpazerBeam;
         WeaponAccuracy      = 0;
         ChargerMax          = 100;
         Heating             = 0;
         Cannon              = 3;
+        CannonOffset        = 13;
         break;
     case Weapons.wPulseBeam:
-        _RequiresAmmo(false);
+        scRequiresAmmo(false);
         RateOfFire          = 3;           
         WeaponProjectile    = Weapons.wPulseBeam;
         WeaponAccuracy      = 2;
         ChargerMax          = 100;
         Heating             = 0;
         Cannon              = 4;
+        CannonOffset        = 14;
         break;
     case Weapons.wIceBeam:
-        _RequiresAmmo(false);
+        scRequiresAmmo(false);
         RateOfFire          = 14;           
         WeaponProjectile    = Weapons.wIceBeam;
         WeaponAccuracy      = 5;
         ChargerMax          = 100;
         Heating             = 0;
         Cannon              = 5;
+        CannonOffset        = 13;
         break;
     case Weapons.wRuptureBeam:
-        _RequiresAmmo(false);
+        scRequiresAmmo(false);
         RateOfFire          = 0;           
         WeaponProjectile    = Weapons.wRuptureBeam;
         WeaponAccuracy      = 3;
         ChargerMax          = 100;
         Heating             = 0;
         Cannon              = 6;
+        CannonOffset        = 13;
         break;
     case Weapons.wPhazonBeam:
-        _RequiresAmmo(false);
+        scRequiresAmmo(false);
         RateOfFire          = 11;           
         WeaponProjectile    = Weapons.wPhazonBeam;
         WeaponAccuracy      = 1; 
         ChargerMax          = 100;
         Heating             = 0;
         Cannon              = 7;
+        CannonOffset        = 16;
         break;
 // --- Secondary Weapons ---
     case Weapons.wMissileLauncher:
-        _RequiresAmmo(true);
+        scRequiresAmmo(true);
         RateOfFire          = 0;             
         WeaponProjectile    = Weapons.wMissileLauncher;
         WeaponAccuracy      = 0;
         ChargerMax          = 0;
         Heating             = 0;
-        Cannon              = 8;  
+        Cannon              = 8;
+        CannonOffset        = 11;
         break;
     case Weapons.wSuperMissile:
-        _RequiresAmmo(true);
+        scRequiresAmmo(true);
         RateOfFire          = 40;             
         WeaponProjectile    = Weapons.wSuperMissile;
         WeaponAccuracy      = 0;
         ChargerMax          = 0;
         Heating             = 0;
-        Cannon              = 9;  
+        Cannon              = 9;
+        CannonOffset        = 11;
         break;
 // --- Addons ---
     case Weapons.wBallBomb:
-        _RequiresAmmo(false);
+        scRequiresAmmo(false);
         RateOfFire          = 0;           
         WeaponProjectile    = Weapons.wBallBomb;
         WeaponAccuracy      = 0;
@@ -127,7 +137,7 @@ Cannon                      Sets the subimage for the arm cannon sprite.
         Cannon              = -1;
         break;
     case Weapons.wPowerBomb:
-        _RequiresAmmo(true);
+        scRequiresAmmo(true);
         RateOfFire          = 0;           
         WeaponProjectile    = Weapons.wPowerBomb;
         WeaponAccuracy      = 0;

@@ -1,5 +1,11 @@
 // Runs at the creation of every actor (not in the create event, but when created remotely.
 myid = argument0;
+// Pause handling.
+impaused = 0;
+held = 0;
+inputspeed = 0;
+ispeed = 0;
+inputimspeed = 0;
 switch(myid)
 {
     case Enemies.eZoomer:
