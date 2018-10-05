@@ -6,8 +6,8 @@ if (object_index = eId)
     draw_set_valign(fa_bottom);
     draw_set_color(c_white);
     
-    dxo = view_xview[0]+130;
-    dyo = view_yview[0]+view_hview[0];
+    dxo = view_xview[0];
+    dyo = view_yview[0];
     
     if (drawmpgrid)
     {
@@ -27,6 +27,15 @@ if (object_index = eId)
         draw_text(5,60,"vox:"); draw_text(40,60,vox);
         draw_text(5,80,"voy:"); draw_text(40,80,voy);
     }
+    
+    if (instance_exists(oPlayer))
+    {
+        draw_text(dxo+5,dyo+20,"boosting:"); draw_text(dxo+80,dyo+20,oPlayer.boosting);
+        draw_text(dxo+5,dyo+40,"boostup:"); draw_text(dxo+80,dyo+40,oPlayer.boostup);
+        draw_text(dxo+5,dyo+60,"boostready:"); draw_text(dxo+80,dyo+60,oPlayer.boostready);
+        draw_text(dxo+5,dyo+80,"boostgo:"); draw_text(dxo+80,dyo+80,oPlayer.boostgo);
+    }
+    
     //draw_text(dxo,dyo-2,string_insert(string_format(instance_number(oParticle),3,0), "Parts: ",8));
     //draw_text(dxo,dyo-50,string_insert(string_format(oViewController.x,3,0), "VC X: ",7));
     //draw_text(dxo,dyo-34,string_insert(string_format(oViewController.y,3,3), "VC Y: ",7));

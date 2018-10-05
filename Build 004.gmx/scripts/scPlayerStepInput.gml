@@ -24,7 +24,7 @@ KeyFireReleased      = mouse_check_button_released(mb_left);
 
 KeyChargeUp          = mouse_check_button(mb_right);
 KeyChargePressed     = mouse_check_button_pressed(mb_right);
-KeyChargeRelease     = mouse_check_button_released(mb_right);
+KeyChargeReleased     = mouse_check_button_released(mb_right);
 
 // --- Under Review ---
 KeyDodge             = keyboard_check_pressed(vk_space);
@@ -153,7 +153,6 @@ else
             AnimationTimer = 0;
         }
     }
-    
     move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);
     speed = 0;
 }

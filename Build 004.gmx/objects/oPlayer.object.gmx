@@ -49,23 +49,8 @@ scPlayerCreate();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// Create the death animation placeholder.
-with (instance_create(x,y,oFreezeAnim))
-{
-    sprite_index = sprPlayerDie;
-    image_angle = other.image_angle;
-    image_speed = .25;
-    sound_play(SamusDeath);
-    sound_play(SamusHurt6);
-    
-    // Create the death animation light.
-    slave = instance_create(x,y,oLight);
-    slave.master = id;
-    slave.image_xscale = .4;
-    slave.image_yscale = .4;
-    slave.HasAmbient = .7
-    slave.DestScale = 0;
-}
+            <string>///scPlayerDeath();
+scPlayerDeath();
 </string>
           </argument>
         </arguments>
@@ -88,7 +73,28 @@ with (instance_create(x,y,oFreezeAnim))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Placeholder so this alarm will count down. Used for checking if we should be knocking back from damage or not.
+            <string>///Placeholder so this alarm will count down. Used for checking if we should
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///be knocking back from damage taken or not.
 </string>
           </argument>
         </arguments>
@@ -134,7 +140,8 @@ with (instance_create(x,y,oFreezeAnim))
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (pulsechargeshot = 15) 
+            <string>///Pulse Beam charged shot code.
+if (pulsechargeshot = 15) 
 { 
    pulsechargeshot = 0;
    ShotTimer = RateOfFire*12;
@@ -171,7 +178,28 @@ if (pulsechargeshot &lt; 16) then
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Placeholder so this alarm will count down. Used for checking if we can take damage.
+            <string>///Placeholder so this alarm will count down.
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Used for checking if we can take damage.
 </string>
           </argument>
         </arguments>
@@ -194,7 +222,8 @@ if (pulsechargeshot &lt; 16) then
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scPlayerEndStep();
+            <string>///scPlayerEndStep();
+scPlayerEndStep();
 </string>
           </argument>
         </arguments>
@@ -220,6 +249,7 @@ if (pulsechargeshot &lt; 16) then
             <string>///Player "Step" event scripts, as well as transition check.
 if (eId.transitioning) or (eId.paused &gt; 0) exit;
 scPlayerStepGeneral();
+scPlayerBoostInput();
 scPlayerStepInput();
 scPlayerStepWeaponHandling();
 </string>
@@ -244,7 +274,7 @@ scPlayerStepWeaponHandling();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///scTransOut
+            <string>///scTransOut();
 scTransOut();
 </string>
           </argument>
@@ -316,7 +346,8 @@ scPlayerDamageActor();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scPlayerDraw();
+            <string>///scPlayerDraw();
+scPlayerDraw();
 </string>
           </argument>
         </arguments>

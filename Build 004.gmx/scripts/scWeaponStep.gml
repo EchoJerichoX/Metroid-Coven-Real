@@ -13,7 +13,7 @@ if (object_index = oPlayer) and (eId.visor = 0)
         case Weapons.wPulseBeam:
         case Weapons.wIceBeam:
         case Weapons.wPhazonBeam:
-            if (KeyFireNormal && !KeyChargeUp && !KeyChargeRelease && !Overheated) scWeaponFire();
+            if (KeyFireNormal && !KeyChargeUp && !KeyChargeReleased && !Overheated) scWeaponFire();
             break;
     // --- Weapons that fire as fast as the player can click the mouse ---
     // --- Use "scWeaponFire(2);" ---        
@@ -21,7 +21,7 @@ if (object_index = oPlayer) and (eId.visor = 0)
         case Weapons.wMissileLauncher:
         case Weapons.wSuperMissile:
         case Weapons.wBallBomb:
-            if (KeyFireClickSpeed && !KeyChargeUp && !KeyChargeRelease && !Overheated) scWeaponFire();
+            if (KeyFireClickSpeed && !KeyChargeUp && !KeyChargeReleased && !Overheated) scWeaponFire();
             break;
     }
     // --- Reset the Pulse Beam if the fire key is released ---
@@ -41,7 +41,7 @@ if (object_index = oPlayer) and (eId.visor = 0)
         }
     }
     // --- Fire Charge Beam ---
-    if (KeyChargeRelease) scWeaponFire();
+    if (KeyChargeReleased) scWeaponFire();
     if (!KeyChargeUp) Charger = 0;
     // --- Handle Plasma Beam heat ---
     if (Heat >= 100)

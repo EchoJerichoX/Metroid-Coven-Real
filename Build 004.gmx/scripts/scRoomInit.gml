@@ -20,6 +20,9 @@ if (object_index = eId)
         case Tutorial2:
         case Tutorial3:
         case Tutorial4:
+        case Tutorial5:
+        case Tutorial6:
+        case Tutorial7:
             tutorialroom = 1;
             scEIDMessagesInit(); // Tell the item pickup strings to update to the tutorial versions.
             break;
@@ -27,20 +30,24 @@ if (object_index = eId)
         case BarriaLandingSite:
             vector_world_add(oVectorLine);
             vector_path_add(oVectorLine,BarriaLandingSitePath1,0,0,0);
+            tutorialroom = 0;
             break;
         case BarriaIntWest:
             vector_world_add(oVectorLine);
             vector_path_add(oVectorLine,BarriaIntWestPath1,0,0,0);
+            tutorialroom = 0;
             break;
         case BarriaCacheMissile:
             vector_world_add(oVectorLine);
             vector_path_add(oVectorLine,BarriaCacheMissilePath1,0,0,0);
             vector_path_add(oVectorLine,BarriaCacheMissilePath2,0,0,0);
+            tutorialroom = 0;
             break;
         case BarriaCacheMorphBall:
             vector_world_add(oVectorLine);
             vector_path_add(oVectorLine,BarriaCacheMorphBallPath1,0,0,0);
             vector_path_add(oVectorLine,BarriaCacheMorphBallPath2,0,0,0);
+            tutorialroom = 0;
             break;
     }
 }

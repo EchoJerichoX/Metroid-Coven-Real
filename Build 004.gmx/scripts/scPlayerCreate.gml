@@ -30,6 +30,13 @@ SpeedInterval = 5; // Determines the rate of movement speed acceleration.
                    // Used, for example, on ice surfaces.
 OnIce = false; // Are we on an ice tile?
 
+boosting = false; // Used for the Speed Charger. Are we trying to boost?
+boostup = 0;
+boostready = 10;
+boostgo = 0;
+boostdone = 0;
+boostdelay = 0;
+
 Suit = -1; // Suit variable.
 scDefineSuit(Other.sPowerSuit); // Upon the player being created, set the current suit to the
                                 // Power Suit.
@@ -129,15 +136,19 @@ KeySecondarySwitch   = keyboard_check_pressed(vk_control);
 KeyMorph             = keyboard_check_pressed(ord("Z"));
 KeyVisor             = keyboard_check_pressed(ord("X"));
 
+KeyBoost             = mouse_check_button(mb_middle);
+KeyBoostPressed      = mouse_check_button_pressed(mb_middle);
+KeyBoostReleased     = mouse_check_button_released(mb_middle);
+
 KeyFireNormal        = mouse_check_button(mb_left);
 KeyFireClickSpeed    = mouse_check_button_pressed(mb_left);
 KeyFireReleased      = mouse_check_button_released(mb_left);
 
 KeyChargeUp          = mouse_check_button(mb_right);
 KeyChargePressed     = mouse_check_button_pressed(mb_right);
-KeyChargeRelease     = mouse_check_button_released(mb_right);
+KeyChargeReleased    = mouse_check_button_released(mb_right);
+KeyTorch             = keyboard_check_pressed(ord("F"));
 
 // --- Under Review/Temporary ---
 KeyDodge             = keyboard_check_pressed(vk_space);
 KeyDodgeHold         = keyboard_check(vk_space);
-KeyTorch             = keyboard_check_pressed(ord("F"));

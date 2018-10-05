@@ -1,5 +1,10 @@
 // Runs in the create event of the transition parent object.
-switch (room) // Check current room.
+// This determines where individual transition spots in rooms
+//   actually go. Just find the position of the object(s) and
+//   assign a trans number to it.
+// NOTE: MAKE SURE you match the trans number with the door
+//   that is on the other side.
+switch (room)
 {
     /*
     ====
@@ -39,15 +44,17 @@ switch (room) // Check current room.
     case Tutorial6:
         trans = 2; // Blue to Tutorial5;
         break;
+    case Tutorial7:
+        if (sprite_index = sprTransitionGuideLR) trans = 1; // Blue to Tutorial5;
+        else trans = 2;
+        break;
         
     /*
     ====
     = Barria Tundra
     ==== 
     */
-    // Get the position of the transition object in the room.
     case BarriaLandingSite:
-        // Set a variable (trans) to match with the target room's transition object.
         trans = 1; // To BarriaIntWest.
         break;
     case BarriaIntWest:

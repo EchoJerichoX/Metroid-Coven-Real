@@ -91,10 +91,6 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <instance objName="oItem" x="512" y="144" name="inst_BDB627D3" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="544" y="144" name="inst_07003380" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="576" y="144" name="inst_B40499E9" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oIceLR" x="400" y="608" name="inst_D5E9A538" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oIceLR" x="496" y="608" name="inst_02B9355B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oIceUD" x="608" y="576" name="inst_4392E9E6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oIceUD" x="608" y="656" name="inst_E2A0E124" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaIceCave" x="64" y="448" w="64" h="64" xo="16" yo="320" id="10009142" name="tile_B7771496" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
