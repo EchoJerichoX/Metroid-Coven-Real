@@ -52,7 +52,7 @@ enum Items
     iMorphBall = 40014,
     iBallBomb = 40015,
     iPowerBomb = 40016,
-    iSpeedBooster = 40017,
+    iArcDash = 40017,
     iLightsear = 40018,
     iMissileExpansion = 40019,
     iSuperMissileExpansion = 40020,
@@ -83,7 +83,7 @@ enum Blocks
     bPowerBomb = 60004,
     bMissile = 60005,
     bSuperMissile = 60006,
-    bSpeedBooster = 60007
+    bArcDash = 60007
 }
 enum Other
 {

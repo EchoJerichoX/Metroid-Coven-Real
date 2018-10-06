@@ -103,7 +103,7 @@ if (keyboard_check_pressed(vk_multiply))
         HasMorphBall = true;
         HasBallBomb = true;
         HasPowerBomb = true;
-        HasSpeedBooster = true;
+        HasArcDash = true;
         HasLightsear = true;
         // ---
         with (oPlayer)

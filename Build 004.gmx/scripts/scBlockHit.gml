@@ -44,7 +44,7 @@ switch (object_index)
                 if (argument0 = 2)
                     { if (other.sprite_index = sprSuperMissileExplosion) instance_destroy(); }
                 break;
-            case Blocks.bSpeedBooster:
+            case Blocks.bArcDash:
                 // Incomplete.
                 break;
         }

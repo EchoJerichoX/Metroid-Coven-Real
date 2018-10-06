@@ -16,7 +16,7 @@ switch (myid)
     case Items.iMorphBall: text = eId.GainMorphBall; eId.HasMorphBall = true; break;
     case Items.iBallBomb: text = eId.GainBallBomb; eId.HasBallBomb = true; break;
     case Items.iPowerBomb: text = eId.GainPowerBomb; eId.HasPowerBomb = true; break;
-    case Items.iSpeedBooster: text = eId.GainSpeedBooster; eId.HasSpeedBooster = true; break;
+    case Items.iArcDash: text = eId.GainArcDash; eId.HasArcDash = true; break;
     case Items.iLightsear: text = eId.GainLightsear; eId.HasLightsear = true; break;
 // --- Suits ---
     case Items.iVariaSuit: text = eId.GainVariaSuit; eId.HasVariaSuit = true; with (other) scDefineSuit(Other.sVariaSuit); break;

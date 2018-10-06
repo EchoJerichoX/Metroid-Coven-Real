@@ -30,10 +30,12 @@ if (object_index = eId)
     
     if (instance_exists(oPlayer))
     {
-        draw_text(dxo+5,dyo+20,"boosting:"); draw_text(dxo+80,dyo+20,oPlayer.boosting);
-        draw_text(dxo+5,dyo+40,"boostup:"); draw_text(dxo+80,dyo+40,oPlayer.boostup);
-        draw_text(dxo+5,dyo+60,"boostready:"); draw_text(dxo+80,dyo+60,oPlayer.boostready);
-        draw_text(dxo+5,dyo+80,"boostgo:"); draw_text(dxo+80,dyo+80,oPlayer.boostgo);
+        draw_text(dxo+5,dyo+16,"startboostcharge:"); draw_text(dxo+160,dyo+16,oPlayer.startboostcharge);
+        draw_text(dxo+5,dyo+32,"boostchargelevel:"); draw_text(dxo+160,dyo+32,oPlayer.boostchargelevel);
+        draw_text(dxo+5,dyo+48,"boosteffectdelay:"); draw_text(dxo+160,dyo+48,oPlayer.boosteffectdelay);
+        draw_text(dxo+5,dyo+64,"boostdelay:");       draw_text(dxo+160,dyo+64,oPlayer.boostdelay);
+        draw_text(dxo+5,dyo+80,"boostalpha:");       draw_text(dxo+160,dyo+80,oPlayer.boostalpha);
+        draw_text(dxo+5,dyo+96,"boostfaderate:");    draw_text(dxo+160,dyo+96,oPlayer.boostfaderate);
     }
     
     //draw_text(dxo,dyo-2,string_insert(string_format(instance_number(oParticle),3,0), "Parts: ",8));

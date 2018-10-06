@@ -20,6 +20,9 @@
     <sprite>sprites\sprite11</sprite>
     <sprite>sprites\sprite12</sprite>
     <sprite>sprites\sprite13</sprite>
+    <sprite>sprites\sprite14</sprite>
+    <sprite>sprites\sprite15</sprite>
+    <sprite>sprites\sprite16</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>

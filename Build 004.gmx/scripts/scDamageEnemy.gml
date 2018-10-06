@@ -5,6 +5,11 @@ if (HP <= 0)
 switch (myid)
 {
     case Enemies.eZoomer:
+        if (other.myid = Weapons.wBallBomb)
+        {
+            if (ImmuneToBomb) exit;
+            else ImmuneToBomb = 6;
+        }
         if (HP < MaxHP/2) staterate = 20; // Speed up the state changes to exhibit panic.
         if (soundcanplay = 0)
             { sound_play(ZoomerHit) soundcanplay += 5+round(random(15)); }

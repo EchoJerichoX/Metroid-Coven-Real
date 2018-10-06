@@ -11,7 +11,7 @@ switch (object_index)
             case Blocks.bPowerBomb: sprite_index = sprPowerBombBlock16; break;
             case Blocks.bMissile: sprite_index = sprMissileBlock16; break;
             case Blocks.bSuperMissile: sprite_index = sprSuperMissileBlock16; break;
-            case Blocks.bSpeedBooster: sprite_index = sprSpeedBoosterBlock16; break;
+            case Blocks.bArcDash: sprite_index = sprArcDashBlock16; break;
         }
         break;
     case oBlock8:
@@ -23,7 +23,7 @@ switch (object_index)
             case Blocks.bPowerBomb: sprite_index = sprPowerBombBlock8; break;
             case Blocks.bMissile: sprite_index = sprMissileBlock8; break;
             case Blocks.bSuperMissile: sprite_index = sprSuperMissileBlock8; break;
-            case Blocks.bSpeedBooster: sprite_index = sprSpeedBoosterBlock8; break;
+            case Blocks.bArcDash: sprite_index = sprArcDashBlock8; break;
         }
         break;
 }

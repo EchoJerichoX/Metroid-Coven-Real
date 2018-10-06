@@ -15,6 +15,7 @@ switch(myid)
         MaxSpeed = 2.25;
         MaxHP = round(random_range(7,10))*0.5;
         HP = MaxHP;
+        ImmuneToBomb = 0;
         ImmuneToPowerBomb = 0;
         CantTakeDamageFrom = noone;
         turnrate = 5; // How fast we turn towards "destdir."

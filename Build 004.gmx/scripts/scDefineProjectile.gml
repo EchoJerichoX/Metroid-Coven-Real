@@ -234,7 +234,6 @@ switch (myid)
         sprite_index = sprRuptureParticle;
         speed = random_range(1,3);
         direction = random(360);
-        sound_play(BeamIce);
         alarm[0] = 20;
         alarm[1] = 2;
         image_speed = .5;

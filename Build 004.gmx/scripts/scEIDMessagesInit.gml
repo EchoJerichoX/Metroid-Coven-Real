@@ -24,7 +24,7 @@ if (tutorialroom = 0)
     GainMorphBall = "Morph Ball acquired!#Press -Z- to morph and unmorph.";
     GainBallBomb = "Ball Bomb acquired!#Left-click in Morph Ball mode to use.";
     GainPowerBomb = "Power Bomb acquired!#Right-click in Morph Ball mode to use.";
-    GainSpeedBooster = "Speed Booster acquired!#Hold -E and run continuously in one direction to activate.";
+    GainArcDash = "Arc Dash acquired!!#Hold -Middle Click- to charge a dash, and release to activate.";
     GainLightsear = "Lightsear acquired!#Press -Q- or Middle-click to activate.";
     // Suits...
     GainVariaSuit = "Varia Suit acquired!#Extreme temperature zones are now accessible.";
@@ -58,7 +58,7 @@ else
     GainMorphBall = "Morph Ball acquired!#Press -Z- to morph and unmorph.##The Morph Ball allows you to access small spaces, and move more quickly.";
     GainBallBomb = "Ball Bomb acquired!#Left-click in Morph Ball mode to use.##The Ball Bomb can destroy certain obstructions, and deals splash damage.#They detonate after just a few seconds, but you can only have three live bombs at any given time.";
     GainPowerBomb = "Power Bomb acquired!#Right-click in Morph Ball mode to use.##Power Bombs deal immense damage in a very large area, but require the rarest ammunition.#Power Bombs can also destroy many obstructions.";
-    GainSpeedBooster = "Speed Booster acquired!#Hold -E- and run continuously in one direction to activate.##The Speed Booster allows you to move extremely quickly across a large space.#It also can destroy certain obstructions.";
+    GainArcDash = "Arc Dash acquired!!#Hold -Middle Click- to charge a dash, and release to activate.##The Arc Dash allows you to move extremely quickly across a large space by moving continuously in one direction determined by the mouse.#Momentum is halted by colliding with a solid object or powerful enemy. It also can destroy certain obstructions.";
     GainLightsear = "Lightsear acquired!#Press -Q- or Middle-click to activate.##The Lightsear can reflect enemy projectiles back at them and deal damage.#Note that it mostly works on energy-based projectiles, not all of them.";
     // Suits...
     GainVariaSuit = "Varia Suit acquired!#Extreme temperature zones are now accessible.##The Varia Suit allows you traverse extreme hot and cold environments.#The Varia Suit also reduces incoming damage slightly.";

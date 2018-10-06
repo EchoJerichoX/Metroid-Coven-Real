@@ -92,7 +92,7 @@ HasArmCannon = true;
 HasMorphBall = false;
 HasBallBomb = false;
 HasPowerBomb = false;
-HasSpeedBooster = false;
+HasArcDash = false;
 HasLightsear = false;
 // --- Suits ---
 HasPowerSuit = true;

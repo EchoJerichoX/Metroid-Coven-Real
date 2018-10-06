@@ -97,26 +97,25 @@ if (shrink)
 switch (sprite_index)
 {
     case sprPlasmaTrail:
-        speed = startspeed*.1;
-        image_alpha -= .1;
-    break;
     case sprRuptureTrail:
         speed = startspeed*.1;
         image_alpha -= .1;
-    break;
+        break;
     case sprMorphPower:
     case sprMorphVaria:
     case sprMorphGravity:
     case sprMorphCorruption:
         image_alpha -= .075;
         image_angle -= 15;
-        image_xscale -= .05;
-        image_yscale -= .05;
-    break;
-    
-    default: 
-        image_alpha -= .1;
-    break;
+        image_xscale -= .015;
+        image_yscale -= .015;
+        break;
+    case sprArcDashReady:
+        image_xscale += .05;
+        image_yscale = image_xscale;
+        break;
+    case sprArcDashSpark: motion_add(random(360),random(0.5)); break;
+    default: image_alpha -= .1; break;
 }
 if (image_alpha &lt;= 0) instance_destroy();
 </string>
@@ -143,7 +142,9 @@ if (image_alpha &lt;= 0) instance_destroy();
             <kind>1</kind>
             <string>if (sprite_index = sprPlasmaTrail)
 or (sprite_index = sprIceTrail)
-or (sprite_index = sprBallBombCharge) instance_destroy();
+or (sprite_index = sprBallBombCharge)
+or (sprite_index = sprArcDashReady)
+or (sprite_index = sprArcDashSpark) instance_destroy();
 </string>
           </argument>
         </arguments>

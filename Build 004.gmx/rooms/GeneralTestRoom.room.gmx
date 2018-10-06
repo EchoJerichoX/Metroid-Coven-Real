@@ -17,8 +17,8 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>2576</w>
-    <h>1394</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -72,14 +72,14 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <instance objName="oBlock16" x="192" y="352" name="inst_329F1FF2" locked="0" code="scDefineBlock(Blocks.bMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="224" y="352" name="inst_9921D112" locked="0" code="scDefineBlock(Blocks.bSuperMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="64" y="352" name="inst_69E276EB" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock16" x="256" y="352" name="inst_42FBB809" locked="0" code="scDefineBlock(Blocks.bSpeedBooster);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="256" y="352" name="inst_42FBB809" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="64" y="400" name="inst_82188426" locked="0" code="scDefineBlock(Blocks.bBasic);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="88" y="400" name="inst_7E075569" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="112" y="400" name="inst_18E98055" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="136" y="400" name="inst_9840EE3A" locked="0" code="scDefineBlock(Blocks.bPowerBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="160" y="400" name="inst_7CC7B4E4" locked="0" code="scDefineBlock(Blocks.bMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="184" y="400" name="inst_A22512EA" locked="0" code="scDefineBlock(Blocks.bSuperMissile);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="oBlock8" x="208" y="400" name="inst_43675ADC" locked="0" code="scDefineBlock(Blocks.bSpeedBooster);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="208" y="400" name="inst_43675ADC" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="128" y="304" name="inst_8F67E456" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oViewController" x="0" y="0" name="inst_E390C63E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="512" y="80" name="inst_8853DBC0" locked="0" code="scDefineItem(Items.iMissileExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

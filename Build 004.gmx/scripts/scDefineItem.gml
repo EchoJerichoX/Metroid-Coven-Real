@@ -122,8 +122,8 @@ switch (myid)
         StepSpeed      = 3;
         Name = "Power Bomb";
         break;
-    case Items.iSpeedBooster:
-        if (eId.HasSpeedBooster) instance_destroy();
+    case Items.iArcDash:
+        if (eId.HasArcDash) instance_destroy();
         AnimationStart = 40;
         AnimationEnd   = 41;
         StepSpeed      = 3;

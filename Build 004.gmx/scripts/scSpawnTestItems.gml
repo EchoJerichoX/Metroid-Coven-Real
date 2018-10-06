@@ -34,7 +34,7 @@ for (i = 0; i <= 17; i += 1;)
         case 13: with (o) scDefineItem(Items.iMorphBall); break;
         case 14: with (o) scDefineItem(Items.iBallBomb); break;
         case 15: with (o) scDefineItem(Items.iPowerBomb); break;
-        case 16: with (o) scDefineItem(Items.iSpeedBooster); break;
+        case 16: with (o) scDefineItem(Items.iArcDash); break;
         case 17: with (o) scDefineItem(Items.iLightsear); break;
     }
 }

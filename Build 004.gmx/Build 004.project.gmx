@@ -41,68 +41,88 @@
   </datafiles>
   <NewExtensions/>
   <sounds name="sound">
-    <sounds name="Ambience">
-      <sound>sound\AmbienceSnow</sound>
+    <sounds name="Old">
+      <sounds name="Ambience">
+        <sound>sound\AmbienceSnow</sound>
+      </sounds>
+      <sounds name="Effects">
+        <sound>sound\BeamChargeLoop</sound>
+        <sound>sound\BeamChargeStart</sound>
+        <sound>sound\BeamIce</sound>
+        <sound>sound\BeamImpact1</sound>
+        <sound>sound\BeamImpact2</sound>
+        <sound>sound\BeamImpact3</sound>
+        <sound>sound\BeamImpact4</sound>
+        <sound>sound\BeamPhazon</sound>
+        <sound>sound\BeamPlasma</sound>
+        <sound>sound\BeamPower</sound>
+        <sound>sound\BeamPulse</sound>
+        <sound>sound\BeamRupture</sound>
+        <sound>sound\BeamSpazer</sound>
+        <sound>sound\BombExplosion</sound>
+        <sound>sound\BombLay</sound>
+        <sound>sound\Crumble1</sound>
+        <sound>sound\Crumble2</sound>
+        <sound>sound\Crumble3</sound>
+        <sound>sound\Crumble4</sound>
+        <sound>sound\Crumble5</sound>
+        <sound>sound\Crumble6</sound>
+        <sound>sound\DoorClose</sound>
+        <sound>sound\DoorHit</sound>
+        <sound>sound\DoorOpen</sound>
+        <sound>sound\EnemyZoomerDeath</sound>
+        <sound>sound\EnemyZoomerHit</sound>
+        <sound>sound\IceBeamImpact1</sound>
+        <sound>sound\IceBeamImpact2</sound>
+        <sound>sound\IceBeamImpact3</sound>
+        <sound>sound\IceShatter</sound>
+        <sound>sound\IntroShip</sound>
+        <sound>sound\MissileExplosion</sound>
+        <sound>sound\MissileFire</sound>
+        <sound>sound\PowerBomb</sound>
+        <sound>sound\SamusBreathe</sound>
+        <sound>sound\SamusDeath</sound>
+        <sound>sound\SamusDodge</sound>
+        <sound>sound\SamusHurt1</sound>
+        <sound>sound\SamusHurt2</sound>
+        <sound>sound\SamusHurt3</sound>
+        <sound>sound\SamusHurt4</sound>
+        <sound>sound\SamusHurt5</sound>
+        <sound>sound\SamusHurt6</sound>
+        <sound>sound\SamusMorph</sound>
+        <sound>sound\SamusUnmorph</sound>
+        <sound>sound\SuperMissileExplosion</sound>
+        <sound>sound\SwitchFromSecondary</sound>
+        <sound>sound\SwitchPrimary</sound>
+        <sound>sound\SwitchToSecondary</sound>
+        <sound>sound\TitleMouseover</sound>
+        <sound>sound\TitleSelect</sound>
+        <sound>sound\ZoomerHit</sound>
+        <sound>sound\ZoomerDie</sound>
+      </sounds>
+      <sounds name="Music">
+        <sound>sound\BarriaOverworld</sound>
+        <sound>sound\Title</sound>
+      </sounds>
     </sounds>
-    <sounds name="Effects">
-      <sound>sound\BeamChargeLoop</sound>
-      <sound>sound\BeamChargeStart</sound>
-      <sound>sound\BeamIce</sound>
-      <sound>sound\BeamImpact1</sound>
-      <sound>sound\BeamImpact2</sound>
-      <sound>sound\BeamImpact3</sound>
-      <sound>sound\BeamImpact4</sound>
-      <sound>sound\BeamPhazon</sound>
-      <sound>sound\BeamPlasma</sound>
-      <sound>sound\BeamPower</sound>
-      <sound>sound\BeamPulse</sound>
-      <sound>sound\BeamRupture</sound>
-      <sound>sound\BeamSpazer</sound>
-      <sound>sound\BeamWave</sound>
-      <sound>sound\BombExplosion</sound>
-      <sound>sound\BombLay</sound>
-      <sound>sound\Crumble1</sound>
-      <sound>sound\Crumble2</sound>
-      <sound>sound\Crumble3</sound>
-      <sound>sound\Crumble4</sound>
-      <sound>sound\Crumble5</sound>
-      <sound>sound\Crumble6</sound>
-      <sound>sound\DoorClose</sound>
-      <sound>sound\DoorHit</sound>
-      <sound>sound\DoorOpen</sound>
-      <sound>sound\EnemyZoomerDeath</sound>
-      <sound>sound\EnemyZoomerHit</sound>
-      <sound>sound\IceBeamImpact1</sound>
-      <sound>sound\IceBeamImpact2</sound>
-      <sound>sound\IceBeamImpact3</sound>
-      <sound>sound\IceShatter</sound>
-      <sound>sound\IntroShip</sound>
-      <sound>sound\MissileExplosion</sound>
-      <sound>sound\MissileFire</sound>
-      <sound>sound\PowerBomb</sound>
-      <sound>sound\SamusBreathe</sound>
-      <sound>sound\SamusDeath</sound>
-      <sound>sound\SamusDodge</sound>
-      <sound>sound\SamusHurt1</sound>
-      <sound>sound\SamusHurt2</sound>
-      <sound>sound\SamusHurt3</sound>
-      <sound>sound\SamusHurt4</sound>
-      <sound>sound\SamusHurt5</sound>
-      <sound>sound\SamusHurt6</sound>
-      <sound>sound\SamusMorph</sound>
-      <sound>sound\SamusUnmorph</sound>
-      <sound>sound\SuperMissileExplosion</sound>
-      <sound>sound\SwitchFromSecondary</sound>
-      <sound>sound\SwitchPrimary</sound>
-      <sound>sound\SwitchToSecondary</sound>
-      <sound>sound\TitleMouseover</sound>
-      <sound>sound\TitleSelect</sound>
-      <sound>sound\ZoomerHit</sound>
-      <sound>sound\ZoomerDie</sound>
-    </sounds>
-    <sounds name="Music">
-      <sound>sound\BarriaOverworld</sound>
-      <sound>sound\Title</sound>
+    <sounds name="Sound Effects">
+      <sounds name="General Effects">
+        <sound>sound\snCrackleLong</sound>
+        <sound>sound\snCrackleShort1</sound>
+        <sound>sound\snCrackleShort5</sound>
+        <sound>sound\snCrackleShort4</sound>
+        <sound>sound\snCrackleShort3</sound>
+        <sound>sound\snCrackleShort2</sound>
+      </sounds>
+      <sounds name="Player">
+        <sounds name="Weapons">
+          <sound>sound\snBeamWave</sound>
+        </sounds>
+        <sounds name="Addons">
+          <sound>sound\snArcDashStart</sound>
+          <sound>sound\snArcDashCharge</sound>
+        </sounds>
+      </sounds>
     </sounds>
   </sounds>
   <sprites name="sprites">
@@ -205,14 +225,14 @@
           <sprite>sprites\sprPowerBombBlock16</sprite>
           <sprite>sprites\sprMissileBlock16</sprite>
           <sprite>sprites\sprSuperMissileBlock16</sprite>
-          <sprite>sprites\sprSpeedBoosterBlock16</sprite>
+          <sprite>sprites\sprArcDashBlock16</sprite>
           <sprite>sprites\sprBasicBlock8</sprite>
           <sprite>sprites\sprReformBlock8</sprite>
           <sprite>sprites\sprBombBlock8</sprite>
           <sprite>sprites\sprPowerBombBlock8</sprite>
           <sprite>sprites\sprMissileBlock8</sprite>
           <sprite>sprites\sprSuperMissileBlock8</sprite>
-          <sprite>sprites\sprSpeedBoosterBlock8</sprite>
+          <sprite>sprites\sprArcDashBlock8</sprite>
           <sprite>sprites\sprBlockBreak16</sprite>
           <sprite>sprites\sprBlockBreak8</sprite>
           <sprite>sprites\sprBlockReform16</sprite>
@@ -293,6 +313,7 @@
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
+      <sprite>sprites\sprPlayerArcDash</sprite>
       <sprite>sprites\sprPlayerMask</sprite>
       <sprite>sprites\sprPlayerMorphBall</sprite>
       <sprite>sprites\sprPlayerMorphBallMask</sprite>
@@ -307,6 +328,8 @@
       <sprite>sprites\sprFootPrint</sprite>
       <sprite>sprites\sprCombatVisor</sprite>
       <sprite>sprites\sprScanVisor</sprite>
+      <sprite>sprites\sprArcDashSpark</sprite>
+      <sprite>sprites\sprArcDashReady</sprite>
     </sprites>
     <sprites name="Projectiles and Weapons">
       <sprite>sprites\sprProjectileMaskDoorChecker</sprite>
@@ -551,8 +574,7 @@
       <script>scripts\scDropLoot.gml</script>
     </scripts>
     <scripts name="Player">
-      <script>scripts\scPlayerCreate.gml</script>
-      <script>scripts\scPlayerStartValues.gml</script>
+      <script>scripts\scPlayerInit.gml</script>
       <script>scripts\scDefineSuit.gml</script>
       <script>scripts\scPlayerStepGeneral.gml</script>
       <script>scripts\scPlayerBoostInput.gml</script>

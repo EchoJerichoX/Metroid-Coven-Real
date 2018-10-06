@@ -17,7 +17,7 @@ switch (myid)
     case Items.iGravitySuit:
     case Items.iCorruptionSuit:
     case Items.iPowerBomb:
-    case Items.iSpeedBooster:
+    case Items.iArcDash:
     case Items.iLightsear:
     case Items.iEnergyTank:
     case Items.iMissileExpansion:

@@ -1,7 +1,25 @@
-// --- Basic initialization variables ---
 if (!instance_exists(oCannon)) instance_create(x,y,oCannon);
 
-scPlayerStartValues();
+// --- General ---
+Energy = 100;
+EnergyTanks = 0;
+FullTanks = 0;
+GainEnergy = 0;
+Accel = 1;
+
+//Starting ammo amounts.
+scWeaponInitValues(Weapons.wMissileLauncher,10);
+scWeaponInitValues(Weapons.wSuperMissile,3);
+scWeaponInitValues(Weapons.wPowerBomb,2);
+scWeaponInitValues(Weapons.wPhazonBeam,0);
+
+//Other weapon variables.
+Heat = 0; // See variable "Heating" in scDefineWeapon for the rate at which the Plasma Beam heats up.
+CoolRate = 0.25; // Rate at which the Plasma Beam cools down.
+Overheated = 0;
+Charger = 0;
+ChargeRate = 1.4;
+ShotTimer = 0;
 
 AnimationStart = 0; // Determines the start and stop frames of continuous animation.
                     // Varies by suit/state.
@@ -30,12 +48,25 @@ SpeedInterval = 5; // Determines the rate of movement speed acceleration.
                    // Used, for example, on ice surfaces.
 OnIce = false; // Are we on an ice tile?
 
-boosting = false; // Used for the Speed Charger. Are we trying to boost?
+startboostcharge = 0;
+boostchargelevel = 0;
+boostchargemax = 120;
+boosteffectdelay = 0;
+boosteffectdelaytimer = 5;
+boostdelay = 0;
+boosteffectrangemod = 10;
+boostalpha = 0;
+boostalphaset = 0.7;
+boostfaderate = 0.05;
+
+/*
+boosting = false; // Used for the Arc Dash. Are we trying to boost?
 boostup = 0;
 boostready = 10;
 boostgo = 0;
 boostdone = 0;
 boostdelay = 0;
+*/
 
 Suit = -1; // Suit variable.
 scDefineSuit(Other.sPowerSuit); // Upon the player being created, set the current suit to the
