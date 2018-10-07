@@ -60,7 +60,17 @@ if (boostdelay > 0) boostdelay -= 1;
 // Release.
 
 if (KeyBoostReleased)
-    { boostchargelevel = 0; startboostcharge = 0; boostdelay = 10; }
+{
+    if (boostchargelevel = boostchargemax)
+    {
+        motion_add(point_direction(x,y,mouse_x,mouse_y),boostspeed);
+        friction = 0.1;
+        boosting = 60;
+    }
+    boostchargelevel = 0;
+    startboostcharge = 0;
+    boostdelay = 10;
+}
 
 /*
 var boostdir = point_direction(x,y,mouse_x,mouse_y);
