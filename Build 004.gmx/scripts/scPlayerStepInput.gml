@@ -26,10 +26,126 @@ KeyChargeUp          = mouse_check_button(mb_right);
 KeyChargePressed     = mouse_check_button_pressed(mb_right);
 KeyChargeReleased     = mouse_check_button_released(mb_right);
 
-// --- Under Review ---
+KeyBoost             = mouse_check_button(mb_middle);
+KeyBoostPressed      = mouse_check_button_pressed(mb_middle);
+KeyBoostReleased     = mouse_check_button_released(mb_middle);
+
+// Dodge code currently not used.
 KeyDodge             = keyboard_check_pressed(vk_space);
 KeyDodgeHold         = keyboard_check(vk_space);
 KeyTorch             = keyboard_check_pressed(ord("F"));
+// ^
+
+if (!MorphBall) and (eId.HasArcDash)
+{
+    // Release boost key.
+    if (KeyBoostReleased)
+    {
+        if (boostchargelevel = boostchargemax)
+        and (!boosting)
+        and (!boostdelay)
+        {
+            boostdir = point_direction(x,y,mouse_x,mouse_y);
+            boosting = 1;
+            boosttrail = boosttraildelay;
+        }
+        boostchargelevel = 0;
+        startboostcharge = 0;
+        boostdelay = 10;
+    }
+    
+    // Press boost key.
+    if (KeyBoostPressed) and (!boostdelay) and (!startboostcharge)
+    {
+        startboostcharge = 1;
+        with (instance_create(x,y,oEffect))
+        {
+            sound_play(snArcDashStart);
+            sound_play(snArcDashCharge);
+            sprite_index = sprArcDashReady;
+            image_speed = 0.5;
+            image_alpha = 0.2;
+            image_angle = random(360);
+        }
+    }
+    
+    // Hold boost key.
+    if (KeyBoost) and (startboostcharge) and (boostchargelevel < boostchargemax) boostchargelevel += 1;
+    if (boostalpha <= 0) boostalpha = boostalphaset;
+    boostfaderate = boostchargelevel/1500;
+    if (boostalpha > 0) boostalpha -= boostfaderate;
+    if (boostchargelevel > 0)
+    {
+        var ce = random(boostchargelevel);
+        if (abs(ce-boostchargemax) > boostchargemax/3) and (!boosteffectdelay)
+        {
+            boosteffectdelay = boosteffectdelaytimer;
+            with (instance_create(x+random_range(boostchargelevel/boosteffectrangemod,boostchargelevel/-boosteffectrangemod),
+                                  y+random_range(boostchargelevel/boosteffectrangemod,boostchargelevel/-boosteffectrangemod),oEffect))
+            {
+                var s = random(other.boostchargelevel)+random(40);
+                if (s > 40) sound_play(choose(snCrackleShort1,
+                                              snCrackleShort2,
+                                              snCrackleShort3,
+                                              snCrackleShort4,
+                                              snCrackleShort5));
+                sprite_index = sprArcDashSpark;
+                image_speed = 1;
+                image_alpha = ((random(other.boostchargelevel))/other.boostchargemax)*0.9;
+                clamp(image_alpha,0,1);
+                image_angle = random(360);
+                image_xscale = random_range(0.75,1.25);
+                image_yscale = image_xscale;
+                depth = other.depth+round(random_range(-2,1));
+            }
+        }
+    }
+    
+    // Miscellaneous boost stuff.
+    if (boosting)
+    {
+        motion_add(boostdir,boostspeed);
+        with (instance_create(x+random_range(boostchargelevel/boosteffectrangemod,boostchargelevel/-boosteffectrangemod),
+                              y+random_range(boostchargelevel/boosteffectrangemod,boostchargelevel/-boosteffectrangemod),
+                              oEffect))
+        {
+            var s = random(10);
+            if (s > 4) sound_play(choose(snCrackleShort1,
+                                         snCrackleShort2,
+                                         snCrackleShort3,
+                                         snCrackleShort4,
+                                         snCrackleShort5));
+            sprite_index = sprArcDashSpark;
+            image_speed = 1;
+            image_alpha = ((random(other.boostchargelevel))/other.boostchargemax)*0.9;
+            clamp(image_alpha,0,1);
+            image_angle = random(360);
+            image_xscale = random_range(0.75,1.25);
+            image_yscale = image_xscale;
+            depth = other.depth+round(random_range(-2,1));
+            speed = random(2);
+            direction = random(360);
+        }
+        if (boosttrail > 0) boosttrail -= 1;
+        if (boosttrail = 0)
+        {
+            if (boosttrail = 0) boosttrail = boosttraildelay;
+            else boosttrail -= 1;
+            with (instance_create(x,y,oEffect))
+            {
+                
+                sprite_index = sprArcDashTrail;
+                direction = other.direction;
+                speed = other.speed/2;
+                image_angle = other.image_angle;
+                image_alpha = 0.8;;
+                flex = 1;
+            }
+        }
+    }
+    if (boosteffectdelay > 0) boosteffectdelay -= 1;
+    if (boostdelay > 0) boostdelay -= 1;
+}
 
 // Toggle Morph Ball.
 if (KeyMorph = true)
@@ -68,6 +184,7 @@ if (KeyVisor) eId.visor = !eId.visor;
 // Check whether or not we are standing on ice tiles.
 if (tile_layer_find(1999,x,y))
 and (!tile_layer_find(1001,x,y))
+and (boosting+boostchargelevel = 0)
 {
     if (MorphBall) SpeedInterval = 35;
     else SpeedInterval = 45;
@@ -97,19 +214,23 @@ else
 
 moving_direction_previous = moving_direction;
 moving_direction = 0;
+moving = true;
 
-moving = true;    
-if (KeyUp)
-    { mvspeed -= MaxSpeed/(SpeedInterval/1.5); moving_direction = 90; }
-if (KeyLeft)
-    { mhspeed -= MaxSpeed/(SpeedInterval/1.5); moving_direction = 180; }
-if (KeyDown)
-    { mvspeed += MaxSpeed/(SpeedInterval/1.5); moving_direction = 270; }
-if (KeyRight)
-    { mhspeed += MaxSpeed/(SpeedInterval/1.5); moving_direction = 0; }
+if (boosting+boostchargelevel = 0)
+{
+    if (KeyUp)
+        { mvspeed -= MaxSpeed/(SpeedInterval/1.5); moving_direction = 90; }
+    if (KeyLeft)
+        { mhspeed -= MaxSpeed/(SpeedInterval/1.5); moving_direction = 180; }
+    if (KeyDown)
+        { mvspeed += MaxSpeed/(SpeedInterval/1.5); moving_direction = 270; }
+    if (KeyRight)
+        { mhspeed += MaxSpeed/(SpeedInterval/1.5); moving_direction = 0; }
+}
 
-hspeed = mhspeed;
-vspeed = mvspeed;
+if (boosting+boostchargelevel = 0)
+    { hspeed = mhspeed; vspeed = mvspeed; }
+
 if (MorphBall) maxs = MaxBallSpeed;
 else maxs = MaxSpeed;
 
@@ -118,8 +239,10 @@ if (KeyRight) and (KeyDown) moving_direction = 315;
 if (KeyLeft) and (KeyUp) moving_direction = 135;
 if (KeyLeft) and (KeyDown) moving_direction = 225;
 
-speed = min(speed,maxs);
-if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
+if (boosting+boostchargelevel = 0) speed = min(speed,maxs);
+
+if ((KeyUp+KeyLeft+KeyDown+KeyRight) = 0)
+or (boosting+boostchargelevel > 0)
 {
     moving_direction = -1;
     if (OnIce) speed = max(speed*0.95,0);
@@ -134,39 +257,45 @@ if (alarm[3] > 0)
 mhspeed = lengthdir_x(speed,direction);
 mvspeed = lengthdir_y(speed,direction);
 
-if (MorphBall)
+// Animate sprite.
+if (boosting+boostchargelevel = 0)
 {
-    if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
-        { AnimationTimer = 0; }
-    else AnimationTimer += 1;
-    
-    if (AnimationTimer = BallAnimationLimit)
+    if (MorphBall)
     {
-        if (BallAnimationStart != BallAnimationEnd)
+        if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
+            { AnimationTimer = 0; }
+        else AnimationTimer += 1;
+        
+        if (AnimationTimer = BallAnimationLimit)
         {
-            image_single += 1;
-            if (image_single > BallAnimationEnd) image_single = BallAnimationStart;
+            if (BallAnimationStart != BallAnimationEnd)
+            {
+                image_single += 1;
+                if (image_single > BallAnimationEnd) image_single = BallAnimationStart;
+            }
+            AnimationTimer = 0;
         }
-        AnimationTimer = 0;
+        if (speed > maxs) speed = maxs;
+        image_angle = direction;
     }
-    if (speed > maxs) speed = maxs;
-    image_angle = direction;
-}
-else
-{
-    if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
-        { image_single = AnimationStart; AnimationTimer = 0; }
-    else AnimationTimer += 1;
-    if (AnimationTimer = 2)
+    else
     {
-        if (AnimationStart != AnimationEnd)
+        if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
+            { image_single = AnimationStart; AnimationTimer = 0; }
+        else AnimationTimer += 1;
+        if (AnimationTimer = 2)
         {
-            image_single += 1;
-            if (image_single > AnimationEnd) image_single = AnimationStart;
+            if (AnimationStart != AnimationEnd)
+            {
+                image_single += 1;
+                if (image_single > AnimationEnd) image_single = AnimationStart;
+            }
+            AnimationTimer = 0;
         }
-        AnimationTimer = 0;
     }
 }
+else image_single = AnimationStart;
+
 move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);
-speed = 0;
+if (boosting+boostchargelevel = 0) speed = 0;
 //}

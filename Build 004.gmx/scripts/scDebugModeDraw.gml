@@ -30,14 +30,15 @@ if (object_index = eId)
     
     if (instance_exists(oPlayer))
     {
-        draw_text(dxo+5,dyo+16,"startboostcharge:"); draw_text(dxo+160,dyo+16,oPlayer.startboostcharge);
-        draw_text(dxo+5,dyo+32,"boostchargelevel:"); draw_text(dxo+160,dyo+32,oPlayer.boostchargelevel);
-        draw_text(dxo+5,dyo+48,"boosteffectdelay:"); draw_text(dxo+160,dyo+48,oPlayer.boosteffectdelay);
-        draw_text(dxo+5,dyo+64,"boostdelay:");       draw_text(dxo+160,dyo+64,oPlayer.boostdelay);
-        draw_text(dxo+5,dyo+80,"boostalpha:");       draw_text(dxo+160,dyo+80,oPlayer.boostalpha);
-        draw_text(dxo+5,dyo+96,"boostfaderate:");    draw_text(dxo+160,dyo+96,oPlayer.boostfaderate);
-        draw_text(dxo+5,dyo+112,"boostchargemax:");  draw_text(dxo+160,dyo+112,oPlayer.boostchargemax);
-        draw_text(dxo+5,dyo+128,"boosting:");        draw_text(dxo+160,dyo+128,oPlayer.boosting);
+        draw_text(dxo+5,dyo+14,"startboostcharge:"); draw_text(dxo+160,dyo+16,oPlayer.startboostcharge);
+        draw_text(dxo+5,dyo+28,"boostchargelevel:"); draw_text(dxo+160,dyo+32,oPlayer.boostchargelevel);
+        draw_text(dxo+5,dyo+42,"boosteffectdelay:"); draw_text(dxo+160,dyo+48,oPlayer.boosteffectdelay);
+        draw_text(dxo+5,dyo+56,"boostdelay:");       draw_text(dxo+160,dyo+64,oPlayer.boostdelay);
+        draw_text(dxo+5,dyo+70,"boostalpha:");       draw_text(dxo+160,dyo+80,oPlayer.boostalpha);
+        draw_text(dxo+5,dyo+84,"boostfaderate:");    draw_text(dxo+160,dyo+96,oPlayer.boostfaderate);
+        draw_text(dxo+5,dyo+98,"boostchargemax:");   draw_text(dxo+160,dyo+112,oPlayer.boostchargemax);
+        draw_text(dxo+5,dyo+112,"boosting:");        draw_text(dxo+160,dyo+128,oPlayer.boosting);
+        draw_text(dxo+5,dyo+126,"boostspeed:");      draw_text(dxo+160,dyo+128,oPlayer.boostspeed);
     }
     //draw_text(dxo,dyo-2,string_insert(string_format(instance_number(oParticle),3,0), "Parts: ",8));
     //draw_text(dxo,dyo-50,string_insert(string_format(oViewController.x,3,0), "VC X: ",7));

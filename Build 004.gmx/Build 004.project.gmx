@@ -578,7 +578,6 @@
       <script>scripts\scPlayerInit.gml</script>
       <script>scripts\scDefineSuit.gml</script>
       <script>scripts\scPlayerStepGeneral.gml</script>
-      <script>scripts\scPlayerBoostInput.gml</script>
       <script>scripts\scPlayerStepInput.gml</script>
       <script>scripts\scPlayerStepWeaponHandling.gml</script>
       <script>scripts\scPlayerWeaponControl.gml</script>

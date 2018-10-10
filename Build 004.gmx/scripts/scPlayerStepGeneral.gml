@@ -3,7 +3,7 @@
 //   image_angle = point_direction(x,y,mouse_x,mouse_y);
 var pd = point_direction(x,y,eId.x,eId.y);
 var dd = angle_difference(image_angle, pd);
-image_angle -= min(abs(dd), 9) * sign(dd);
+image_angle -= min(abs(dd),9)*sign(dd);
 
 // Point weapon separately (not in use).
 if (WeaponDistanceOffset != 0)
@@ -17,8 +17,8 @@ else
     { WeaponXPosition = x; WeaponYPosition = y; }
 //WeaponAim = point_direction(WeaponXPosition,WeaponYPosition,mouse_x,mouse_y);
 var pw = point_direction(x,y,eId.x,eId.y);
-var dw = angle_difference(WeaponAim, pw);
-WeaponAim -= min(abs(dw), 11) * sign(dw);
+var dw = angle_difference(WeaponAim,pw);
+WeaponAim -= min(abs(dw),11)*sign(dw);
 
 // Draw footsteps.
 if (point_distance(x,y,stepx,stepy) > 20)
