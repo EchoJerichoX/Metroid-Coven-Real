@@ -31,7 +31,12 @@ KeyDodge             = keyboard_check_pressed(vk_space);
 KeyDodgeHold         = keyboard_check(vk_space);
 KeyTorch             = keyboard_check_pressed(ord("F"));
 
-if (KeyMorph = true) and (eId.HasMorphBall = true) and (!Overheated)
+// Toggle Morph Ball.
+if (KeyMorph = true)
+and (eId.HasMorphBall = true)
+and (!Overheated)
+and (!boosting)
+and (!boostchargelevel)
 {
     if (MorphBall) and (collision_circle(x,y,8,oBlockParent,true,false)) exit;
     MorphBall = !MorphBall;
@@ -49,13 +54,18 @@ if (KeyMorph = true) and (eId.HasMorphBall = true) and (!Overheated)
         case Other.sCorruptionSuit: me.sprite_index = sprMorphCorruption; break;
     }
 }
+
+// Set sprite depending on whether we are in Morph Ball or not.
 if (MorphBall = false) && (sprite_index = sprPlayerMorphBall)
     { sprite_index = sprPlayer; image_single = AnimationStart; mask_index = sprPlayerMask; }
 if (MorphBall = true) && (sprite_index = sprPlayer)
     { sprite_index = sprPlayerMorphBall; image_single = BallAnimationStart; mask_index = sprPlayerMorphBallMask; }
 
+
+// Toggle scan and combat visor.
 if (KeyVisor) eId.visor = !eId.visor;
 
+// Check whether or not we are standing on ice tiles.
 if (tile_layer_find(1999,x,y))
 and (!tile_layer_find(1001,x,y))
 {
@@ -70,6 +80,8 @@ else
     OnIce = false;
 }
 
+// Dodge code (currently unused)
+/*
 if (DodgeCooldown > 0) DodgeCooldown -= 1;
 if (Dodge > 0)
 {
@@ -81,78 +93,80 @@ if (Dodge > 0)
 }
 else
 {
-    moving_direction_previous = moving_direction;
-    moving_direction = 0;
-    
-    moving = true;    
-    if (KeyUp)
-        { mvspeed -= MaxSpeed/(SpeedInterval/1.5); moving_direction = 90; }
-    if (KeyLeft)
-        { mhspeed -= MaxSpeed/(SpeedInterval/1.5); moving_direction = 180; }
-    if (KeyDown)
-        { mvspeed += MaxSpeed/(SpeedInterval/1.5); moving_direction = 270; }
-    if (KeyRight)
-        { mhspeed += MaxSpeed/(SpeedInterval/1.5); moving_direction = 0; }
-   
-    hspeed = mhspeed;
-    vspeed = mvspeed;
-    if (MorphBall) maxs = MaxBallSpeed;
-    else maxs = MaxSpeed;
-    
-    if (KeyRight) and (KeyUp) moving_direction = 45;
-    if (KeyRight) and (KeyDown) moving_direction = 315;
-    if (KeyLeft) and (KeyUp) moving_direction = 135;
-    if (KeyLeft) and (KeyDown) moving_direction = 225;
-    
-    speed = min(speed,maxs);
-    if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
-    {
-        moving_direction = -1;
-        if (OnIce) speed = max(speed*0.95,0);
-        else speed = max(speed*0.55,0);
-        if (abs(speed) < 0.5) speed = 0;
-        moving = false;
-    }
-    
-    if (alarm[3] > 0)
-        { speed = 5; direction = KnockbackDir; }
-    
-    mhspeed = lengthdir_x(speed,direction);
-    mvspeed = lengthdir_y(speed,direction);
-    
-    if (MorphBall)
-    {
-        if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
-            { AnimationTimer = 0; }
-        else AnimationTimer += 1;
-        
-        if (AnimationTimer = BallAnimationLimit)
-        {
-            if (BallAnimationStart != BallAnimationEnd)
-            {
-                image_single += 1;
-                if (image_single > BallAnimationEnd) image_single = BallAnimationStart;
-            }
-            AnimationTimer = 0;
-        }
-        if (speed > maxs) speed = maxs;
-        image_angle = direction;
-    }
-    else
-    {
-        if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
-            { image_single = AnimationStart; AnimationTimer = 0; }
-        else AnimationTimer += 1;
-        if (AnimationTimer = 2)
-        {
-            if (AnimationStart != AnimationEnd)
-            {
-                image_single += 1;
-                if (image_single > AnimationEnd) image_single = AnimationStart;
-            }
-            AnimationTimer = 0;
-        }
-    }
-    move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);
-    speed = 0;
+*/
+
+moving_direction_previous = moving_direction;
+moving_direction = 0;
+
+moving = true;    
+if (KeyUp)
+    { mvspeed -= MaxSpeed/(SpeedInterval/1.5); moving_direction = 90; }
+if (KeyLeft)
+    { mhspeed -= MaxSpeed/(SpeedInterval/1.5); moving_direction = 180; }
+if (KeyDown)
+    { mvspeed += MaxSpeed/(SpeedInterval/1.5); moving_direction = 270; }
+if (KeyRight)
+    { mhspeed += MaxSpeed/(SpeedInterval/1.5); moving_direction = 0; }
+
+hspeed = mhspeed;
+vspeed = mvspeed;
+if (MorphBall) maxs = MaxBallSpeed;
+else maxs = MaxSpeed;
+
+if (KeyRight) and (KeyUp) moving_direction = 45;
+if (KeyRight) and (KeyDown) moving_direction = 315;
+if (KeyLeft) and (KeyUp) moving_direction = 135;
+if (KeyLeft) and (KeyDown) moving_direction = 225;
+
+speed = min(speed,maxs);
+if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
+{
+    moving_direction = -1;
+    if (OnIce) speed = max(speed*0.95,0);
+    else speed = max(speed*0.55,0);
+    if (abs(speed) < 0.5) speed = 0;
+    moving = false;
 }
+
+if (alarm[3] > 0)
+    { speed = 5; direction = KnockbackDir; }
+
+mhspeed = lengthdir_x(speed,direction);
+mvspeed = lengthdir_y(speed,direction);
+
+if (MorphBall)
+{
+    if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
+        { AnimationTimer = 0; }
+    else AnimationTimer += 1;
+    
+    if (AnimationTimer = BallAnimationLimit)
+    {
+        if (BallAnimationStart != BallAnimationEnd)
+        {
+            image_single += 1;
+            if (image_single > BallAnimationEnd) image_single = BallAnimationStart;
+        }
+        AnimationTimer = 0;
+    }
+    if (speed > maxs) speed = maxs;
+    image_angle = direction;
+}
+else
+{
+    if ((KeyUp + KeyLeft + KeyDown + KeyRight) = 0)
+        { image_single = AnimationStart; AnimationTimer = 0; }
+    else AnimationTimer += 1;
+    if (AnimationTimer = 2)
+    {
+        if (AnimationStart != AnimationEnd)
+        {
+            image_single += 1;
+            if (image_single > AnimationEnd) image_single = AnimationStart;
+        }
+        AnimationTimer = 0;
+    }
+}
+move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);
+speed = 0;
+//}

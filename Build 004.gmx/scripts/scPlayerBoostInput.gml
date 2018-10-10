@@ -1,8 +1,24 @@
-if (!eId.HasArcDash) exit;
+if (!eId.HasArcDash)
+or (MorphBall) exit;
 
 KeyBoost             = mouse_check_button(mb_middle);
 KeyBoostPressed      = mouse_check_button_pressed(mb_middle);
 KeyBoostReleased     = mouse_check_button_released(mb_middle);
+
+// Release.
+
+if (KeyBoostReleased)
+{
+    if (boostchargelevel = boostchargemax)
+    {
+        motion_add(point_direction(x,y,mouse_x,mouse_y),boostspeed);
+        friction = 8/60;
+        boosting = 60;
+    }
+    boostchargelevel = 0;
+    startboostcharge = 0;
+    boostdelay = 10;
+}
 
 // Press.
 if (KeyBoostPressed) and (!boostdelay) and (!startboostcharge)
@@ -54,53 +70,20 @@ if (boostchargelevel > 0)
     }
 }
 
+// Misc.
+
+if (boosting) boosting -= 1;
 if (boosteffectdelay > 0) boosteffectdelay -= 1;
 if (boostdelay > 0) boostdelay -= 1;
 
-// Release.
-
-if (KeyBoostReleased)
+if (tile_layer_find(1999,x,y))
+and (!tile_layer_find(1001,x,y))
 {
-    if (boostchargelevel = boostchargemax)
-    {
-        motion_add(point_direction(x,y,mouse_x,mouse_y),boostspeed);
-        friction = 0.1;
-        boosting = 60;
-    }
-    boostchargelevel = 0;
-    startboostcharge = 0;
-    boostdelay = 10;
-}
-
-/*
-var boostdir = point_direction(x,y,mouse_x,mouse_y);
-
-if (boostdelay > 0)
-    { boostdelay -= 1; exit; }
-else boostdone = 0;
-
-// Input controller.
-if (boosting)
-{
-    if (boostup < 60) boostup += 1;
-    if (boostup = 60) and (boostready < 10) boostready += 1;
-    if (boostready = 10) boostgo = 1;
-    else boostgo = 0;
-    direction = point_direction(x,y,mouse_x,mouse_y);
+    SpeedInterval = 45;
+    OnIce = true;
 }
 else
 {
-    boostgo = 0;
-    boostready = 0;
-    if (boostup > 0) boostup -= 1;
-}
-
-if (boostgo) and (!boostdone)
-{
-    var destx = mouse_x;
-    var desty = mouse_y;
-    motion_add(boostdir,20);
-    friction = 1;
-    boostdone = 1;
-    boostdelay = 120;
+    SpeedInterval = 5;
+    OnIce = false;
 }

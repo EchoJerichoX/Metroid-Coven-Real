@@ -58,6 +58,8 @@ boosteffectrangemod = 10;
 boostalpha = 0;
 boostalphaset = 0.7;
 boostfaderate = 0.05;
+boostspeed = 10;
+boosting = 0;
 
 /*
 boosting = false; // Used for the Arc Dash. Are we trying to boost?

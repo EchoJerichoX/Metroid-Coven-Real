@@ -313,7 +313,6 @@
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
-      <sprite>sprites\sprPlayerArcDash</sprite>
       <sprite>sprites\sprPlayerMask</sprite>
       <sprite>sprites\sprPlayerMorphBall</sprite>
       <sprite>sprites\sprPlayerMorphBallMask</sprite>
@@ -328,8 +327,10 @@
       <sprite>sprites\sprFootPrint</sprite>
       <sprite>sprites\sprCombatVisor</sprite>
       <sprite>sprites\sprScanVisor</sprite>
+      <sprite>sprites\sprPlayerArcDash</sprite>
       <sprite>sprites\sprArcDashSpark</sprite>
       <sprite>sprites\sprArcDashReady</sprite>
+      <sprite>sprites\sprArcDashTrail</sprite>
     </sprites>
     <sprites name="Projectiles and Weapons">
       <sprite>sprites\sprProjectileMaskDoorChecker</sprite>
@@ -579,8 +580,6 @@
       <script>scripts\scPlayerStepGeneral.gml</script>
       <script>scripts\scPlayerBoostInput.gml</script>
       <script>scripts\scPlayerStepInput.gml</script>
-      <script>scripts\scPlayerMovement.gml</script>
-      <script>scripts\scPlayerMovementBall.gml</script>
       <script>scripts\scPlayerStepWeaponHandling.gml</script>
       <script>scripts\scPlayerWeaponControl.gml</script>
       <script>scripts\scPlayerEndStep.gml</script>

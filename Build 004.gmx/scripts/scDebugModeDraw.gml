@@ -36,8 +36,9 @@ if (object_index = eId)
         draw_text(dxo+5,dyo+64,"boostdelay:");       draw_text(dxo+160,dyo+64,oPlayer.boostdelay);
         draw_text(dxo+5,dyo+80,"boostalpha:");       draw_text(dxo+160,dyo+80,oPlayer.boostalpha);
         draw_text(dxo+5,dyo+96,"boostfaderate:");    draw_text(dxo+160,dyo+96,oPlayer.boostfaderate);
+        draw_text(dxo+5,dyo+112,"boostchargemax:");  draw_text(dxo+160,dyo+112,oPlayer.boostchargemax);
+        draw_text(dxo+5,dyo+128,"boosting:");        draw_text(dxo+160,dyo+128,oPlayer.boosting);
     }
-    
     //draw_text(dxo,dyo-2,string_insert(string_format(instance_number(oParticle),3,0), "Parts: ",8));
     //draw_text(dxo,dyo-50,string_insert(string_format(oViewController.x,3,0), "VC X: ",7));
     //draw_text(dxo,dyo-34,string_insert(string_format(oViewController.y,3,3), "VC Y: ",7));
