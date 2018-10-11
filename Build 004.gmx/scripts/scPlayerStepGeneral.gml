@@ -2,7 +2,7 @@
 // This is temporary, since we need a method to smoothly turn towards the mouse.
 //   image_angle = point_direction(x,y,mouse_x,mouse_y);
 var pd = point_direction(x,y,eId.x,eId.y);
-var dd = angle_difference(image_angle, pd);
+var dd = angle_difference(image_angle,pd);
 image_angle -= min(abs(dd),9)*sign(dd);
 
 // Point weapon separately (not in use).

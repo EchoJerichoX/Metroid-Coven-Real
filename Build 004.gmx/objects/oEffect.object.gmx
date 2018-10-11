@@ -113,11 +113,20 @@ switch (sprite_index)
     case sprArcDashSpark: motion_add(random(360),random(0.5)); break;
     case sprArcDashReady:
         if (instance_exists(oPlayer))
-            { x = oPlayer.x; y = oPlayer.y; }
-        image_xscale += .05;
+        {
+            x = oPlayer.x;
+            y = oPlayer.y;
+            var b = oPlayer.boostchargemax;
+            if (oPlayer.boostchargelevel = 0) instance_destroy();
+        }
+        else var b = 120;
+        if (image_xscale &gt; 0.25) image_xscale -= (1/b)*3
+        if (image_alpha &lt; 1) image_alpha += 1/b;
+        clamp(image_alpha,0,1);
+        image_speed = image_alpha;
         image_yscale = image_xscale;
         image_angle = random(360);
-        image_alpha -= .075;
+        if (image_alpha = 1) instance_destroy();
         break;
     default: image_alpha -= .1; break;
 }
@@ -147,7 +156,6 @@ if (image_alpha &lt;= 0) instance_destroy();
             <string>if (sprite_index = sprPlasmaTrail)
 or (sprite_index = sprIceTrail)
 or (sprite_index = sprBallBombCharge)
-or (sprite_index = sprArcDashReady)
 or (sprite_index = sprArcDashSpark) instance_destroy();
 </string>
           </argument>

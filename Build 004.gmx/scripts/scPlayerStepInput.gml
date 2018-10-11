@@ -63,8 +63,10 @@ if (!MorphBall) and (eId.HasArcDash)
             sound_play(snArcDashStart);
             sound_play(snArcDashCharge);
             sprite_index = sprArcDashReady;
-            image_speed = 0.5;
-            image_alpha = 0.2;
+            image_alpha = 0;
+            image_speed = image_alpha;
+            image_xscale = 3;
+            image_yscale = image_xscale;
             image_angle = random(360);
         }
     }
@@ -137,7 +139,7 @@ if (!MorphBall) and (eId.HasArcDash)
                 sprite_index = sprArcDashTrail;
                 direction = other.direction;
                 speed = other.speed/2;
-                image_angle = other.image_angle;
+                image_angle = other.boostdir;
                 image_alpha = 0.8;;
                 flex = 1;
             }
@@ -294,7 +296,20 @@ if (boosting+boostchargelevel = 0)
         }
     }
 }
-else image_single = AnimationStart;
+else
+{
+    image_single = AnimationStart;
+    if (boosting) image_angle = WeaponAim = boostdir;
+    else
+    {
+        var pd = point_direction(x,y,eId.x,eId.y);
+        var dd = angle_difference(image_angle,pd);
+        image_angle -= min(abs(dd),9)*sign(dd);
+        var pw = point_direction(x,y,eId.x,eId.y);
+        var dw = angle_difference(WeaponAim,pw);
+        WeaponAim -= min(abs(dw),11)*sign(dw);
+    }
+}
 
 move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);
 if (boosting+boostchargelevel = 0) speed = 0;

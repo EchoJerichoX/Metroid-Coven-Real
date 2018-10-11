@@ -140,8 +140,8 @@ switch (myid)
                 sprite_index = sprMissileSmoke;
                 direction = random(360);
                 image_angle = random(360);
-                speed = random_range(.5,1.5);
-                image_speed = random_range(.25,.5);
+                speed = random_range(.5,1.25);
+                image_speed = random_range(.25,.4);
             }
         }
         with (instance_create(x,y,oExplosion))
@@ -155,15 +155,15 @@ switch (myid)
         break;
     case Weapons.wSuperMissile:
         sound_play(SuperMissileExplosion);
-        repeat (60)
+        repeat (40)
         {
             with (instance_create(x,y,oDestroyAnim))
             {
                 sprite_index = sprSuperMissileSmoke;
                 direction = random(360);
                 image_angle = random(360);
-                speed = random_range(.25,1.5);
-                image_speed = random_range(.15,.45);
+                speed = random_range(.5,1.25);
+                image_speed = random_range(.25,.4);
             }
         }
         with (instance_create(x,y,oExplosion))
