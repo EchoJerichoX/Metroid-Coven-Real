@@ -121,6 +121,7 @@
         <sounds name="Addons">
           <sound>sound\snArcDashStart</sound>
           <sound>sound\snArcDashCharge</sound>
+          <sound>sound\snArcDashGo</sound>
         </sounds>
       </sounds>
     </sounds>
