@@ -119,7 +119,7 @@ if (!MorphBall) and (eId.HasArcDash)
                                          snCrackleShort5));
             sprite_index = sprArcDashSpark;
             image_speed = 1;
-            image_alpha = ((random(other.boostchargelevel))/other.boostchargemax)*0.9;
+            image_alpha = 0.6+random(0.4);
             clamp(image_alpha,0,1);
             image_angle = random(360);
             image_xscale = random_range(0.75,1.25);

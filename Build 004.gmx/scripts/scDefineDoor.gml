@@ -1,4 +1,5 @@
 myid = argument0;
+stopdash = 1;
 switch (object_index)
 {
     case oDoorGuideW: rot = 0; mask_index = sprDoorMaskW; break;

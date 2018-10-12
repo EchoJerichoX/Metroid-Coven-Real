@@ -31,6 +31,8 @@ pointx_1=x
 pointy_1=y
 pointx_2=x+lengthdir_x(sprite_width*image_xscale,image_angle)
 pointy_2=y+lengthdir_y(sprite_width*image_xscale,image_angle)
+
+stopdash = 1;
 </string>
           </argument>
         </arguments>

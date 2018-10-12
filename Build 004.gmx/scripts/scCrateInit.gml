@@ -6,3 +6,4 @@ else maxhp = round(random_range(10,16));
 hp = maxhp;
 hitfade = 0;
 soundcanplay = 0;
+stopdash = 0;
