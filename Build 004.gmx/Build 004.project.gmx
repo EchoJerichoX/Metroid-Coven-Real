@@ -329,6 +329,7 @@
       <sprite>sprites\sprFootPrint</sprite>
       <sprite>sprites\sprCombatVisor</sprite>
       <sprite>sprites\sprScanVisor</sprite>
+      <sprite>sprites\sprPlayerArcDashGuide</sprite>
       <sprite>sprites\sprPlayerArcDash</sprite>
       <sprite>sprites\sprCannonsArcDash</sprite>
       <sprite>sprites\sprArcDashSpark</sprite>
