@@ -50,18 +50,19 @@ OnIce = false; // Are we on an ice tile?
 
 startboostcharge = 0;
 boostchargelevel = 0;
-boostchargemax = 120;
+boostchargemax = 60;
 boosteffectdelay = 0;
 boosteffectdelaytimer = 5;
 boostdelay = 0;
+boostdelaymax = 10;
 boosteffectrangemod = 10;
 boostalpha = 0;
 boostalphaset = 0.7;
 boostfaderate = 0.05;
-boostspeed = 4.5;
+boostspeed = 4;
 boosting = 0;
 boostdir = 0;
-boosttraildelay = 3;
+boosttraildelay = 5;
 
 /*
 boosting = false; // Used for the Arc Dash. Are we trying to boost?

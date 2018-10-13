@@ -51,7 +51,7 @@ if (!MorphBall) and (eId.HasArcDash)
         }
         boostchargelevel = 0;
         startboostcharge = 0;
-        boostdelay = 10;
+        boostdelay = boostdelaymax;
     }
     
     // Press boost key.
@@ -74,7 +74,7 @@ if (!MorphBall) and (eId.HasArcDash)
     // Hold boost key.
     if (KeyBoost) and (startboostcharge) and (boostchargelevel < boostchargemax) boostchargelevel += 1;
     if (boostalpha <= 0) boostalpha = boostalphaset;
-    boostfaderate = boostchargelevel/1500;
+    boostfaderate = boostchargelevel/1000;
     if (boostalpha > 0) boostalpha -= boostfaderate;
     if (boostchargelevel > 0)
     {
@@ -85,7 +85,7 @@ if (!MorphBall) and (eId.HasArcDash)
             with (instance_create(x+random_range(boostchargelevel/boosteffectrangemod,boostchargelevel/-boosteffectrangemod),
                                   y+random_range(boostchargelevel/boosteffectrangemod,boostchargelevel/-boosteffectrangemod),oEffect))
             {
-                var s = random(other.boostchargelevel)+random(40);
+                var s = random(other.boostchargelevel)+random(other.boostchargemax/3);
                 if (s > 40) sound_play(choose(snCrackleShort1,
                                               snCrackleShort2,
                                               snCrackleShort3,
@@ -111,7 +111,7 @@ if (!MorphBall) and (eId.HasArcDash)
                               y+random_range(boostchargelevel/boosteffectrangemod,boostchargelevel/-boosteffectrangemod),
                               oEffect))
         {
-            var s = random(10);
+            var s = round(random(10));
             if (s > 4) sound_play(choose(snCrackleShort1,
                                          snCrackleShort2,
                                          snCrackleShort3,
@@ -135,12 +135,12 @@ if (!MorphBall) and (eId.HasArcDash)
             else boosttrail -= 1;
             with (instance_create(x,y,oEffect))
             {
-                
+                depth = other.depth-1;
                 sprite_index = sprArcDashTrail;
                 direction = other.direction;
                 speed = other.speed/2;
                 image_angle = other.boostdir;
-                image_alpha = 0.8;;
+                image_alpha = 0.8;
                 flex = 1;
             }
         }
@@ -174,14 +174,22 @@ and (!boostchargelevel)
 }
 
 // Set sprite depending on whether we are in Morph Ball or not.
-if (MorphBall = false) && (sprite_index = sprPlayerMorphBall)
-    { sprite_index = sprPlayer; image_single = AnimationStart; mask_index = sprPlayerMask; }
-if (MorphBall = true) && (sprite_index = sprPlayer)
-    { sprite_index = sprPlayerMorphBall; image_single = BallAnimationStart; mask_index = sprPlayerMorphBallMask; }
-
+if (boosting) 
+{
+    sprite_index = sprPlayerArcDash;
+    if (instance_exists(oCannon)) oCannon.sprite_index = sprCannonsArcDash;
+}
+else
+{
+    if (instance_exists(oCannon)) oCannon.sprite_index = sprCannons;
+    if (MorphBall = false) && (sprite_index != sprPlayer)
+        { sprite_index = sprPlayer; image_single = AnimationStart; mask_index = sprPlayerMask; }
+    if (MorphBall = true) && (sprite_index != sprPlayerMorphBall)
+        { sprite_index = sprPlayerMorphBall; image_single = BallAnimationStart; mask_index = sprPlayerMorphBallMask; }
+}
 
 // Toggle scan and combat visor.
-if (KeyVisor) eId.visor = !eId.visor;
+if (KeyVisor) and (boosting+boostchargelevel = 0) eId.visor = !eId.visor;
 
 // Check whether or not we are standing on ice tiles.
 if (tile_layer_find(1999,x,y))
@@ -299,16 +307,16 @@ if (boosting+boostchargelevel = 0)
 else
 {
     image_single = AnimationStart;
-    if (boosting) image_angle = WeaponAim = boostdir;
-    else
-    {
-        var pd = point_direction(x,y,eId.x,eId.y);
-        var dd = angle_difference(image_angle,pd);
-        image_angle -= min(abs(dd),9)*sign(dd);
-        var pw = point_direction(x,y,eId.x,eId.y);
-        var dw = angle_difference(WeaponAim,pw);
-        WeaponAim -= min(abs(dw),11)*sign(dw);
-    }
+    
+    var pd;
+    if (boosting) pd = boostdir;
+    else pd = point_direction(x,y,eId.x,eId.y);
+    
+    var dd = angle_difference(image_angle,pd);
+    image_angle -= min(abs(dd),9)*sign(dd);
+    
+    var dw = angle_difference(WeaponAim,pd);
+    WeaponAim -= min(abs(dw),11)*sign(dw);
 }
 
 move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);

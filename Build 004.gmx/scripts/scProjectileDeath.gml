@@ -180,13 +180,15 @@ switch (myid)
         sound_play(BombExplosion);
         with (instance_create(x,y,oExplosion))
         {
+            myid = other.myid;
             hittype = 4; // Bomb.
             sprite_index = sprBallBombExplosion;
+            playerweapon = 1;
             image_speed = .5;
             Damage = 6;
             scProjectileLight(.2,c_white,make_color_rgb(94,174,255),.4);
-            if (instance_exists(oPlayer)) oPlayer.ExistingBombs -= 1;
         }
+        if (instance_exists(oPlayer)) oPlayer.ExistingBombs -= 1;
         break;
     
 // ===== Enemy Beams =====

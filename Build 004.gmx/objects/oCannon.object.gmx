@@ -27,7 +27,15 @@
             <kind>1</kind>
             <string>if (instance_exists(oPlayer))
 {
-    draw_sprite_ext(sprCannons,oPlayer.Cannon,oPlayer.WeaponXPosition,oPlayer.WeaponYPosition,1,1,oPlayer.WeaponAim,c_white,image_alpha);
+    draw_sprite_ext(sprite_index,
+                    oPlayer.Cannon,
+                    oPlayer.WeaponXPosition,
+                    oPlayer.WeaponYPosition,
+                    1,
+                    1,
+                    oPlayer.WeaponAim,
+                    c_white,
+                    image_alpha);
 }
 </string>
           </argument>

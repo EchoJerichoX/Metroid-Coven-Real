@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>Damage = 0;
 hittype = 0;
+playerweapon = 0;
 </string>
           </argument>
         </arguments>

@@ -14,7 +14,7 @@ switch (myid)
 // --- Power Beam ---
     case Weapons.wPowerBeam:
         // - General Initialization -
-        playerprojectile = 1; // Player-owned projectile.
+        playerweapon = 1; // Player-owned projectile.
         hittype = 1; // Beam.
         DiesOnContact = true; // Destroy the instance when it hits something.
         Damage = 1; // Damage dealt to enemies and applicable obstructions.
@@ -47,7 +47,7 @@ switch (myid)
 // --- Wave Beam ---
     case Weapons.wWaveBeam:
         // - General Initialization -
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 1;
@@ -77,7 +77,7 @@ switch (myid)
 // --- Plasma Beam ---
     case Weapons.wPlasmaBeam:
         // - General Initialization -
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 7;
@@ -110,7 +110,7 @@ switch (myid)
 // --- Spazer Beam ---
     case Weapons.wSpazerBeam:
         // - General Initialization -
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 1;
@@ -141,7 +141,7 @@ switch (myid)
 // --- Pulse Beam ---
     case Weapons.wPulseBeam:
         // - General Initialization -
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 1;
@@ -160,7 +160,7 @@ switch (myid)
 // --- Ice Beam ---
     case Weapons.wIceBeam:
         // - General Initialization -
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 2;
@@ -194,7 +194,7 @@ switch (myid)
 // --- Rupture Beam ---
     case Weapons.wRuptureBeam:
         // - General Initialization -
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 2;
@@ -226,7 +226,7 @@ switch (myid)
 // --- Rupture Beam Particle---
     case Projectiles.pRuptureBeamParticle:
         // - General Initialization -
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 0.5;
@@ -241,7 +241,7 @@ switch (myid)
 // --- Phazon Beam ---
     case Weapons.wPhazonBeam:
         // - General Initialization -
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 1; // Beam.
         DiesOnContact = true;
         Damage = 4;
@@ -273,7 +273,7 @@ switch (myid)
 // ====================================
 // --- Missile Launcher ---
     case Weapons.wMissileLauncher:
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 2; // Missile.
         speed = 6;
         sprite_index = sprMissile;
@@ -284,7 +284,7 @@ switch (myid)
         alarm[0] = 200;
         break;
     case Weapons.wSuperMissile:
-        playerprojectile = 1;
+        playerweapon = 1;
         hittype = 3; // Super Missile.
         speed = 4;
         sprite_index = sprSuperMissile;
@@ -300,12 +300,12 @@ switch (myid)
 // ================================
 // --- Ball Bomb ---
     case Weapons.wBallBomb:
-        playerprojectile = 1;
+        playerweapon = 1;
         // See this ID in "scProjectileDeath" for actual damage info.
         speed = 0;
         Damage = 0;
-        if (instance_exists(oPlayer)) oPlayer.ExistingBombs += 1;
         sprite_index = sprBallBomb;
+        if (instance_exists(oPlayer)) oPlayer.ExistingBombs += 1;
         mask_index = sprite_index;
         DiesOnContact = false;
         sound_play(BombLay);
@@ -315,7 +315,7 @@ switch (myid)
         break;
 // --- Power Bomb ---
     case Weapons.wPowerBomb:
-        playerprojectile = 1;
+        playerweapon = 1;
         // See this ID in "scProjectileDeath" for actual damage info.
         speed = 0;
         Damage = 0;
@@ -335,7 +335,7 @@ switch (myid)
 
 // --- Turret Bolt ---
     case Projectiles.pTurret:
-        playerprojectile = 0;
+        playerweapon = 0;
         hittype = 1; // Beam.
         Damage = 12;
         speed = 10;

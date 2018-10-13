@@ -2,6 +2,8 @@
 // Using the below 2 switch statements, we determine which object this
 //   script is being called from so we can do different things in each.
 
+if (!instance_exists(oViewController)) instance_create(x,y,oViewController);
+
 // Step 1: Determine weather type by region.
 scEIDGetRegion();
 

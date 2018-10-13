@@ -6,9 +6,12 @@ switch (myid)
 {
     case Enemies.eZoomer:
         if (other.myid = Weapons.wBallBomb)
+        or (other.myid = Weapons.wPowerBomb)
         {
-            if (ImmuneToBomb) exit;
-            else ImmuneToBomb = 6;
+            instance_destroy();
+            exit;
+            //if (ImmuneToBomb) exit;
+            //else ImmuneToBomb = 6;
         }
         if (HP < MaxHP/2) staterate = 20; // Speed up the state changes to exhibit panic.
         if (soundcanplay = 0)
@@ -24,5 +27,13 @@ switch (myid)
         damaged = 1;
         break;
     // - - -
-    case Enemies.eTurret: damaged = 1; break;
+    case Enemies.eTurret:
+        if (other.myid = Weapons.wBallBomb)
+        or (other.myid = Weapons.wPowerBomb)
+        {
+            instance_destroy();
+            //if (ImmuneToBomb) exit;
+            //else ImmuneToBomb = 6;
+        }
+        damaged = 1; break;
 }

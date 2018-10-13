@@ -1,3 +1,9 @@
+if (other.myid = Weapons.wPowerBomb) instance_destroy();
+if (other.myid = Weapons.wBallBomb)
+{
+    if (ImmuneToBomb) exit;
+    else ImmuneToBomb = 6;
+}
 hp -= other.Damage; // Reduce health by a value determined by the projectile.
 if (hp <= 0)
     { instance_destroy(); exit; }

@@ -330,6 +330,7 @@
       <sprite>sprites\sprCombatVisor</sprite>
       <sprite>sprites\sprScanVisor</sprite>
       <sprite>sprites\sprPlayerArcDash</sprite>
+      <sprite>sprites\sprCannonsArcDash</sprite>
       <sprite>sprites\sprArcDashSpark</sprite>
       <sprite>sprites\sprArcDashReady</sprite>
       <sprite>sprites\sprArcDashTrail</sprite>
@@ -419,7 +420,7 @@
   <paths name="paths">
     <paths name="Generic">
       <path>paths\GeneralTestRoomPath1</path>
-      <path>paths\AITestRoomPath1</path>
+      <path>paths\DashTestRoomPath1</path>
     </paths>
     <paths name="Tutorial">
       <path>paths\TutorialStartPath1</path>
@@ -585,6 +586,7 @@
       <script>scripts\scPlayerWeaponControl.gml</script>
       <script>scripts\scPlayerEndStep.gml</script>
       <script>scripts\scPlayerDraw.gml</script>
+      <script>scripts\scPlayerBoostCollide.gml</script>
       <script>scripts\scPlayerDamageActor.gml</script>
       <script>scripts\scPlayerDamageHazard.gml</script>
       <script>scripts\scPlayerDamageProjectile.gml</script>
@@ -595,8 +597,8 @@
       <script>scripts\scFireProjectile.gml</script>
       <script>scripts\scDefineProjectile.gml</script>
       <script>scripts\scProjectileStep.gml</script>
-      <script>scripts\scProjectileDeath.gml</script>
       <script>scripts\scProjectileLight.gml</script>
+      <script>scripts\scProjectileDeath.gml</script>
     </scripts>
     <scripts name="Rooms and Transitions">
       <script>scripts\scRoomInit.gml</script>
@@ -757,6 +759,7 @@
     <rooms name="Generic Rooms">
       <room>rooms\GeneralTestRoom</room>
       <room>rooms\EnemyTestRoom</room>
+      <room>rooms\DashTestRoom</room>
       <room>rooms\NewRoomTemplate</room>
       <room>rooms\Fire1</room>
       <room>rooms\TransitionRoom</room>

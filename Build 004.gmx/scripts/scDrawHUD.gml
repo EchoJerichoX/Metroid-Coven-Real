@@ -1,4 +1,6 @@
-if (room = TitleRoom) or (room = IntroSceneShip) exit;
+if (room = TitleRoom)
+or (room = IntroSceneShip)
+or (!drawhud) exit;
 var vx,vy,
     MissileLauncherAlpha,
     SuperMissileAlpha,

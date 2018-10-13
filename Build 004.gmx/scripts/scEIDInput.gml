@@ -18,11 +18,9 @@ if (keyboard_check_pressed(vk_f9))
 // - DEBUG MODE KEYS - //
 /*
     NUM 0 - Toggle debug mode.
-    
     NUM 1 - Spawn health at mouse.
     NUM 2 - Spawn ammo at mouse.
     NUM 3 - Overheat the Plasma Beam.
-    
     NUM 4 - Spawn enemy at mouse.
             Set "debugenemy" variable in "GameInit" script
             to determine which enemy to spawn.
@@ -33,7 +31,8 @@ if (keyboard_check_pressed(vk_f9))
     NUM 6 - Update AI movement planning grid cells.
     NUM 7 - Toggle drawing of motion planning grid.
     NUM 8 - Update motion planning grid.
-    
+    NUM 9 - Toggle HUD.
+    NUM / - Toggle slowdown.
     NUM * - Grant all powerups to player.
     NUM - - Reduce player health by 1.
 */
@@ -84,38 +83,6 @@ if (keyboard_check_pressed(vk_numpad2))
 if (keyboard_check_pressed(vk_numpad3)) and (instance_exists(oPlayer))
     { if (oPlayer.CurrentPrimary = Weapons.wPlasmaBeam) oPlayer.Heat = 100; }
     
-// Grant all powerups to player.
-if (keyboard_check_pressed(vk_multiply))
-{
-    if (!allitemsgiven) and (instance_exists(oPlayer))
-    {
-        allitemsgiven = 1;
-        HasWaveBeam = true;
-        HasPlasmaBeam = true;
-        HasSpazerBeam = true;
-        HasPulseBeam = true;
-        HasIceBeam = true;
-        HasRuptureBeam = true;
-        HasPhazonBeam = true;
-        HasMissileLauncher = true;
-        HasSuperMissile = true;
-        HasDiffuser = true;
-        HasMorphBall = true;
-        HasBallBomb = true;
-        HasPowerBomb = true;
-        HasArcDash = true;
-        HasLightsear = true;
-        // ---
-        with (oPlayer)
-        {
-            scDefineSuit(Other.sCorruptionSuit);
-            EnergyTanks = 12;
-            FullTanks = EnergyTanks;
-            Energy = 100;
-        }
-    }
-}
-
 // Spawn enemy at mouse.
 //   Set "debugenemy" variable in "GameInit" script
 //   to determine which enemy to spawn.
@@ -154,6 +121,49 @@ if (keyboard_check_pressed(vk_numpad7)) drawmpgrid = !drawmpgrid;
 
 // Update motion planning grid.
 if (keyboard_check_pressed(vk_numpad8)) scUpdateMPGrid();
+
+// Toggle HUD.
+if (keyboard_check_pressed(vk_numpad9)) drawhud = !drawhud;
+
+// Toggle HUD.
+if (keyboard_check_pressed(vk_divide))
+{
+    if (room_speed = 60) room_speed = 15;
+    else room_speed = 60;
+}
+
+// Grant all powerups to player.
+if (keyboard_check_pressed(vk_multiply))
+{
+    if (!allitemsgiven) and (instance_exists(oPlayer))
+    {
+        allitemsgiven = 1;
+        HasWaveBeam = true;
+        HasPlasmaBeam = true;
+        HasSpazerBeam = true;
+        HasPulseBeam = true;
+        HasIceBeam = true;
+        HasRuptureBeam = true;
+        HasPhazonBeam = true;
+        HasMissileLauncher = true;
+        HasSuperMissile = true;
+        HasDiffuser = true;
+        HasMorphBall = true;
+        HasBallBomb = true;
+        HasPowerBomb = true;
+        HasArcDash = true;
+        HasLightsear = true;
+        // ---
+        with (oPlayer)
+        {
+            scDefineSuit(Other.sCorruptionSuit);
+            EnergyTanks = 12;
+            FullTanks = EnergyTanks;
+            Energy = 100;
+        }
+    }
+}
+
 
 // Reduce player health by 1.
 if (keyboard_check(vk_subtract))

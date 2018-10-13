@@ -50,11 +50,12 @@ switch (state)
             else pspeed = 1; // Move faster if the enemy is weakened, to show panic.
                              // Would normally not be needed unless there is no den to run to when taking damage.
             path_start(mypath,pspeed,path_action_stop,0);
-            image_speed = pspeed/2;
+            image_speed = 0.5;
             state = 2;
         }
         break;
     case 2: // Move along path.
+        image_speed = 0.5;
         image_angle = point_direction(x,y,xprevious,yprevious);
         if (path_position = 1)
         {

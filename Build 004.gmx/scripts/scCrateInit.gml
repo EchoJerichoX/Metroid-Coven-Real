@@ -7,3 +7,4 @@ hp = maxhp;
 hitfade = 0;
 soundcanplay = 0;
 stopdash = 0;
+ImmuneToBomb = 0;

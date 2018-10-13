@@ -1,3 +1,4 @@
+if (boosting+boostchargelevel > 0) exit;
 if (MorphBall = false)
 {
     if (KeyPowerBeam)

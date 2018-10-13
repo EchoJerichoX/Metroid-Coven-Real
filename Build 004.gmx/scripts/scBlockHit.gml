@@ -51,35 +51,6 @@ switch (object_index)
         break;
     case oIceLR:
     case oIceUD:
-        if (other.myid = Weapons.wMissileLauncher) or (other.myid = Weapons.wSuperMissile)
-        {
-            o1 = sprite_width; o2 = sprite_height;
-            if (sprite_index = sprIceLR) image_angle += 90;
-            so = 15; // Distance in from the edge of the sprite we will create a doodad.
-            repeat(25+round(random(10))) with (instance_create(x-(o1/2)+so+random(o1)-so,y-(o2/2)+so+random(o2)-so,oDoodad))
-            {
-                sprite_index = sprIcePart;
-                depth = other.depth+1;
-                image_angle = random(360);
-                image_xscale = random_range(.6,1);
-                image_yscale = random_range(.6,1);
-                alarm[0] = 300-max(instance_number(oDoodad),1);
-                image_single = round(random(11));
-                speed = 1+random(1);
-                friction = .05;
-                direction = random(360);
-                image_alpha = other.image_alpha-.2;
-            }
-            sound_play(IceShatter);
-            with (instance_create(x,y,oExplosion))
-            {
-                sprite_index = sprIceShatter;
-                depth = other.depth;
-                image_angle = other.image_angle;
-                image_speed = .5;
-                image_alpha = other.image_alpha+.2;
-            }
-            instance_destroy();
-        }
+        if (other.myid = Weapons.wMissileLauncher) or (other.myid = Weapons.wSuperMissile) instance_destroy();
         break;
 }

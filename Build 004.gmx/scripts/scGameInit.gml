@@ -15,6 +15,7 @@ StartRoom = TutorialStart; // Determines where we go after the player leaves the
 wait = 120; // Delay to start intro scene.
 titlevol = 1; // Volume of title music.
 tutorialmessageshown = 0; // Has the tutorial "welcome" message been shown?
+drawhud = 1; // Draw HUD in gameplay rooms.
 
 // Initialize debug mode stuff.
 debugmode = 0; // Is debug mode on or off?

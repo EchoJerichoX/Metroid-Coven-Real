@@ -365,7 +365,7 @@ if (DiesOnContact)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!playerprojectile) exit;
+            <string>if (!playerweapon) exit;
 other.HitPoints -= Damage;
 other.TakeHitDirection = direction;
 if (DiesOnContact) 

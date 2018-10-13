@@ -321,28 +321,7 @@ scPlayerDamageHazard();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (boosting)
-{
-    if (!other.stopdash) exit; // If the other object should be able to stop
-                               //    the player while boosting, continue.
-    x = xprevious;
-    y = yprevious;
-    boosting = 0;
-    boosttrail = 0;
-    repeat (10)
-    {
-        with (instance_create(x+random_range(-7,7),y+random_range(-7,7),oDestroyAnim))
-        {
-            sprite_index = sprSmoke;
-            direction = random(360);
-            image_angle = random(360);
-            speed = random_range(.5,1.25);
-            image_speed = random_range(.25,.4);
-        }
-    }
-    KnockbackDir = direction-180;
-    alarm[3] = 2;
-}
+            <string>scPlayerBoostCollide();
 </string>
           </argument>
         </arguments>
