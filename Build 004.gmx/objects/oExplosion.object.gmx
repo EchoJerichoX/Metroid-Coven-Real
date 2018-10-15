@@ -28,6 +28,7 @@
             <string>Damage = 0;
 hittype = 0;
 playerweapon = 0;
+myid = -1;
 </string>
           </argument>
         </arguments>

@@ -45,7 +45,7 @@ switch (object_index)
                     { if (other.sprite_index = sprSuperMissileExplosion) instance_destroy(); }
                 break;
             case Blocks.bArcDash:
-                // Incomplete.
+                if (argument0 = 6) and (other.boosting) instance_destroy();
                 break;
         }
         break;

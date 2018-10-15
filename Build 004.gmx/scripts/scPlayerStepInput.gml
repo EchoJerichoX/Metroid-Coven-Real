@@ -41,6 +41,8 @@ if (!MorphBall) and (eId.HasArcDash)
     // Release boost key.
     if (KeyBoostReleased)
     {
+        if (sound_isplaying(snArcDashReadyIdle)) sound_stop(snArcDashReadyIdle);
+        sound_volume(snArcDashReadyIdle,0);
         if (boostchargelevel = boostchargemax)
         and (!boosting)
         and (!boostdelay)
@@ -57,6 +59,7 @@ if (!MorphBall) and (eId.HasArcDash)
     // Press boost key.
     if (KeyBoostPressed) and (!boostdelay) and (!startboostcharge)
     {
+        if (!sound_isplaying(snArcDashReadyIdle)) sound_loop(snArcDashReadyIdle);
         startboostcharge = 1;
         with (instance_create(x,y,oEffect))
         {
@@ -78,6 +81,7 @@ if (!MorphBall) and (eId.HasArcDash)
     if (boostalpha > 0) boostalpha -= boostfaderate;
     if (boostchargelevel > 0)
     {
+        sound_volume(snArcDashReadyIdle,boostchargelevel/boostchargemax);
         var ce = random(boostchargelevel);
         if (abs(ce-boostchargemax) > boostchargemax/3) and (!boosteffectdelay)
         {

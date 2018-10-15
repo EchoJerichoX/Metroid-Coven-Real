@@ -121,7 +121,9 @@
         <sounds name="Addons">
           <sound>sound\snArcDashStart</sound>
           <sound>sound\snArcDashCharge</sound>
+          <sound>sound\snArcDashReadyIdle</sound>
           <sound>sound\snArcDashGo</sound>
+          <sound>sound\snArcDashImpactSpark</sound>
         </sounds>
       </sounds>
     </sounds>
@@ -290,6 +292,9 @@
       <sprite>sprites\sprSmoke</sprite>
     </sprites>
     <sprites name="Interface">
+      <sprites name="HUD 2.0">
+        <sprite>sprites\sprHUDText</sprite>
+      </sprites>
       <sprite>sprites\sprText</sprite>
       <sprite>sprites\sprTextSkewed</sprite>
       <sprite>sprites\sprHUDAccentTop</sprite>
@@ -519,6 +524,7 @@
     <scripts name="Engine Initialization">
       <script>scripts\scGameInit.gml</script>
       <script>scripts\scEIDMasterList.gml</script>
+      <script>scripts\scEIDAudioInit.gml</script>
       <script>scripts\scEIDStep.gml</script>
       <script>scripts\scEIDInput.gml</script>
       <script>scripts\scEIDEndStep.gml</script>

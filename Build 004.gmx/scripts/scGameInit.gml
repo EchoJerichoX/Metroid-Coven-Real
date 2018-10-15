@@ -8,6 +8,7 @@
 scEIDMasterList(); // Init the enums for all IDs in the game.
 tutorialroom = 0;
 scEIDMessagesInit(); // Init the various messages of the game.
+scEIDAudioInit();
 region = 0; // Determines what region we are in.
 fullscreen = 0; // Determines whether the game is in fullscreen or not.
 titlefade = 0; // Used to fade the title screen.
