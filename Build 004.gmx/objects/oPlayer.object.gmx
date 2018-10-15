@@ -321,7 +321,8 @@ scPlayerDamageHazard();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scPlayerBoostCollide();
+            <string>///scPlayerBoostCollide(1);
+scPlayerBoostCollide(1);
 </string>
           </argument>
         </arguments>

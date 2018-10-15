@@ -76,6 +76,7 @@ vector_path_add(oVectorLine,Tutorial6Path3,0,0,0);</code>
     <instance objName="oBlock16" x="128" y="200" name="inst_6263732C" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock16" x="344" y="248" name="inst_BF4CAD7E" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oBlock8" x="252" y="344" name="inst_06993301" locked="0" code="scDefineBlock(Blocks.bBomb);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oDoorGuideS" x="320" y="432" name="inst_15919975" locked="0" code="scDefineDoor(Doors.dBlue);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaOuter" x="272" y="432" w="32" h="48" xo="208" yo="80" id="10033502" name="inst_C7F86B34" depth="2" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

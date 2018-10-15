@@ -10,6 +10,7 @@ switch (argument0)
     case 2:
         // - Tutorial -
         if (room = Tutorial5) eId.HasTutorial5ME = true;
+        if (room = Tutorial8) eId.HasTutorial8ME = true;
         // - Barria Tundra -
         if (room = BarriaLandingSite) eId.HasBarriaLandingSiteME = true;
         if (room = BarriaCacheMissile) eId.HasBarriaCacheMissileME = true;

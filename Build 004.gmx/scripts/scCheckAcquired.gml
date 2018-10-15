@@ -10,6 +10,7 @@ switch (argument0)
     case 2:
         // - Tutorial -
         if (room = Tutorial5) and (eId.HasTutorial5ME = true) instance_destroy();
+        if (room = Tutorial8) and (eId.HasTutorial8ME = true) instance_destroy();
         // - Barria Tundra -
         if (room = BarriaLandingSite) and (eId.HasBarriaLandingSiteME = true) instance_destroy();
         if (room = BarriaCacheMissile) and (eId.HasBarriaCacheMissileME = true) instance_destroy();

@@ -91,6 +91,7 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <instance objName="oItem" x="512" y="144" name="inst_BDB627D3" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="544" y="144" name="inst_07003380" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oItem" x="576" y="144" name="inst_B40499E9" locked="0" code="scDefineItem(Items.iPowerBombExpansion);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="461" y="541" name="inst_3A27FD77" locked="0" code="scDefineBlock(Blocks.bReform);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="tilBarriaIceCave" x="64" y="448" w="64" h="64" xo="16" yo="320" id="10009142" name="tile_B7771496" depth="1999" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
@@ -198,6 +199,7 @@ vector_path_add(oVectorLine,GeneralTestRoomPath1,0,0,0);</code>
     <tile bgName="&lt;undefined&gt;" x="96" y="528" w="48" h="48" xo="0" yo="192" id="10009154" name="tile_07295A1B" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="&lt;undefined&gt;" x="96" y="576" w="48" h="48" xo="0" yo="192" id="10009155" name="tile_C4645604" depth="1001" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCave" x="128" y="304" w="16" h="16" xo="48" yo="336" id="10009156" name="tile_905CF842" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="grdGeneral" x="464" y="544" w="16" h="16" xo="80" yo="80" id="10034675" name="inst_7DB0B115" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCave" x="352" y="256" w="16" h="16" xo="96" yo="416" id="10020553" name="inst_2879A60B" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCave" x="352" y="272" w="16" h="16" xo="96" yo="416" id="10020554" name="inst_9707DB9A" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="tilBarriaIceCave" x="352" y="288" w="16" h="16" xo="96" yo="416" id="10020555" name="inst_C27FFAE0" depth="-1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

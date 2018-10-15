@@ -109,15 +109,28 @@ visible = true;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (r = 1)
+            <string>if (r = 1) // Are we a reforming block?
     { alarm[0] = 300; r = 0; image_speed = 0; visible = false; exit; }
 if (sprite_index = sprBlockReform16) or (sprite_index = sprBlockReform8)
 {
+    if (instance_exists(oActor))
+    {
+        var na = instance_nearest(x+sprite_width/2,y+sprite_height/2,oActor);
+        if (point_distance(x+sprite_width/2,y+sprite_height/2,na.x,na.y) &lt; 10) exit;
+        // ^ Replace the "10" above with an adjustable number based on actor's sprite/mask size.
+    }
+    if (instance_exists(oPlayer))
+        { if (point_distance(x+sprite_width/2,y+sprite_height/2,oPlayer.x,oPlayer.y) &lt; 8) exit; }
     if (sprite_index = sprBlockReform16) with (instance_create(x,y,oBlock16)) scDefineBlock(Blocks.bReform);
     if (sprite_index = sprBlockReform8) with (instance_create(x,y,oBlock8)) scDefineBlock(Blocks.bReform);
+    // The below code will bring back the tile that we erase when a reforming block is destroyed.
+    // Traditionally, the bare form of the block remains visible in Metroid games, so if we want
+    //   to bring the tile back when the block reforms, just uncomment the below 3 lines.
+    /*
     var ii;
-    ii = tile_layer_find(1,x+sprite_width/2,y+sprite_height/2);
+    ii = tile_layer_find(eId.secrettilelayer,x+sprite_width/2,y+sprite_height/2);
     if (ii) tile_set_visible(ii,true);
+    */
 }
 instance_destroy();
 </string>

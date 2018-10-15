@@ -1,8 +1,12 @@
 if (boosting)
 {
-    if (!other.stopdash) exit; // If the other object should be able to stop
-                               //   the player while boosting, continue.
-    //or (angle_difference(boostdir,point_direction(xprevious,yprevious,x,y)) < 21) exit;
+    if (argument0 = 2) // If the player is stopping the dash manually...
+    {
+        // Add stuff here later.
+    }
+    if (argument0 = 1) // If this is called from a collision event...
+        { if (!other.stopdash) exit; } // If the other object should be able to stop
+                                       //   the player while boosting, continue.
     x = xprevious;
     y = yprevious;
     boosting = 0;

@@ -115,6 +115,12 @@ vector_path_add(oVectorLine,DashTestRoomPath1,0,0,0);</code>
     <instance objName="oIceLR" x="576" y="384" name="inst_18F95453" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oIceLR" x="1136" y="368" name="inst_AD752524" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="oIceUD" x="896" y="352" name="inst_00197F2A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="368" y="192" name="inst_3E996CDD" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="384" y="240" name="inst_AAE24D68" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock16" x="400" y="208" name="inst_CBF50ABC" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="416" y="160" name="inst_9449507F" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="480" y="128" name="inst_47C025D2" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="oBlock8" x="448" y="144" name="inst_E801A6A6" locked="0" code="scDefineBlock(Blocks.bArcDash);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="grdGeneral" x="0" y="0" w="32" h="32" xo="0" yo="128" id="10034519" name="inst_C4DAFD9C" depth="1" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

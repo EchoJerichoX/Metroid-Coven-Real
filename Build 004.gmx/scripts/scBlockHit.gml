@@ -5,6 +5,7 @@
 
 // Exception list (blocks should only be
 //   breakable by the player for now)...
+/*
 switch (argument0)
 {
     case 1:
@@ -14,6 +15,7 @@ switch (argument0)
         // Insert "if other.myid = Weapons.wEnemySplash" or something here, with "exit;".
         break;
 }
+*/
 switch (object_index)
 {
     case oBlock16:
@@ -45,7 +47,12 @@ switch (object_index)
                     { if (other.sprite_index = sprSuperMissileExplosion) instance_destroy(); }
                 break;
             case Blocks.bArcDash:
-                if (argument0 = 6) and (other.boosting) instance_destroy();
+                if (argument0 = 4) 
+                {
+                    if (other.object_index = oPlayer) 
+                        { if (other.boosting) instance_destroy(); }
+                    if (other.sprite_index = sprArcDashTrail) instance_destroy();
+                }
                 break;
         }
         break;

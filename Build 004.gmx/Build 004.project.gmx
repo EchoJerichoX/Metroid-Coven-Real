@@ -335,11 +335,11 @@
       <sprite>sprites\sprCombatVisor</sprite>
       <sprite>sprites\sprScanVisor</sprite>
       <sprite>sprites\sprPlayerArcDashGuide</sprite>
+      <sprite>sprites\sprArcDashReady</sprite>
       <sprite>sprites\sprPlayerArcDash</sprite>
       <sprite>sprites\sprCannonsArcDash</sprite>
-      <sprite>sprites\sprArcDashSpark</sprite>
-      <sprite>sprites\sprArcDashReady</sprite>
       <sprite>sprites\sprArcDashTrail</sprite>
+      <sprite>sprites\sprArcDashSpark</sprite>
     </sprites>
     <sprites name="Projectiles and Weapons">
       <sprite>sprites\sprProjectileMaskDoorChecker</sprite>
@@ -440,6 +440,7 @@
       <path>paths\Tutorial6Path2</path>
       <path>paths\Tutorial6Path3</path>
       <path>paths\Tutorial7Path1</path>
+      <path>paths\Tutorial8Path1</path>
     </paths>
     <paths name="Barria">
       <path>paths\BarriaLandingSitePath1</path>
@@ -700,6 +701,7 @@
         <object>objects\oStickLightS</object>
       </objects>
       <objects name="Obstructions">
+        <object>objects\oDestructibleBlockParent</object>
         <object>objects\oBlock16</object>
         <object>objects\oBlock8</object>
         <object>objects\oIceParent</object>
@@ -755,6 +757,7 @@
       <room>rooms\Tutorial5</room>
       <room>rooms\Tutorial6</room>
       <room>rooms\Tutorial7</room>
+      <room>rooms\Tutorial8</room>
     </rooms>
     <rooms name="Barria">
       <room>rooms\BarriaLandingSite</room>

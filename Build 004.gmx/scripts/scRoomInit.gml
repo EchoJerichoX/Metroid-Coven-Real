@@ -18,13 +18,14 @@ if (object_index = eId)
         // NOTE that some rooms initialize their vector paths from the room creation code.
         // - Tutorial -
         case TutorialStart:
-        alarm[1] = 10;
+            alarm[1] = 10;
         case Tutorial2:
         case Tutorial3:
         case Tutorial4:
         case Tutorial5:
         case Tutorial6:
         case Tutorial7:
+        case Tutorial8:
             tutorialroom = 1;
             scEIDMessagesInit(); // Tell the item pickup strings to update to the tutorial versions.
             break;

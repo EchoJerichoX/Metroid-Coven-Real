@@ -1,6 +1,8 @@
 myid = argument0;
 depth = 10;
 stopdash = 1;
+if (tile_layer_find(1,x+sprite_width/2,y+sprite_height/2)) image_alpha = 0;
+else image_alpha = 1;
 switch (object_index)
 {
     case oBlock16:

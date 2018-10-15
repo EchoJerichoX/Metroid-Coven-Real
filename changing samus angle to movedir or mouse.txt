@@ -1,0 +1,6 @@
+add a system where Samus generally follows her moving direction, and only snaps towards the mouse when she is trying to fire.
+
+use moving_direction for a facing, smooth turn to it at a certain speed.
+add a variable to determine if she should be facing the mouse, or her moving direction.
+if var = 1, move at one speed, otherwise move at a faster speed to face the mouse.
+this will add a skill ceiling to get the player to practice turning samus towards the mouse, strafing, etc. maybe change right-click behavior? turn off automatic weaponry?

@@ -3,6 +3,7 @@
 // --- Missile Expansions ---
 // - Tutorial -
 HasTutorial5ME = false;
+HasTutorial8ME = false;
 // - Barria Tundra -
 HasBarriaLandingSiteME = false;
 HasBarriaCacheMissileME = false;

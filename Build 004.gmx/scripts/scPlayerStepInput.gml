@@ -39,7 +39,7 @@ KeyTorch             = keyboard_check_pressed(ord("F"));
 if (!MorphBall) and (eId.HasArcDash)
 {
     // Release boost key.
-    if (KeyBoostReleased)
+    if (KeyBoostReleased) and (!boosting)
     {
         if (sound_isplaying(snArcDashReadyIdle)) sound_stop(snArcDashReadyIdle);
         sound_volume(snArcDashReadyIdle,0);
@@ -47,7 +47,9 @@ if (!MorphBall) and (eId.HasArcDash)
         and (!boosting)
         and (!boostdelay)
         {
-            boostdir = point_direction(x,y,mouse_x,mouse_y);
+            boostdir = round(point_direction(x,y,mouse_x,mouse_y));
+            destboostdir = boostdir;
+            destdirdelay = 3;
             boosting = 1;
             boosttrail = boosttraildelay;
         }
@@ -57,7 +59,7 @@ if (!MorphBall) and (eId.HasArcDash)
     }
     
     // Press boost key.
-    if (KeyBoostPressed) and (!boostdelay) and (!startboostcharge)
+    if (KeyBoostPressed) and (!boostdelay) and (!startboostcharge) and (!boosting)
     {
         if (!sound_isplaying(snArcDashReadyIdle)) sound_loop(snArcDashReadyIdle);
         startboostcharge = 1;
@@ -73,13 +75,14 @@ if (!MorphBall) and (eId.HasArcDash)
             image_angle = random(360);
         }
     }
+    if (KeyBoostPressed) and (boosting) scPlayerBoostCollide(2);
     
     // Hold boost key.
-    if (KeyBoost) and (startboostcharge) and (boostchargelevel < boostchargemax) boostchargelevel += 1;
+    if (KeyBoost) and (startboostcharge) and (boostchargelevel < boostchargemax) and (!boosting) boostchargelevel += 1;
     if (boostalpha <= 0) boostalpha = boostalphaset;
     boostfaderate = boostchargelevel/1000;
     if (boostalpha > 0) boostalpha -= boostfaderate;
-    if (boostchargelevel > 0)
+    if (boostchargelevel > 0) and (!boosting)
     {
         sound_volume(snArcDashReadyIdle,boostchargelevel/boostchargemax);
         var ce = random(boostchargelevel);
@@ -144,8 +147,9 @@ if (!MorphBall) and (eId.HasArcDash)
                 direction = other.direction;
                 speed = other.speed/2;
                 image_angle = other.boostdir;
-                image_alpha = 0.8;
-                flex = 1;
+                image_alpha = 1;
+                image_speed = 0.5;
+                //flex = 1;
             }
         }
     }
@@ -324,5 +328,23 @@ else
 }
 
 move_step_ext(x+mhspeed,y+mvspeed,sign(0)*min(1,abs(0)),oBlockParent);
-if (boosting+boostchargelevel = 0) speed = 0;
-//}
+speed = 0;
+
+// Stop boosting if we hit a wall at a bad angle.
+if (boosting)
+{
+    prevdir = point_direction(xprevious,yprevious,x,y);
+    if (point_distance(x,y,xprevious,yprevious) < 3)  scPlayerBoostCollide(0);
+    if (angle_difference(prevdir,boostdir) > boostdirblocklimit)  scPlayerBoostCollide(0);
+    else
+    {
+        if (destdirdelay = 0) destboostdir = floor(prevdir);
+        else destdirdelay -= 1;
+    }
+    if (boostdir != destboostdir)
+    {
+        var dbd = round(angle_difference(boostdir,destboostdir));
+        boostdir -= (min(abs(dbd),1)*sign(dbd));
+    }
+}
+boostdir = round(boostdir);
