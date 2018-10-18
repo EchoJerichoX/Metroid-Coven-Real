@@ -14,7 +14,7 @@ if (instance_exists(oPlayer))
 }
 else exit;
 if (point_distance(x,y,xx,yy) > truemaxspeed)
-    { if (maxspeed < truemaxspeed) maxspeed += 0.05; }
+    { if (maxspeed < truemaxspeed) maxspeed += 0.25; }
 else
     { maxspeed = 0; }
 
@@ -23,7 +23,7 @@ switch (eId.transstep)
 {
     case -1:
         if (instance_exists(oPlayer)) and (eId.paused = 0) and (eId.fadeStage = -1)
-            { move_towards_point(xx,yy,maxspeed); }
+            { move_towards_point(xx,yy,point_distance(x,y,xx,yy)/10); }
         else speed = 0;
         speed = clamp(speed,0,maxspeed);
         break;

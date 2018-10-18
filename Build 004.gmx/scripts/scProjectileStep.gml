@@ -40,7 +40,7 @@ switch (myid)
         trail.direction = direction;
         trail.speed = speed/2;
         trail.image_angle = other.image_angle;
-        trail.image_alpha = other.image_alpha;
+        trail.image_alpha = other.image_alpha/1.5;
         trail.flex = 1;
         break;
 // --- Wave Beam ---
@@ -76,7 +76,7 @@ switch (myid)
         trail.direction = direction;
         trail.speed = speed/2;
         trail.image_angle = other.image_angle;
-        trail.image_alpha = other.image_alpha;
+        trail.image_alpha = other.image_alpha/1.5;
         trail.flex = 1;
         
         tail = instance_create(x,y,oEffect);
@@ -84,7 +84,7 @@ switch (myid)
         tail.direction = random(360);
         tail.speed = random(3);
         tail.startspeed = speed;
-        tail.image_alpha = other.image_alpha;
+        tail.image_alpha = other.image_alpha/1.5;
         tail.image_speed = 1;
         break;
 // --- Spazer Beam ---
@@ -98,7 +98,7 @@ switch (myid)
             trail.direction = direction;
             trail.speed = speed/2;
             trail.image_angle = other.image_angle;
-            trail.image_alpha = other.image_alpha;
+            trail.image_alpha = other.image_alpha/1.5;
             trail.flex = 1;
         }
         else
@@ -123,7 +123,7 @@ switch (myid)
         trail.direction = direction;
         trail.speed = speed/2;
         trail.image_angle = other.image_angle;
-        trail.image_alpha = other.image_alpha;
+        trail.image_alpha = other.image_alpha/1.5;
         trail.flex = 1;
         break;
 // --- Ice Beam ---
@@ -136,7 +136,7 @@ switch (myid)
         trail.direction = direction-180;
         trail.speed = random_range(1,2);
         trail.startspeed = speed;
-        trail.image_alpha = other.image_alpha;
+        trail.image_alpha = other.image_alpha/1.5;
         trail.image_speed = 0.5;
         break;
 // --- Rupture Beam Particle ---
@@ -164,7 +164,7 @@ switch (myid)
         trail.direction = direction;
         trail.speed = speed/2;
         trail.image_angle = other.image_angle;
-        trail.image_alpha = other.image_alpha;
+        trail.image_alpha = other.image_alpha/1.5;
         trail.flex = 1;
         break;
 

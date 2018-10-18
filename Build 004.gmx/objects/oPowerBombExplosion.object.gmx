@@ -37,6 +37,7 @@ hittype = 5;
 Damage = .5;
 myid = Weapons.wPowerBomb;
 playerweapon = 1;
+scViewShake(8,0.05);
 </string>
           </argument>
         </arguments>

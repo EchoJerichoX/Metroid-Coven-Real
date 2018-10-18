@@ -28,7 +28,6 @@ if (charged) // Make changes to common variables if the player fired the project
 {
     lightalpha = lightalpha*2;
     lightradius = lightradius*2;
-    Damage = Damage*4;
 }
 pop = instance_create(x,y,oParticle);        // Create a small particle burst.
 pop.myid = myid;                             // ^
@@ -181,7 +180,7 @@ switch (myid)
     case Weapons.wSuperMissile:
         hittype = 3;
         Damage = 25;
-        sprite_index = sprMissile;
+        sprite_index = sprSuperMissile;
         speed = 4;
         blend = make_color_rgb(196,121,196);
         sound_play(MissileFire);
@@ -193,6 +192,7 @@ switch (myid)
 // NOTE: See Bomb and Power Bomb IDs in "scProjectileDeath" for remaining pertinent info.
 // --- Ball Bomb ---
     case Weapons.wBallBomb:
+        Charger = 0;
         DiesOnContact = false;
         sprite_index = sprBallBomb;
         if (instance_exists(oPlayer)) oPlayer.ExistingBombs += 1;
@@ -206,6 +206,7 @@ switch (myid)
         break;
 // --- Power Bomb ---
     case Weapons.wPowerBomb:
+        Charger = 0;
         DiesOnContact = false;
         if (instance_exists(oPlayer)) oPlayer.ExistingPowerBombs += 1;
         sprite_index = sprPowerBomb;

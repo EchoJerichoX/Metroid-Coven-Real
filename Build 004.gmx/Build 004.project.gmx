@@ -592,8 +592,8 @@
       <script>scripts\scDefineSuit.gml</script>
       <script>scripts\scPlayerStepGeneral.gml</script>
       <script>scripts\scPlayerStepInput.gml</script>
-      <script>scripts\scPlayerStepWeaponHandling.gml</script>
       <script>scripts\scPlayerWeaponControl.gml</script>
+      <script>scripts\scPlayerStepWeaponHandling.gml</script>
       <script>scripts\scPlayerEndStep.gml</script>
       <script>scripts\scPlayerDraw.gml</script>
       <script>scripts\scPlayerBoostCollide.gml</script>
@@ -602,6 +602,7 @@
       <script>scripts\scPlayerDamageProjectile.gml</script>
       <script>scripts\scPlayerDamage.gml</script>
       <script>scripts\scPlayerDeath.gml</script>
+      <script>scripts\scDiffuserBurst.gml</script>
     </scripts>
     <scripts name="Projectile">
       <script>scripts\scFireProjectile.gml</script>
