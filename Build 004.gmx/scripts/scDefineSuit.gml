@@ -13,8 +13,8 @@ switch (argument0)
         BallAnimationStart = 0;
         BallAnimationEnd = 6;
         BallAnimationLimit = 2;
-        MaxSpeed = 1.75;
-        MaxBallSpeed = 2.25;
+        MaxSpeed = 1.5;
+        MaxBallSpeed = 2;
         DamageReduction = 1;
         break;
     case Other.sVariaSuit:
@@ -23,8 +23,8 @@ switch (argument0)
         BallAnimationStart = 7;
         BallAnimationEnd = 13;
         BallAnimationLimit = 2;
-        MaxSpeed = 1.75;
-        MaxBallSpeed = 2.25;
+        MaxSpeed = 1.5;
+        MaxBallSpeed = 2;
         DamageReduction = 0.9;
         break;
     case Other.sGravitySuit:
@@ -33,8 +33,8 @@ switch (argument0)
         BallAnimationStart = 14;
         BallAnimationEnd = 20;
         BallAnimationLimit = 2;
-        MaxSpeed = 2;
-        MaxBallSpeed = 2.75;
+        MaxSpeed = 1.75;
+        MaxBallSpeed = 2.25;
         DamageReduction = 0.8;
         //visorSlave.image_blend = make_color_rgb(94,174,255);
         //visorSlave.AmbientBlend = make_color_rgb(94,174,255);
@@ -45,8 +45,8 @@ switch (argument0)
         BallAnimationStart = 21;
         BallAnimationEnd = 36;
         BallAnimationLimit = 1;
-        MaxSpeed = 2.25;
-        MaxBallSpeed = 3;
+        MaxSpeed = 1.75;
+        MaxBallSpeed = 2.25;
         DamageReduction = 0.7;
         break;
 }

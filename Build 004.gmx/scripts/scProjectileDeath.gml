@@ -93,7 +93,7 @@ switch (myid)
                 with (instance_create(x,y,oProjectile))
                 {
                     direction = random(360);
-                    scDefineProjectile(Projectiles.pRuptureBeamParticle);
+                    scDefineProjectilePlayer(Projectiles.pRuptureBeamParticle);
                     alarm[1] = 2;
                 }
             }
@@ -130,7 +130,7 @@ switch (myid)
         }
         break;
 // ===== Player Secondary Weapons and Addons =====
-// --- Missile Launcher ---
+// --- Missile ---
     case Weapons.wMissileLauncher:
         sound_play(MissileExplosion);
         repeat (20)
@@ -153,6 +153,7 @@ switch (myid)
             scProjectileLight(.2,c_white,c_orange,.6)
         }
         break;
+// --- Super Missile ---
     case Weapons.wSuperMissile:
         sound_play(SuperMissileExplosion);
         repeat (40)
@@ -174,6 +175,7 @@ switch (myid)
             Damage = 1;
             scProjectileLight(.3,c_white,c_purple,.7)
         }
+        scViewShake(8,0.5);
         break;
 // --- Ball Bomb ---
     case Weapons.wBallBomb:

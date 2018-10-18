@@ -5,9 +5,14 @@ switch (transstep)
     // Fade to black.
     case 0:
         if (transfade < 1) transfade += transfaderate;
+        if (instance_exists(oViewController))
+        {
+            with (oViewController)
+                { if (shakemax > 0) shakemax -= 0.5; }
+        }
         if (transfade = 1) transstep = 1;
         break;
-    // Buffer a bit before moving to the transition room.
+    // Buffer a bit before moving to the transition room, screen is fully black.
     case 1:
         if (transbuffer < transbuffermax) transbuffer += 1;
         if (transbuffer = transbuffermax) 
@@ -97,11 +102,22 @@ switch (transstep)
         if (transfade = 0) 
         {
             transitioning = false;
-            transstep = -1;
+            transstep = 7;
             tx = 0; ty = 0;
             tdx = 0; tdy = 0;
             tsx = 0; tsy = 0;
             vox = 0; voy = 0;
+        }
+        break;
+    case 7:
+        // Slowly correct the max shake so the view doesn't snap back too fast.
+        if (instance_exists(oViewController))
+        {
+            with (oViewController)
+            {
+                if (shakemax < eId.trueshakemax) shakemax += 0.5;
+                else other.transstep = -1;
+            }
         }
         break;
 }

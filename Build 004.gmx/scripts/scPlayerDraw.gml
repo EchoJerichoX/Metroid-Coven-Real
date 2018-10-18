@@ -8,4 +8,5 @@ if (CanTakeHit = false)
 else
     { col = 1; var blend = c_white; }
 draw_sprite_ext(sprite_index,image_single,x,y,image_xscale,image_yscale,image_angle,blend,col);
+if (!MorphBall) draw_sprite_ext(sprPlayerFeet,image_single,x,y,image_xscale,image_yscale,image_angle,blend,col);
 if (boostchargelevel > 0) draw_sprite_ext(sprPlayerArcDash,image_single,x,y,image_xscale,image_yscale,image_angle,c_white,boostalpha);

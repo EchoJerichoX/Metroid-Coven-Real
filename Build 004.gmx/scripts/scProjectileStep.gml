@@ -213,8 +213,8 @@ switch (myid)
         if (speed > 0)
             { fadeout = false; alarm[0] = 100; }
         else fadeout = true;
-        if (fadeout) image_speed += .005;//*(1+global.accel); // Uncomment this when accel tanks are added.
-        if (image_speed >= .75)
+        if (fadeout) image_speed += .015;//*(1+global.accel); // Uncomment this when accel tanks are added.
+        if (image_speed >= 1.25)
             { instance_create(x,y,oPowerBombExplosion); instance_destroy(); }
         break;
 

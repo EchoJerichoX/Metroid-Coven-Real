@@ -4,12 +4,9 @@ if (object_index = eId)
     draw_set_font(font1);
     draw_set_halign(fa_left);
     draw_set_valign(fa_bottom);
-    
     draw_set_color(c_ltgray);
-    
     dxo = view_xview[0];
     dyo = view_yview[0];
-    
     if (drawmpgrid)
     {
         draw_set_alpha(0.2);
@@ -20,7 +17,6 @@ if (object_index = eId)
             { draw_line(i,0,i,room_height); }
         draw_set_alpha(1);
     }
-    
     if (room = TransitionRoom)
     {
         draw_text(5,20,"tx:"); draw_text(40,20,tx);
@@ -28,13 +24,29 @@ if (object_index = eId)
         draw_text(5,60,"vox:"); draw_text(40,60,vox);
         draw_text(5,80,"voy:"); draw_text(40,80,voy);
     }
+    if (instance_exists(oViewController))
+    {
+        draw_set_color(c_black);
+        draw_set_alpha(0.3);
+        draw_rectangle(dxo,dyo,dxo+220,dyo+90,0);
+        draw_set_color(c_white);
+        draw_set_alpha(0.9);
+        draw_text(dxo+4,dyo+13,"view x:");            draw_text(dxo+160,dyo+14,oViewController.x);
+        draw_text(dxo+4,dyo+26,"view y:");            draw_text(dxo+160,dyo+27,oViewController.y);
+        draw_text(dxo+4,dyo+39,"view shake:");        draw_text(dxo+160,dyo+40,oViewController.shake);
+        draw_text(dxo+4,dyo+52,"view shakerate:");    draw_text(dxo+160,dyo+53,oViewController.shakerate);
+        draw_text(dxo+4,dyo+65,"view shakemax:");     draw_text(dxo+160,dyo+66,oViewController.shakemax);
+        draw_text(dxo+4,dyo+78,"view maxspeed:");     draw_text(dxo+160,dyo+79,oViewController.maxspeed);
+        draw_text(dxo+4,dyo+91,"view truemaxspeed:"); draw_text(dxo+160,dyo+92,oViewController.truemaxspeed);
+        draw_text(dxo+4,dyo+104,"view xx:");          draw_text(dxo+160,dyo+105,oViewController.xx);
+        draw_text(dxo+4,dyo+117,"view yy:");          draw_text(dxo+160,dyo+118,oViewController.yy);
+    }
     /*
     if (instance_exists(oPlayer))
     {
         draw_set_color(c_black);
         draw_set_alpha(0.3);
         draw_rectangle(dxo,dyo,dxo+220,dyo+194,0);
-        
         draw_set_color(c_white);
         draw_set_alpha(0.9);
         draw_text(dxo+4,dyo+13,"startboostcharge:");  draw_text(dxo+160,dyo+14,oPlayer.startboostcharge);

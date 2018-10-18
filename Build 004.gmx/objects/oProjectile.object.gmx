@@ -33,7 +33,7 @@ impacted = 0;
 slave = noone;
 createeffect = 0;
 hittype = 0; // 1 = Beam. 2 = Missile. 3 = Super Missile. 4 = Ball Bomb. 5 = Power Bomb.
-inputspeed = -1; // Set in scDefineProjectile.
+inputspeed = -1; // Set in scDefineProjectilePlayer/scDefineProjectileOther.
 trail = -1; // Prevents missing instance errors later on.
 </string>
           </argument>

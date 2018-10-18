@@ -97,7 +97,8 @@ scActorStep();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scActorHit();
+            <string>///scActorHit();
+scActorHit();
 </string>
           </argument>
         </arguments>
@@ -120,7 +121,8 @@ scActorStep();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scActorWallCollide();
+            <string>///scActorWallCollide();
+scActorWallCollide();
 </string>
           </argument>
         </arguments>
@@ -143,7 +145,8 @@ scActorStep();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scActorHit();
+            <string>///scActorHit();
+scActorHit();
 </string>
           </argument>
         </arguments>
@@ -166,7 +169,8 @@ scActorStep();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scActorHit();
+            <string>///scActorHit();
+scActorHit();
 </string>
           </argument>
         </arguments>
@@ -189,7 +193,8 @@ scActorStep();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scActorWallCollide();
+            <string>///scActorWallCollide();
+scActorWallCollide();
 </string>
           </argument>
         </arguments>
@@ -212,7 +217,8 @@ scActorStep();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>scActorWallCollide();
+            <string>///scActorWallCollide();
+scActorWallCollide();
 </string>
           </argument>
         </arguments>

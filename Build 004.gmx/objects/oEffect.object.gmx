@@ -122,7 +122,7 @@ switch (sprite_index)
         else var b = 120;
         if (image_xscale &gt; 0.25) image_xscale -= (1/b)*3
         if (image_alpha &lt; 1) image_alpha += 1/b;
-        clamp(image_alpha,0,1);
+        image_alpha = clamp(image_alpha,0,1);
         image_speed = image_alpha;
         image_yscale = image_xscale;
         image_angle = random(360);

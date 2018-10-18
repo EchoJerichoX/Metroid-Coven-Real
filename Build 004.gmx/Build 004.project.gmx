@@ -290,6 +290,7 @@
       <sprite>sprites\sprPowerBombInvert</sprite>
       <sprite>sprites\sprLargeCrateExplosion</sprite>
       <sprite>sprites\sprSmoke</sprite>
+      <sprite>sprites\sprShockwave</sprite>
     </sprites>
     <sprites name="Interface">
       <sprites name="HUD 2.0">
@@ -320,6 +321,7 @@
     </sprites>
     <sprites name="Player">
       <sprite>sprites\sprPlayer</sprite>
+      <sprite>sprites\sprPlayerFeet</sprite>
       <sprite>sprites\sprPlayerMask</sprite>
       <sprite>sprites\sprPlayerMorphBall</sprite>
       <sprite>sprites\sprPlayerMorphBallMask</sprite>
@@ -522,7 +524,7 @@
         </scripts>
       </scripts>
     </scripts>
-    <scripts name="Engine Initialization">
+    <scripts name="Engine ID Systems">
       <script>scripts\scGameInit.gml</script>
       <script>scripts\scEIDMasterList.gml</script>
       <script>scripts\scEIDAudioInit.gml</script>
@@ -603,7 +605,8 @@
     </scripts>
     <scripts name="Projectile">
       <script>scripts\scFireProjectile.gml</script>
-      <script>scripts\scDefineProjectile.gml</script>
+      <script>scripts\scDefineProjectilePlayer.gml</script>
+      <script>scripts\scDefineProjectileOther.gml</script>
       <script>scripts\scProjectileStep.gml</script>
       <script>scripts\scProjectileLight.gml</script>
       <script>scripts\scProjectileDeath.gml</script>
@@ -616,6 +619,12 @@
       <script>scripts\scTransition.gml</script>
       <script>scripts\scTransGetDest.gml</script>
       <script>scripts\scTransIn.gml</script>
+    </scripts>
+    <scripts name="View Controller">
+      <script>scripts\scViewControllerInit.gml</script>
+      <script>scripts\scViewControllerEndStep.gml</script>
+      <script>scripts\scViewControllerDraw.gml</script>
+      <script>scripts\scViewShake.gml</script>
     </scripts>
     <scripts name="Weapon">
       <script>scripts\scDefineWeapon.gml</script>
@@ -758,6 +767,7 @@
       <room>rooms\Tutorial6</room>
       <room>rooms\Tutorial7</room>
       <room>rooms\Tutorial8</room>
+      <room>rooms\Tutorial9</room>
     </rooms>
     <rooms name="Barria">
       <room>rooms\BarriaLandingSite</room>

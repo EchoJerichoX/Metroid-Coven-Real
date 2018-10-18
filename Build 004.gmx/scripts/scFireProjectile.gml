@@ -2,6 +2,7 @@
 // Get data about the projectile, and create it.
 // argument0 = Aiming direction of the player when firing.
 // argument1 = WeaponProjectile. Defined by enums in scDefineWeapon.
+//   ^ Typically just copies current weapon enum directly to the projectile (no separate enum).
 var xx = WeaponXPosition+lengthdir_x(CannonOffset,argument0); // Determine where we spawn the projectile from,
 var yy = WeaponYPosition+lengthdir_y(CannonOffset,argument0); //   in relation to the arm cannon.
 if (Charger >= 60) Heat += Heating*4; // Increase heat if using the Plasma Beam.
@@ -17,7 +18,7 @@ if (HoldingWeaponId = Weapons.wWaveBeam) // Specific behavior for Wave Beam.
             Charger = other.Charger; // Inherit charge level from Charge Beam.
             direction = argument0; // Fires "straight".
             image_angle = direction;
-            scDefineProjectile(argument1);
+            scDefineProjectilePlayer(argument1);
             t = 0;
             SwingPositive = i;
         }
@@ -35,7 +36,7 @@ else if (HoldingWeaponId = Weapons.wSpazerBeam) // Specific behavior for Spazer 
             Charger = other.Charger;
             direction = argument0;
             image_angle = direction;
-            scDefineProjectile(argument1);
+            scDefineProjectilePlayer(argument1);
             side = i; // 0 = left, 1 = middle, 2 = right projectile.
         }
     }
@@ -54,7 +55,7 @@ else if (HoldingWeaponId = Weapons.wPhazonBeam) // Specific behavior for Phazon 
             Charger = other.Charger;
             direction = oPlayer.WeaponAim+random_range(oPlayer.WeaponAccuracy,oPlayer.WeaponAccuracy*-1);
             image_angle = direction;
-            scDefineProjectile(Weapons.wPhazonBeam);
+            scDefineProjectilePlayer(Weapons.wPhazonBeam);
         }
         pop.c = 0;
     }
@@ -67,7 +68,7 @@ else if (HoldingWeaponId = Weapons.wPhazonBeam) // Specific behavior for Phazon 
                 direction = i;
                 image_angle = direction;
                 Charger = other.Charger;
-                scDefineProjectile(Weapons.wPhazonBeam);
+                scDefineProjectilePlayer(Weapons.wPhazonBeam);
             }
         }
         pop.c = 1;
@@ -80,5 +81,5 @@ else with (instance_create(xx,yy,oProjectile)) // Behavior for all other project
     Charger = other.Charger;
     direction = argument0+random_range(other.WeaponAccuracy*-1,other.WeaponAccuracy);
     image_angle = direction;
-    scDefineProjectile(argument1);
+    scDefineProjectilePlayer(argument1);
 }

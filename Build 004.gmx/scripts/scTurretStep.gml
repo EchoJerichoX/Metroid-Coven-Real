@@ -30,7 +30,7 @@ if (shotready = 0) and (pulse < 3)
         pulseready = pulsedelay;
         with (instance_create(x+lengthdir_x(15,direction),y+lengthdir_y(15,direction),oProjectile))
         {
-            scDefineProjectile(Projectiles.pTurret);
+            scDefineProjectileOther(Projectiles.pTurret);
             speed = 5;
             direction = other.direction+random_range(-10,10);
             image_angle = direction;
